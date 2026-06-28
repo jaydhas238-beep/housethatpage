@@ -1258,10 +1258,9 @@ height:auto;
 .split-video-hero{
   min-height:100vh;
   display:grid;
-  grid-template-columns:1fr .72fr;
-  align-items:center;
-  gap:4vw;
-  padding:140px 6vw 80px;
+  grid-template-columns:42% 58%;
+  align-items:stretch;
+  padding:0;
   background:var(--ivory);
   position:relative;
   overflow:hidden;
@@ -1269,14 +1268,18 @@ height:auto;
 
 .hero-copy{
   position:relative;
-  z-index:2;
+  z-index:3;
+  padding:190px 0 90px 6vw;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
 
 .hero-copy h1{
   font-family:var(--serif);
-  font-size:clamp(64px,9vw,150px);
+  font-size:clamp(70px,8vw,145px);
   font-weight:300;
-  line-height:.85;
+  line-height:.86;
   letter-spacing:-.06em;
 }
 
@@ -1285,7 +1288,7 @@ height:auto;
 }
 
 .hero-desc{
-  margin-top:36px;
+  margin-top:34px;
   max-width:520px;
   color:var(--stone);
   font-size:18px;
@@ -1293,23 +1296,30 @@ height:auto;
 }
 
 .hero-video-wrap{
-  height:78vh;
-  border-radius:34px;
-  overflow:hidden;
   position:relative;
-  box-shadow:0 40px 110px rgba(0,0,0,.18);
+  height:100vh;
+  border-radius:0;
+  overflow:hidden;
+  box-shadow:none;
 }
 
 .hero-video-wrap::before{
   content:"";
   position:absolute;
-  left:-120px;
+  left:-260px;
   top:0;
-  width:220px;
+  width:520px;
   height:100%;
   z-index:2;
-  background:linear-gradient(90deg, var(--ivory), rgba(245,241,232,.75), transparent);
-  backdrop-filter:blur(14px);
+  background:linear-gradient(
+    90deg,
+    var(--ivory) 0%,
+    rgba(245,241,232,.96) 28%,
+    rgba(245,241,232,.72) 58%,
+    rgba(245,241,232,.18) 82%,
+    transparent 100%
+  );
+  backdrop-filter:blur(18px);
   pointer-events:none;
 }
 
@@ -1331,16 +1341,12 @@ height:auto;
   .split-video-hero{
     display:flex;
     flex-direction:column;
-    padding:0;
-    gap:0;
   }
 
   .hero-video-wrap{
     order:1;
     width:100%;
     height:100vh;
-    border-radius:0;
-    box-shadow:none;
   }
 
   .hero-video-wrap::before{
@@ -1355,9 +1361,5 @@ height:auto;
 
   .hero-copy h1{
     font-size:64px;
-  }
-
-  .hero-desc{
-    font-size:16px;
   }
 }
