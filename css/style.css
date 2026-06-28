@@ -63,10 +63,12 @@ a{
 
 .loader-brand{
     display:block;
-    font-size:22px;
-    font-weight:400;
-    margin-bottom:18px;
-    font-family:'Inter',sans-serif;
+    font-family:'Cormorant Garamond', serif;
+    font-size:54px;
+    font-weight:300;
+    letter-spacing:-1px;
+    margin-bottom:12px;
+    line-height:1;
 }
 
 .loader-brand .house{
