@@ -56,13 +56,27 @@ a{
   animation:preLogo 1.4s ease forwards;
 }
 
-.preloader span{
-  font-size:11px;
-  letter-spacing:.35em;
-  text-transform:uppercase;
-  color:var(--gold);
+.loader-text{
+    text-align:center;
+    margin-top:18px;
 }
 
+.loader-text span{
+    display:block;
+    color:#b68b3a;
+    font-size:18px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+
+.loader-subtitle{
+    margin:0;
+    color:#777;
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
 @keyframes preLogo{
   from{opacity:0;transform:scale(.92)}
   to{opacity:1;transform:scale(1)}
