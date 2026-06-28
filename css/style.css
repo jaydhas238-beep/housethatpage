@@ -1382,4 +1382,9 @@ height:auto;
     display: none !important;
 }
 
+.rooftop-project-img{
+    background-image:url('../images/Rooftop4.jpg') !important;
+    background-size:cover;
+    background-position:center;
+}
 
