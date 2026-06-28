@@ -743,3 +743,33 @@ a{
     justify-content:flex-start;
   }
 }
+
+.contact-form{
+  display:grid;
+  gap:22px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+  width:100%;
+  border:0;
+  border-bottom:1px solid var(--line);
+  background:transparent;
+  padding:18px 0;
+  font-family:var(--sans);
+  font-size:15px;
+  outline:none;
+  color:var(--charcoal);
+}
+
+.contact-form textarea{
+  min-height:140px;
+  resize:vertical;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+  border-bottom-color:var(--gold);
+}
