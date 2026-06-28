@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Contact | HouseThat</title>
+  <meta name="description" content="Contact HouseThat for interior design, architecture, construction and turnkey project enquiries.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+  <a href="index.html" class="brand">
+    <img src="images/image5.jpg" alt="HouseThat Logo">
+  </a>
+
+  <nav class="desktop-nav">
+    <a href="about.html">Studio</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="careers.html">Apply</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <a href="contact.html" class="book-link">Book</a>
+</header>
+
+<main>
+
+<section class="about-hero reveal-section">
+  <p class="section-label">Contact</p>
+  <h1>Let’s create<br>your next space.</h1>
+</section>
+
+<section class="home-about section-pad reveal-section">
+  <div class="split-title">
+    <h2>Tell us about<br>your project.</h2>
+
+    <form class="contact-form" onsubmit="sendToWhatsApp(event)">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+
+      <select id="projectType" required>
+        <option value="">Project Type</option>
+        <option>Interior Design</option>
+        <option>Architecture</option>
+        <option>Construction</option>
+        <option>Turnkey Project</option>
+        <option>Renovation</option>
+        <option>Other</option>
+      </select>
+
+      <textarea id="message" placeholder="Tell us about your requirement" required></textarea>
+
+      <button type="submit" class="primary-btn">Send on WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section class="products-home section-pad reveal-section">
+  <div class="section-head">
+    <div>
+      <div class="section-label">Connect</div>
+      <h2>Studio details.</h2>
+    </div>
+  </div>
+
+  <div class="request-list">
+    <a href="mailto:studio@housethat.in">
+      <span>01</span>
+      Email
+      <small>studio@housethat.in</small>
+    </a>
+
+    <a href="https://www.instagram.com/housethat.co" target="_blank">
+      <span>02</span>
+      Instagram
+      <small>@housethat.co</small>
+    </a>
+
+    <a href="#">
+      <span>03</span>
+      Location
+      <small>India · UAE</small>
+    </a>
+  </div>
+</section>
+
+<section class="final-home-cta reveal-section">
+  <h2>Spaces begin<br><em>with a conversation.</em></h2>
+  <a href="https://www.instagram.com/housethat.co" target="_blank" class="primary-btn">View Instagram</a>
+</section>
+
+</main>
+
+<footer class="main-footer">
+  <div>
+    <img src="images/image5.jpg" alt="HouseThat Logo">
+  </div>
+
+  <div>
+    <p>India · UAE</p>
+    <p>Interiors · Architecture · Construction</p>
+  </div>
+
+  <div>
+    <a href="https://www.instagram.com/housethat.co" target="_blank">Instagram</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault();
+
+  const ownerNumber = "7972219776";
+
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const email = document.getElementById("email").value;
+  const projectType = document.getElementById("projectType").value;
+  const message = document.getElementById("message").value;
+
+  const whatsappMessage =
+`New Project Enquiry - HouseThat
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Project Type: ${projectType}
+
+Message:
+${message}`;
+
+  const url = `https://wa.me/${ownerNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
