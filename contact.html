@@ -38,7 +38,50 @@
   <p class="section-label">Contact</p>
   <h1>Let’s create<br>your next space.</h1>
 </section>
+<section class="luxury-contact section-pad reveal-section">
+  <div class="contact-left">
+    <p class="section-label">Project Enquiry</p>
+    <h2>Let’s discuss<br>your project.</h2>
+    <p>Whether you are designing a home, renovating a space or planning a commercial project, begin with a conversation.</p>
+  </div>
 
+  <form class="premium-contact-form" onsubmit="sendToWhatsApp(event)">
+    <div class="form-field">
+      <input type="text" id="name" required>
+      <label>Full Name</label>
+    </div>
+
+    <div class="form-field">
+      <input type="tel" id="phone" required>
+      <label>Phone Number</label>
+    </div>
+
+    <div class="form-field">
+      <input type="email" id="email" required>
+      <label>Email Address</label>
+    </div>
+
+    <div class="form-field">
+      <select id="projectType" required>
+        <option value="" hidden></option>
+        <option>Interior Design</option>
+        <option>Architecture</option>
+        <option>Construction</option>
+        <option>Turnkey Project</option>
+        <option>Renovation</option>
+        <option>Other</option>
+      </select>
+      <label>Project Type</label>
+    </div>
+
+    <div class="form-field full">
+      <textarea id="message" required></textarea>
+      <label>Tell us about your project</label>
+    </div>
+
+    <button type="submit" class="premium-submit">Book Consultation →</button>
+  </form>
+</section>
 
 
 
