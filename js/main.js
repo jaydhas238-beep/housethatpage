@@ -198,4 +198,37 @@ animateHero();
 
 function toggleMenu(){
   document.getElementById("mobileMenu").classList.toggle("open");
+  function sendCareerEmail(event){
+  event.preventDefault();
+
+  const ownerEmail = "careers@housethat.in";
+
+  const name = document.getElementById("careerName").value;
+  const email = document.getElementById("careerEmail").value;
+  const phone = document.getElementById("careerPhone").value;
+  const role = document.getElementById("careerRole").value;
+
+  const subject = `Application for ${role} - HouseThat`;
+
+  const body =
+`Dear HouseThat Team,
+
+I would like to apply for the position of ${role}.
+
+Applicant Details:
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Role Applying For: ${role}
+
+Please find my resume attached.
+
+Regards,
+${name}`;
+
+  const mailtoURL =
+    `mailto:${ownerEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  window.location.href = mailtoURL;
+}
 }
