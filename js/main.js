@@ -232,3 +232,20 @@ ${name}`;
   window.location.href = mailtoURL;
 }
 }
+
+function openEmail(e) {
+    e.preventDefault();
+
+    const email = "jaydhas238@gmail.com"; 
+    const subject = "Website Enquiry";
+
+    if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        window.location.href =
+            `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+    } else {
+        window.open(
+            `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}`,
+            "_blank"
+        );
+    }
+}
