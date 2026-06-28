@@ -371,27 +371,27 @@ a{
 .project-item:hover{
     transform:translateY(-10px);
 }
+
 .project-img{
     width:100%;
     height:520px;
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    border-radius:8px;
-    overflow:hidden;
     display:block;
+    background-size:cover !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+    border-radius:8px;
 }
 
 .project-img-one{
-  background-image:url('../images/Project1.jpg');
+    background-image:url('../images/Project1.jpg') !important;
 }
 
 .project-img-two{
-  background-image:url('../images/Project2.jpg');
+    background-image:url('../images/Project2.jpg') !important;
 }
 
 .project-img-three{
-  background-image:url('../images/Project4.jpg');
+    background-image:url('../images/Project4.jpg') !important;
 }
 .project-item:hover .project-img{
     transform:scale(1.04);
