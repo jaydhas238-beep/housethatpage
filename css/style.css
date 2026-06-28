@@ -143,27 +143,40 @@ a{
 }
 
 .hero-photo-one{
-  width:310px;
-  height:430px;
-  right:8vw;
-  top:17vh;
- background-image:url('../images/Project1.jpg');
+    width:310px;
+    height:430px;
+    right:8vw;
+    top:17vh;
+
+    background-image:url('../images/Project1.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
 
 .hero-photo-two{
-  width:230px;
-  height:310px;
-  left:9vw;
-  bottom:9vh;
-  background-image:url('../images/Project2.jpg');
+    width:230px;
+    height:310px;
+    left:9vw;
+    bottom:9vh;
+
+    background-image:url('../images/Project2.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
   
 
 .hero-photo-three{
-  width:190px;
-  height:250px;
-  right:27vw;
-  bottom:8vh;
- background-image:url('../images/Project3.jpg');
+    width:190px;
+    height:250px;
+    right:27vw;
+    bottom:8vh;
+
+    background-image:url('../images/Project3.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .hero-center{
