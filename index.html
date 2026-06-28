@@ -3,107 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>HouseThat | Luxury Interiors, Architecture & Construction</title>
-  <meta name="description" content="HouseThat is a luxury interior, architecture and turnkey design studio creating refined residential and commercial spaces across India and UAE.">
+  <meta name="description" content="HouseThat is a luxury interior, architecture and turnkey design studio creating refined spaces across India and UAE.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header class="site-header">
-  <a href="index.html" class="logo">
+<div class="loader">
+  <img src="images/logo/png.png" alt="HouseThat Logo">
+</div>
+
+<header class="navbar">
+  <a href="index.html" class="brand">
     <img src="images/logo/png.png" alt="HouseThat Logo">
   </a>
 
   <nav>
-    <a href="about.html">About</a>
-    <a href="projects.html">Work</a>
+    <a href="about.html">Studio</a>
+    <a href="projects.html">Projects</a>
     <a href="services.html">Services</a>
     <a href="products.html">Products</a>
     <a href="careers.html">Apply</a>
     <a href="contact.html">Contact</a>
   </nav>
+
+  <a href="contact.html" class="nav-cta">Book</a>
 </header>
 
+<main>
+
 <section class="hero">
-  <div class="hero-images">
-    <div class="float-img img-one"></div>
-    <div class="float-img img-two"></div>
-    <div class="float-img img-three"></div>
+  <div class="hero-bg" data-speed="0.08"></div>
+
+  <div class="hero-gallery">
+    <div class="hero-img hero-img-1" data-speed="0.16"></div>
+    <div class="hero-img hero-img-2" data-speed="-0.12"></div>
+    <div class="hero-img hero-img-3" data-speed="0.10"></div>
   </div>
 
   <div class="hero-content">
     <p class="eyebrow">Interiors · Architecture · Construction</p>
-    <h1>Spaces that feel<br><span>quietly extraordinary.</span></h1>
-    <p class="hero-text">
-      A luxury design studio crafting refined homes, commercial spaces and turnkey interiors across India and UAE.
+    <h1>
+      Spaces<br>
+      that move<br>
+      <em>quietly.</em>
+    </h1>
+    <p class="hero-copy">
+      Refined homes, commercial spaces and turnkey interiors crafted with restraint, detail and intention.
     </p>
-    <a href="projects.html" class="btn">Explore Work</a>
   </div>
+
+  <div class="scroll-hint">Scroll</div>
 </section>
 
-<section class="intro reveal">
-  <p class="small-label">About HouseThat</p>
-  <h2>Design with restraint.<br>Execution with precision.</h2>
-  <p>
-    Founded in 2022, HouseThat creates high-quality residential and commercial spaces with a focus on timeless aesthetics, detail and thoughtful planning.
+<section class="intro section">
+  <p class="label reveal">About HouseThat</p>
+  <h2 class="big-title reveal">
+    Luxury is not loud.<br>
+    It is deeply felt.
+  </h2>
+  <p class="intro-text reveal">
+    Founded in 2022, HouseThat creates high-quality residential and commercial spaces across Maharashtra, Gujarat, Delhi, Karnataka and the UAE.
   </p>
 </section>
 
-<section class="featured reveal">
-  <div class="section-head">
-    <p class="small-label">Selected Work</p>
-    <h2>Projects shaped<br>with intention.</h2>
+<section class="editorial section">
+  <div class="editorial-img reveal"></div>
+  <div class="editorial-text reveal">
+    <p class="label">The Studio</p>
+    <h2>Designed with calm.<br>Delivered with precision.</h2>
+    <p>
+      Every project is shaped through thoughtful planning, material sensitivity and a clear understanding of how people live within a space.
+    </p>
+    <a href="about.html" class="text-link">Discover Studio</a>
+  </div>
+</section>
+
+<section class="projects-preview section">
+  <div class="section-head reveal">
+    <p class="label">Selected Work</p>
+    <h2>Projects with presence.</h2>
   </div>
 
-  <div class="work-grid">
-    <a href="projects.html" class="work-card">
-      <div class="work-img work-1"></div>
-      <h3>Luxury Residences</h3>
-      <p>Interior Design</p>
+  <div class="project-row reveal">
+    <a href="projects.html" class="project-card">
+      <div class="project-image project-1"></div>
+      <span>Residential</span>
+      <h3>Quiet Luxury Homes</h3>
     </a>
 
-    <a href="projects.html" class="work-card">
-      <div class="work-img work-2"></div>
-      <h3>Dubai Bathrooms</h3>
-      <p>Award-Winning Collection</p>
+    <a href="projects.html" class="project-card tall">
+      <div class="project-image project-2"></div>
+      <span>Dubai Collection</span>
+      <h3>Award-Winning Bathrooms</h3>
     </a>
 
-    <a href="projects.html" class="work-card">
-      <div class="work-img work-3"></div>
-      <h3>Turnkey Spaces</h3>
-      <p>Design to Delivery</p>
+    <a href="projects.html" class="project-card">
+      <div class="project-image project-3"></div>
+      <span>Turnkey</span>
+      <h3>Concept to Completion</h3>
     </a>
   </div>
 </section>
 
-<section class="founder-preview reveal">
-  <div>
-    <p class="small-label">Founder</p>
-    <h2>Meet Anita Shah</h2>
+<section class="founder-strip section">
+  <div class="founder-image reveal"></div>
+  <div class="founder-content reveal">
+    <p class="label">Founder</p>
+    <h2>Anita Shah</h2>
+    <p>
+      Founder and Principal Designer of HouseThat, bringing over five years of expertise in interior design and space planning.
+    </p>
+    <a href="about.html" class="text-link light">Read Story</a>
   </div>
-  <p>
-    Founder and Principal Designer of HouseThat, Anita brings over 5 years of expertise in interior design and space planning, blending functionality with timeless luxury.
+</section>
+
+<section class="dubai section">
+  <p class="label reveal">Dubai Collection</p>
+  <h2 class="big-title reveal">
+    Bathrooms designed<br>
+    like private sanctuaries.
+  </h2>
+  <p class="intro-text reveal">
+    A celebrated collection of refined bathroom spaces created with precision, atmosphere and international detailing.
   </p>
-  <a href="about.html" class="text-link">Read Story</a>
+  <a href="projects.html" class="btn reveal">View Collection</a>
 </section>
 
-<section class="products-preview reveal">
-  <p class="small-label">Products</p>
-  <h2>Curated finishes, furniture<br>and decor selections.</h2>
-  <p>Customers can request pricing directly from the website.</p>
-  <a href="products.html" class="btn dark">Request Price</a>
+<section class="products section">
+  <div class="section-head reveal">
+    <p class="label">Products</p>
+    <h2>Curated pieces.<br>Prices on request.</h2>
+  </div>
+
+  <div class="product-list reveal">
+    <a href="products.html">Natural Stone <span>Request Price</span></a>
+    <a href="products.html">Luxury Vanities <span>Request Price</span></a>
+    <a href="products.html">Designer Lighting <span>Request Price</span></a>
+    <a href="products.html">Premium Faucets <span>Request Price</span></a>
+  </div>
 </section>
 
-<section class="cta reveal">
-  <h2>Let’s create a space<br>that speaks softly.</h2>
-  <a href="contact.html" class="btn">Book Consultation</a>
+<section class="testimonials section">
+  <p class="label reveal">Words</p>
+  <h2 class="quote reveal">
+    “A space should never feel decorated. It should feel discovered.”
+  </h2>
 </section>
+
+<section class="final-cta section">
+  <h2 class="reveal">Let’s shape your<br><em>next space.</em></h2>
+  <a href="contact.html" class="btn reveal">Book Consultation</a>
+</section>
+
+</main>
 
 <footer>
-  <p>© 2026 HouseThat</p>
+  <div>
+    <img src="images/logo/png.png" alt="HouseThat Logo">
+  </div>
+  <p>India · UAE</p>
   <p>Interiors · Architecture · Construction</p>
 </footer>
 
