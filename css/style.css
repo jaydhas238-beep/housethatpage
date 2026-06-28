@@ -1371,4 +1371,19 @@ height:auto;
   }
 }
 
+.hero{
+  background:var(--ivory) !important;
+  background-image:none !important;
+}
+
+.hero-bg,
+.hero-bg-layer,
+.hero::before,
+.hero::after{
+  display:none !important;
+  background:none !important;
+  background-image:none !important;
+  opacity:0 !important;
+}
+
 
