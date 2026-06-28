@@ -61,13 +61,20 @@ a{
     margin-top:18px;
 }
 
-.loader-text span{
+.loader-brand{
     display:block;
-    color:#b68b3a;
-    font-size:18px;
-    letter-spacing:8px;
-    text-transform:uppercase;
-    margin-bottom:12px;
+    font-size:22px;
+    font-weight:400;
+    margin-bottom:18px;
+    font-family:'Inter',sans-serif;
+}
+
+.loader-brand .house{
+    color:#111111;
+}
+
+.loader-brand .that{
+    color:#B68B3A;
 }
 
 .loader-subtitle{
