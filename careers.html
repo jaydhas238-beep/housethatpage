@@ -180,44 +180,50 @@
 
 <script src="js/main.js"></script>
 
+<script src="js/main.js"></script>
+
 <script>
-function sendCareerEmail(event){
-  event.preventDefault();
+function sendCareerEmail(event) {
+    event.preventDefault();
 
-  const ownerEmail = "jaydahs5@gamil.com";
+    const ownerEmail = "careers@housethat.in"; // Replace with actual email
 
-  const name = document.getElementById("careerName").value;
-  const email = document.getElementById("careerEmail").value;
-  const phone = document.getElementById("careerPhone").value;
-  const role = document.getElementById("careerRole").value;
+    const name = document.getElementById("careerName").value;
+    const email = document.getElementById("careerEmail").value;
+    const phone = document.getElementById("careerPhone").value;
+    const role = document.getElementById("careerRole").value;
 
-  const subject = `Application for ${role} - HouseThat`;
+    const subject = `Application for ${role}`;
 
-  const body =
+    const body =
 `Dear HouseThat Team,
 
 I would like to apply for the position of ${role}.
 
-Applicant Details
-
 Name: ${name}
 Email: ${email}
 Phone: ${phone}
-Role Applying For: ${role}
+Role: ${role}
 
-I have attached my resume for your review.
-
-Thank you.
+Please find my resume attached.
 
 Regards,
 ${name}`;
 
-  const gmailURL =
-    `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(ownerEmail)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-  window.open(gmailURL, "_blank");
+    if (isMobile) {
+        window.location.href =
+        `mailto:${ownerEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    } else {
+        window.open(
+        `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(ownerEmail)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+        "_blank");
+    }
 }
 </script>
 
+</body>
+</html>
 </body>
 </html>
