@@ -1376,14 +1376,10 @@ height:auto;
   background-image:none !important;
 }
 
-.hero-bg,
-.hero-bg-layer,
-.hero::before,
-.hero::after{
-  display:none !important;
-  background:none !important;
-  background-image:none !important;
-  opacity:0 !important;
+
+
+.hero-photo-two{
+    display: none !important;
 }
 
 
