@@ -382,6 +382,17 @@ a{
     display:block;
 }
 
+.project-img-one{
+  background-image:url('../images/Project1.jpg');
+}
+
+.project-img-two{
+  background-image:url('../images/Project2.jpg');
+}
+
+.project-img-three{
+  background-image:url('../images/Project4.jpg');
+}
 .project-item:hover .project-img{
     transform:scale(1.04);
 }
