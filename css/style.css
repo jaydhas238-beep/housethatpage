@@ -1226,3 +1226,22 @@ height:auto;
   color:var(--stone);
   line-height:1.8;
 }
+
+.ad-feature-block{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8vw;
+    align-items:center;
+    min-height:700px;
+}
+
+.ad-feature-block h2{
+    display:flex;
+    align-items:center;
+    height:100%;
+    margin:0;
+}
+
+.ad-feature-card{
+    align-self:center;
+}
