@@ -1257,13 +1257,13 @@ height:auto;
 
 /* FIXED HOME HERO */
 .hero{
-  min-height:100vh;
-  position:relative;
-  overflow:hidden;
-  background:var(--ivory);
-  padding:120px 6vw 80px;
-  display:flex;
-  align-items:center;
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+    background:var(--ivory);
+    padding:210px 6vw 80px;
+    display:flex;
+    align-items:center;
 }
 
 .hero-bg{
@@ -1343,11 +1343,11 @@ height:auto;
 }
 
 @media(max-width:900px){
-  .hero{
-    padding:120px 24px 80px;
-    min-height:auto;
-  }
 
+.hero{
+    padding:170px 24px 80px;
+    min-height:auto;
+}
   .hero-content h1{
     font-size:62px;
   }
