@@ -1181,3 +1181,34 @@ height:auto;
     grid-column:auto;
   }
 }
+.ad-feature-card{
+  max-width:520px;
+}
+
+.ad-feature-card img{
+  width:100%;
+  display:block;
+  margin-bottom:28px;
+  border:1px solid var(--line);
+  box-shadow:0 30px 90px rgba(0,0,0,.08);
+}
+
+.ad-feature-card span{
+  font-size:11px;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+
+.ad-feature-card h3{
+  margin-top:12px;
+  font-family:var(--serif);
+  font-size:38px;
+  font-weight:300;
+}
+
+.ad-feature-card p{
+  margin-top:16px;
+  color:var(--stone);
+  line-height:1.8;
+}
