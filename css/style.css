@@ -1283,22 +1283,18 @@ height:auto;
   align-items:center;
 }
 
+
 .hero-bg{
-  position:absolute;
-  inset:0;
-  background:url('../images/Project3.jpg') center/cover no-repeat;
-  opacity:.18;
-  z-index:0;
+    position:absolute;
+    inset:0;
+    background:var(--ivory);
+    z-index:0;
 }
+
 
 .hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(245,241,232,.72);
-  z-index:1;
+    display:none;
 }
-
 .hero-content{
   position:relative;
   z-index:3;
