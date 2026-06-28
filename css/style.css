@@ -1395,3 +1395,13 @@ height:auto;
     display:none;
   }
 }
+.hero-bg{
+  background:none !important;
+  opacity:0 !important;
+  display:none !important;
+}
+
+.hero::after{
+  display:none !important;
+  background:none !important;
+}
