@@ -967,3 +967,83 @@ a{
     display:block;
   }
 }
+.dubai-gallery{
+  background:var(--ivory);
+}
+
+.dubai-large{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:6vw;
+  align-items:center;
+  margin-bottom:110px;
+}
+
+.dubai-large.reverse{
+  grid-template-columns:.75fr 1.25fr;
+}
+
+.dubai-large.reverse img{
+  order:2;
+}
+
+.dubai-large img,
+.dubai-grid img{
+  width:100%;
+  display:block;
+  object-fit:cover;
+}
+
+.dubai-large img{
+  height:760px;
+}
+
+.dubai-large h2{
+  font-family:var(--serif);
+  font-size:clamp(42px,5vw,82px);
+  font-weight:300;
+  line-height:.95;
+  letter-spacing:-.04em;
+}
+
+.dubai-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:34px;
+  margin-bottom:110px;
+}
+
+.dubai-grid img{
+  height:680px;
+}
+
+.dubai-grid h3{
+  margin-top:24px;
+  font-family:var(--serif);
+  font-size:38px;
+  font-weight:300;
+}
+
+.dubai-grid p{
+  margin-top:10px;
+  color:var(--stone);
+  line-height:1.8;
+  max-width:520px;
+}
+
+@media(max-width:900px){
+  .dubai-large,
+  .dubai-large.reverse,
+  .dubai-grid{
+    grid-template-columns:1fr;
+  }
+
+  .dubai-large.reverse img{
+    order:0;
+  }
+
+  .dubai-large img,
+  .dubai-grid img{
+    height:auto;
+  }
+}
