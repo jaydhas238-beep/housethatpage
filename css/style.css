@@ -913,3 +913,11 @@ a{
     padding:32px;
   }
 }
+
+.career-note{
+  grid-column:1/-1;
+  margin-top:10px;
+  font-size:13px;
+  line-height:1.7;
+  color:var(--stone);
+}
