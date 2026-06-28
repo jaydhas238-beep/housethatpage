@@ -1,1 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Careers | HouseThat</title>
+  <meta name="description" content="Apply for interior design, architecture, construction and project roles at HouseThat.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+  <a href="index.html" class="brand">
+    <img src="images/image5.jpg" alt="HouseThat Logo">
+  </a>
+
+  <nav class="desktop-nav">
+    <a href="about.html">Studio</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="careers.html">Apply</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <a href="contact.html" class="book-link">Book</a>
+</header>
+
+<main>
+
+<section class="about-hero reveal-section">
+  <p class="section-label">Careers</p>
+  <h1>Build spaces.<br>Grow with HouseThat.</h1>
+</section>
+
+<section class="home-about section-pad reveal-section">
+  <div class="split-title">
+    <h2>For people who care<br>about details.</h2>
+    <p>
+      HouseThat welcomes designers, architects, site professionals and creative minds who believe in thoughtful spaces, precise execution and timeless design.
+    </p>
+  </div>
+</section>
+
+<section class="products-home section-pad reveal-section">
+  <div class="section-head">
+    <div>
+      <div class="section-label">Open Roles</div>
+      <h2>Apply for<br>the right role.</h2>
+    </div>
+  </div>
+
+  <div class="request-list">
+    <a href="#apply">
+      <span>01</span>
+      Interior Designer
+      <small>Residential · Commercial · Styling</small>
+    </a>
+
+    <a href="#apply">
+      <span>02</span>
+      Architect
+      <small>Planning · Layouts · Elevations</small>
+    </a>
+
+    <a href="#apply">
+      <span>03</span>
+      Construction / Site Supervisor
+      <small>Execution · Site Coordination · Quality</small>
+    </a>
+
+    <a href="#apply">
+      <span>04</span>
+      Project Manager
+      <small>Timelines · Vendors · Client Coordination</small>
+    </a>
+
+    <a href="#apply">
+      <span>05</span>
+      Intern
+      <small>Interior Design · Architecture</small>
+    </a>
+  </div>
+</section>
+
+<section class="luxury-contact section-pad reveal-section" id="apply">
+  <div class="contact-left">
+    <p class="section-label">Application</p>
+    <h2>Start your<br>application.</h2>
+    <p>
+      Fill your details and click Apply Now. Gmail will open with your application details pre-filled. Please attach your resume before sending.
+    </p>
+  </div>
+
+  <form class="premium-contact-form" onsubmit="sendCareerEmail(event)">
+    <div class="form-field">
+      <input type="text" id="careerName" required>
+      <label>Full Name</label>
+    </div>
+
+    <div class="form-field">
+      <input type="email" id="careerEmail" required>
+      <label>Email Address</label>
+    </div>
+
+    <div class="form-field">
+      <input type="tel" id="careerPhone" required>
+      <label>Phone Number</label>
+    </div>
+
+    <div class="form-field">
+      <select id="careerRole" required>
+        <option value="" hidden></option>
+        <option>Interior Designer</option>
+        <option>Architect</option>
+        <option>Construction / Site Supervisor</option>
+        <option>Project Manager</option>
+        <option>Interior Design Intern</option>
+        <option>Architectural Intern</option>
+        <option>3D Visualizer</option>
+        <option>Social Media Manager</option>
+        <option>Business Development</option>
+        <option>Other</option>
+      </select>
+      <label>Position Applying For</label>
+    </div>
+
+    <button type="submit" class="premium-submit">Apply Now →</button>
+
+    <p class="career-note">
+      Gmail will open after submission. Please attach your resume before sending the email.
+    </p>
+  </form>
+</section>
+
+<section class="quote-section reveal-section">
+  <p>Culture</p>
+  <h2>
+    “We value people who notice details before they become visible.”
+  </h2>
+</section>
+
+<section class="final-home-cta reveal-section">
+  <h2>Ready to begin<br><em>your journey?</em></h2>
+  <a href="contact.html" class="primary-btn">Contact Studio</a>
+</section>
+
+</main>
+
+<footer class="main-footer">
+  <div>
+    <img src="images/image5.jpg" alt="HouseThat Logo">
+  </div>
+
+  <div>
+    <p>India · UAE</p>
+    <p>Interiors · Architecture · Construction</p>
+  </div>
+
+  <div>
+    <a href="https://www.instagram.com/housethat.co" target="_blank">Instagram</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+<script>
+function sendCareerEmail(event){
+  event.preventDefault();
+
+  const ownerEmail = "careers@housethat.in";
+
+  const name = document.getElementById("careerName").value;
+  const email = document.getElementById("careerEmail").value;
+  const phone = document.getElementById("careerPhone").value;
+  const role = document.getElementById("careerRole").value;
+
+  const subject = `Application for ${role} - HouseThat`;
+
+  const body =
+`Dear HouseThat Team,
+
+I would like to apply for the position of ${role}.
+
+Applicant Details
+
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Role Applying For: ${role}
+
+I have attached my resume for your review.
+
+Thank you.
+
+Regards,
+${name}`;
+
+  const gmailURL =
+    `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(ownerEmail)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  window.open(gmailURL, "_blank");
+}
+</script>
+
+</body>
+</html>
