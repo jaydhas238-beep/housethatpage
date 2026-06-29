@@ -325,3 +325,42 @@ function flipOswal() {
     card.classList.remove("flipping");
   }, 400);
 }
+
+const oswalSlides = [
+  {
+    image:"images/oswal1.jpg",
+    label:"Elegant Living Space",
+    title:"Contemporary interiors designed for everyday luxury.",
+    text:"Warm materials, refined finishes and thoughtful planning create a calm and sophisticated living environment."
+  },
+  {
+    image:"images/oswal2.jpg",
+    label:"Refined Dining Area",
+    title:"A dining space crafted with timeless elegance.",
+    text:"Premium materials and balanced proportions create a welcoming atmosphere for everyday living."
+  },
+  {
+    image:"images/oswal3.jpg",
+    label:"Thoughtful Design Details",
+    title:"Every element reflects precision and craftsmanship.",
+    text:"Natural textures and elegant finishes combine to create interiors that feel warm and inviting."
+  },
+  {
+    image:"images/oswal4.jpg",
+    label:"Comfortable Family Living",
+    title:"Designed around comfort and functionality.",
+    text:"A harmonious blend of aesthetics and practicality creates spaces that remain timeless."
+  }
+];
+
+let oswalIndex = 0;
+
+function flipOswal(){
+  oswalIndex = (oswalIndex + 1) % oswalSlides.length;
+  const slide = oswalSlides[oswalIndex];
+
+  document.getElementById("oswalFlipImage").src = slide.image;
+  document.getElementById("oswalFlipLabel").textContent = slide.label;
+  document.getElementById("oswalFlipTitle").textContent = slide.title;
+  document.getElementById("oswalFlipText").textContent = slide.text;
+}
