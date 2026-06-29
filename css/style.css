@@ -1467,3 +1467,77 @@ height:auto;
 }
 
 }
+
+.flip-project{
+  background:var(--ivory);
+}
+
+.flip-card{
+  perspective:1400px;
+}
+
+.flip-card-inner{
+  transition:transform .8s ease;
+  transform-style:preserve-3d;
+}
+
+.flip-card.flipping .flip-card-inner{
+  transform:rotateY(180deg);
+}
+
+.flip-face{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:6vw;
+  align-items:center;
+  background:var(--white);
+  padding:34px;
+  border:1px solid var(--line);
+  box-shadow:0 35px 100px rgba(0,0,0,.07);
+}
+
+.flip-face img{
+  width:100%;
+  height:650px;
+  object-fit:cover;
+  display:block;
+}
+
+.flip-content h3{
+  font-family:var(--serif);
+  font-size:clamp(40px,5vw,82px);
+  font-weight:300;
+  line-height:.95;
+  letter-spacing:-.04em;
+}
+
+.flip-content p:not(.section-label){
+  margin-top:28px;
+  color:var(--stone);
+  line-height:1.9;
+  max-width:520px;
+}
+
+.flip-btn{
+  margin-top:34px;
+  background:transparent;
+  border:none;
+  border-bottom:1px solid var(--gold);
+  color:var(--gold);
+  font-size:11px;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  cursor:pointer;
+  padding-bottom:8px;
+}
+
+@media(max-width:900px){
+  .flip-face{
+    grid-template-columns:1fr;
+    padding:20px;
+  }
+
+  .flip-face img{
+    height:auto;
+  }
+}
