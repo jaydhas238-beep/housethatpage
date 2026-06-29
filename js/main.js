@@ -2,13 +2,13 @@
 // HOUSETHAT LUXURY WEBSITE
 // =========================
 
-// ---------- PRELOADER ----------
 window.addEventListener("load", () => {
   const preloader = document.getElementById("preloader");
 
   setTimeout(() => {
     if (preloader) {
       preloader.classList.add("hide");
+      preloader.style.display = "none";
     }
   }, 1800);
 });
