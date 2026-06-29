@@ -249,3 +249,50 @@ function openEmail(e) {
         );
     }
 }
+
+const sangleSlides = [
+  {
+    image: "images/Sangle1.jpg",
+    label: "Elegant Family Dining",
+    title: "A warm dining space shaped for family gatherings.",
+    text: "Natural textures, refined detailing and warm materials create an inviting dining experience."
+  },
+  {
+    image: "images/Sangle2.jpg",
+    label: "Statement Centrepiece",
+    title: "A marble centrepiece that anchors the living area.",
+    text: "Rich natural stone and contemporary craftsmanship create a timeless focal point within the home."
+  },
+  {
+    image: "images/Sangle3.jpg",
+    label: "Crafted Dining Experience",
+    title: "Premium finishes balanced with everyday comfort.",
+    text: "Upholstered seating, warm tones and carefully selected materials create a refined dining environment."
+  },
+  {
+    image: "images/Sangle4.jpg",
+    label: "Comfortable Living Lounge",
+    title: "An inviting living space designed for daily comfort.",
+    text: "Warm lighting, elegant furnishings and clean spatial planning come together with quiet sophistication."
+  }
+];
+
+let sangleIndex = 0;
+
+function flipSangle(){
+  const card = document.getElementById("sangleFlipCard");
+
+  card.classList.add("flipping");
+
+  setTimeout(() => {
+    sangleIndex = (sangleIndex + 1) % sangleSlides.length;
+    const slide = sangleSlides[sangleIndex];
+
+    document.getElementById("sangleFlipImage").src = slide.image;
+    document.getElementById("sangleFlipLabel").textContent = slide.label;
+    document.getElementById("sangleFlipTitle").textContent = slide.title;
+    document.getElementById("sangleFlipText").textContent = slide.text;
+
+    card.classList.remove("flipping");
+  }, 400);
+}
