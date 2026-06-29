@@ -378,8 +378,7 @@ function flipBijou() {
 
 
 
-
- rooftopSlides = [
+var rooftopSlides = [
   {
     image:"images/Rooftop1.jpg",
     label:"Bar & Dining Experience",
