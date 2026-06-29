@@ -1927,3 +1927,21 @@ html {
     grid-template-columns:1fr;
   }
 }
+
+
+.premium-contact-form select{
+  height:52px;
+  appearance:auto;
+  cursor:pointer;
+}
+
+.form-field select + label{
+  top:0 !important;
+  font-size:10px !important;
+  color:var(--gold) !important;
+}
+
+.form-field select{
+  color:#111;
+  font-size:15px;
+}
