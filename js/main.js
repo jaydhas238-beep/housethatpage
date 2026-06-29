@@ -296,3 +296,45 @@ function flipSangle(){
     card.classList.remove("flipping");
   }, 400);
 }
+
+const komalSlides = [
+{
+image:"images/komal1.jpg",
+label:"Luxury Reception",
+title:"A welcoming beauty studio designed with elegance.",
+text:"Soft colours, premium finishes and thoughtful lighting create a relaxing first impression."
+},
+{
+image:"images/komal2.jpg",
+label:"Premium Styling Area",
+title:"Designed for comfort and professional beauty services.",
+text:"A modern styling space with elegant interiors that blends functionality with luxury."
+},
+{
+image:"images/komal3.jpg",
+label:"Makeover Corner",
+title:"Refined interiors for an elevated client experience.",
+text:"Carefully selected finishes and lighting create the perfect atmosphere for professional makeovers."
+},
+{
+image:"images/komal4.jpg",
+label:"Studio Details",
+title:"Every corner reflects sophistication and craftsmanship.",
+text:"Clean lines, premium materials and thoughtful detailing bring timeless elegance to the space."
+}
+];
+
+let komalIndex=0;
+
+function flipKomal(){
+
+komalIndex=(komalIndex+1)%komalSlides.length;
+
+const slide=komalSlides[komalIndex];
+
+document.getElementById("komalFlipImage").src=slide.image;
+document.getElementById("komalFlipLabel").textContent=slide.label;
+document.getElementById("komalFlipTitle").textContent=slide.title;
+document.getElementById("komalFlipText").textContent=slide.text;
+
+}
