@@ -1970,3 +1970,14 @@ html {
   text-transform:uppercase !important;
   color:var(--gold) !important;
 }
+
+
+@media(max-width:900px){
+  main{
+    padding-top:130px !important;
+  }
+
+  .main-header{
+    height:130px !important;
+  }
+}
