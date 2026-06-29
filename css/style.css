@@ -1885,3 +1885,45 @@ html {
     grid-template-columns:1fr;
   }
 }
+
+
+
+.reviews-section{
+  display:block !important;
+  background:#fffdf8;
+}
+
+.reviews-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.review-card{
+  background:#f8f5ef;
+  padding:44px;
+  border:1px solid rgba(17,17,17,.12);
+}
+
+.review-card p{
+  font-family:"Cormorant Garamond",serif;
+  font-size:32px;
+  line-height:1.2;
+  font-weight:300;
+  color:#111;
+}
+
+.review-card span{
+  display:block;
+  margin-top:30px;
+  font-size:11px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:#b88a32;
+}
+
+@media(max-width:900px){
+  .reviews-grid{
+    grid-template-columns:1fr;
+  }
+}
