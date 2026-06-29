@@ -376,59 +376,7 @@ function flipBijou() {
   }, 400);
 }
 
-const rooftopSlides = [
-  {
-    image:"images/Rooftop1.jpg",
-    label:"Bar & Dining Experience",
-    title:"Warm materials, crafted ambience and rooftop energy.",
-    text:"A refined rooftop environment designed for hospitality, comfort and memorable evening experiences."
-  },
-  {
-    image:"images/Rooftop2.jpg",
-    label:"Framed Rooftop Seating",
-    title:"A comfortable setting framed with geometric partitions.",
-    text:"Warm wood tones, open city views and relaxed seating create a calm hospitality experience."
-  },
-  {
-    image:"images/Rooftop3.jpg",
-    label:"Green Dining Corner",
-    title:"A relaxed corner designed for calm conversations.",
-    text:"Planters, leather seating and soft daylight bring freshness and balance to the rooftop space."
-  },
-  {
-    image:"images/Rooftop4.jpg",
-    label:"Feature Wall",
-    title:"A bold visual identity shaped for a memorable rooftop experience.",
-    text:"Layered textures, lighting and branding create a strong focal point within the bar."
-  },
-  {
-    image:"images/Rooftop5.jpg",
-    label:"Signature Bar Counter",
-    title:"A refined counter that anchors the rooftop bar.",
-    text:"Layered lighting, brick textures and elegant detailing create a strong hospitality focal point."
-  }
-];
 
-let rooftopIndex = 0;
-
-function flipRooftop(){
-  const card = document.getElementById("rooftopFlipCard");
-  if (!card) return;
-
-  card.classList.add("flipping");
-
-  setTimeout(() => {
-    rooftopIndex = (rooftopIndex + 1) % rooftopSlides.length;
-    const slide = rooftopSlides[rooftopIndex];
-
-    document.getElementById("rooftopFlipImage").src = slide.image;
-    document.getElementById("rooftopFlipLabel").textContent = slide.label;
-    document.getElementById("rooftopFlipTitle").textContent = slide.title;
-    document.getElementById("rooftopFlipText").textContent = slide.text;
-
-    card.classList.remove("flipping");
-  }, 400);
-}
 
 
 var rooftopSlides = [
