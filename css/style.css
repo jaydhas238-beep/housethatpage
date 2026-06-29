@@ -1981,3 +1981,26 @@ html {
     height:130px !important;
   }
 }
+
+@media(max-width:900px){
+  .main-header{
+    border-bottom:none !important;
+    box-shadow:none !important;
+  }
+
+  main > section:first-child{
+    border-top:none !important;
+    margin-top:0 !important;
+  }
+
+  .about-hero,
+  .career-hero,
+  .contact-hero,
+  .service-hero,
+  .projects-hero,
+  .awards-hero{
+    border-top:none !important;
+    margin-top:0 !important;
+    padding-top:170px !important;
+  }
+}
