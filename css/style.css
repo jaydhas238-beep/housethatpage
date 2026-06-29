@@ -44,6 +44,7 @@ a{
   justify-content:center;
   gap:18px;
   transition:opacity .8s ease, visibility .8s ease;
+  animation: forceHideLoader .8s ease 3.5s forwards;
 }
 
 .preloader.hide{
