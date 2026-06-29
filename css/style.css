@@ -1592,3 +1592,10 @@ html {
     font-size: 17px;
   }
 }
+
+.preloader.hide{
+  opacity:0 !important;
+  visibility:hidden !important;
+  pointer-events:none !important;
+  display:none !important;
+}
