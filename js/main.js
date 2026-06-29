@@ -2,17 +2,22 @@
 // HOUSETHAT LUXURY WEBSITE
 // =========================
 
-window.addEventListener("load", () => {
+function hidePreloader() {
   const preloader = document.getElementById("preloader");
-
-  setTimeout(() => {
-    if (preloader) {
-      preloader.classList.add("hide");
+  if (preloader) {
+    preloader.classList.add("hide");
+    setTimeout(() => {
       preloader.style.display = "none";
-    }
-  }, 1800);
+    }, 900);
+  }
+}
+
+window.addEventListener("load", () => {
+  setTimeout(hidePreloader, 1800);
 });
 
+// backup: hide even if JS/image loading issue
+setTimeout(hidePreloader, 3500);
 // ---------- REVEAL ANIMATION ----------
 const revealItems = document.querySelectorAll(".reveal-section");
 
