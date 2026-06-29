@@ -334,54 +334,44 @@ function flipOswal() {
 
 // ---------- Bijolu SLIDES ----------
 
-const bijouSlides = [
-
-{
-image:"images/gehna1.jpg",
-label:"Luxury Boutique Entrance",
-title:"A refined retail space designed to welcome with elegance.",
-text:"Warm blush tones, brushed gold finishes and bespoke display elements create a luxurious first impression."
-},
-
-{
-image:"images/gehna2.jpg",
-label:"Curated Jewellery Display",
-title:"Lighting that celebrates every collection.",
-text:"Custom illuminated showcases enhance every jewellery piece while creating a sophisticated luxury shopping experience."
-},
-
-{
-image:"images/gehna3.jpg",
-label:"Fashion & Jewellery Studio",
-title:"A boutique where fashion and jewellery come together beautifully.",
-text:"Elegant interiors, premium finishes and thoughtful lighting create an intimate retail environment designed for timeless luxury."
-}
-
+var bijouSlides = [
+  {
+    image: "images/gehna1.jpg",
+    label: "Luxury Boutique Entrance",
+    title: "A refined retail space designed to welcome with elegance.",
+    text: "Warm blush tones, brushed gold finishes and bespoke display elements create a luxurious first impression."
+  },
+  {
+    image: "images/gehna2.jpg",
+    label: "Curated Jewellery Display",
+    title: "Lighting that celebrates every collection.",
+    text: "Custom illuminated showcases enhance every jewellery piece while creating a sophisticated luxury shopping experience."
+  },
+  {
+    image: "images/gehna3.jpg",
+    label: "Fashion & Jewellery Studio",
+    title: "A boutique where fashion and jewellery come together beautifully.",
+    text: "Elegant interiors, premium finishes and thoughtful lighting create an intimate retail environment designed for timeless luxury."
+  }
 ];
 
-let bijouIndex = 0;
+var bijouIndex = 0;
 
-function flipBijou(){
+function flipBijou() {
+  var card = document.getElementById("bijouFlipCard");
+  if (!card) return;
 
-const card = document.getElementById("bijouFlipCard");
+  card.classList.add("flipping");
 
-card.classList.add("flipping");
+  setTimeout(function () {
+    bijouIndex = (bijouIndex + 1) % bijouSlides.length;
+    var slide = bijouSlides[bijouIndex];
 
-setTimeout(()=>{
+    document.getElementById("bijouFlipImage").src = slide.image;
+    document.getElementById("bijouFlipLabel").textContent = slide.label;
+    document.getElementById("bijouFlipTitle").textContent = slide.title;
+    document.getElementById("bijouFlipText").textContent = slide.text;
 
-bijouIndex = (bijouIndex + 1) % bijouSlides.length;
-
-const slide = bijouSlides[bijouIndex];
-
-document.getElementById("bijouFlipImage").src = slide.image;
-document.getElementById("bijouFlipLabel").textContent = slide.label;
-document.getElementById("bijouFlipTitle").textContent = slide.title;
-document.getElementById("bijouFlipText").textContent = slide.text;
-
-card.classList.remove("flipping");
-
-},400);
-
+    card.classList.remove("flipping");
+  }, 400);
 }
-
-
