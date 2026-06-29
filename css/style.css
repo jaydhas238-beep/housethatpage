@@ -1669,3 +1669,9 @@ html {
     height:330px !important;
   }
 }
+
+.project-img-three{
+  background-image:url('../images/komal1.jpg') !important;
+  background-size:cover !important;
+  background-position:center !important;
+}
