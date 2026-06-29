@@ -406,15 +406,15 @@ a{
 }
 
 .project-img-one{
-    background-image:url('../images/Sangle4.jpg') !important;
+    background-image:url('../images/sangle4.jpg') !important;
 }
 
 .project-img-two{
-    background-image:url('../images/Komal2.jpg') !important;
+    background-image:url('../images/komal2.jpg') !important;
 }
 
 .project-img-three{
-    background-image:url('../images/Oswal.jpg') !important;
+    background-image:url('../images/oswal.jpg') !important;
 }
 .project-item:hover .project-img{
     transform:scale(1.04);
