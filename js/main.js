@@ -24,59 +24,25 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  {
-    threshold: 0.15,
-  }
+  { threshold: 0.15 }
 );
 
 revealItems.forEach((item) => revealObserver.observe(item));
-
-// ---------- HERO PARALLAX ----------
-const hero = document.getElementById("hero");
-const layers = document.querySelectorAll("[data-depth]");
-
-if (hero) {
-  hero.addEventListener("mousemove", (e) => {
-    const x = (e.clientX / window.innerWidth - 0.5) * 2;
-    const y = (e.clientY / window.innerHeight - 0.5) * 2;
-
-    layers.forEach((layer) => {
-      const depth = parseFloat(layer.dataset.depth);
-
-      layer.style.transform = `
-        translate(
-          ${x * depth}px,
-          ${y * depth}px
-        )
-      `;
-    });
-  });
-
-  hero.addEventListener("mouseleave", () => {
-    layers.forEach((layer) => {
-      layer.style.transform = "translate(0px,0px)";
-    });
-  });
-}
 
 // ---------- HEADER EFFECT ----------
 const header = document.querySelector(".main-header");
 
 window.addEventListener("scroll", () => {
+  if (!header) return;
 
   if (window.scrollY > 70) {
-
     header.style.background = "rgba(248,245,239,.92)";
     header.style.backdropFilter = "blur(20px)";
     header.style.boxShadow = "0 8px 30px rgba(0,0,0,.05)";
-
   } else {
-
     header.style.background = "rgba(248,245,239,.64)";
     header.style.boxShadow = "none";
-
   }
-
 });
 
 // ---------- PARALLAX IMAGES ----------
@@ -85,133 +51,104 @@ const parallaxImages = document.querySelectorAll(
 );
 
 window.addEventListener("scroll", () => {
-
   const scrollY = window.scrollY;
 
   parallaxImages.forEach((img) => {
-
-    const speed = 0.08;
-
-    img.style.backgroundPosition = `center ${scrollY * speed}px`;
-
+    img.style.backgroundPosition = `center ${scrollY * 0.08}px`;
   });
-
 });
 
-// ---------- BUTTON RIPPLE ----------
-const buttons = document.querySelectorAll(".primary-btn");
-
-buttons.forEach((button) => {
-
+// ---------- BUTTON HOVER ----------
+document.querySelectorAll(".primary-btn").forEach((button) => {
   button.addEventListener("mouseenter", () => {
-
     button.style.transform = "translateY(-3px)";
-
   });
 
   button.addEventListener("mouseleave", () => {
-
     button.style.transform = "translateY(0px)";
-
   });
-
 });
 
 // ---------- PROJECT HOVER ----------
-const projects = document.querySelectorAll(".project-item");
-
-projects.forEach((project) => {
-
+document.querySelectorAll(".project-item").forEach((project) => {
   project.addEventListener("mouseenter", () => {
-
     project.style.transform = "translateY(-8px)";
-
   });
 
   project.addEventListener("mouseleave", () => {
-
     project.style.transform = "translateY(0px)";
-
   });
-
 });
 
 // ---------- SMOOTH FADE BETWEEN PAGES ----------
 document.querySelectorAll("a").forEach((link) => {
-
   const href = link.getAttribute("href");
 
   if (
     href &&
     !href.startsWith("#") &&
-    !href.startsWith("http")
+    !href.startsWith("http") &&
+    !href.startsWith("mailto:")
   ) {
-
     link.addEventListener("click", (e) => {
-
       e.preventDefault();
 
       document.body.style.opacity = "0";
 
       setTimeout(() => {
-
-        window.location = href;
-
+        window.location.href = href;
       }, 250);
-
     });
-
   }
-
 });
 
 document.body.style.transition = "opacity .35s ease";
 
 window.addEventListener("pageshow", () => {
-
   document.body.style.opacity = "1";
-
 });
 
 // ---------- HERO SLOW FLOAT ----------
 const floatingPhotos = document.querySelectorAll(".hero-photo");
-
 let float = 0;
 
 function animateHero() {
-
   float += 0.01;
 
   floatingPhotos.forEach((photo, index) => {
-
     const move = Math.sin(float + index) * 8;
-
     photo.style.marginTop = move + "px";
-
   });
 
   requestAnimationFrame(animateHero);
-
 }
 
-animateHero();
+if (floatingPhotos.length > 0) {
+  animateHero();
+}
 
-function toggleMenu(){
-  document.getElementById("mobileMenu").classList.toggle("open");
-  function sendCareerEmail(event){
+// ---------- MOBILE MENU ----------
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  if (menu) {
+    menu.classList.toggle("open");
+  }
+}
+
+// ---------- CAREER EMAIL ----------
+function sendCareerEmail(event) {
   event.preventDefault();
 
   const ownerEmail = "careers@housethat.in";
 
-  const name = document.getElementById("careerName").value;
-  const email = document.getElementById("careerEmail").value;
-  const phone = document.getElementById("careerPhone").value;
-  const role = document.getElementById("careerRole").value;
+  const name = document.getElementById("careerName")?.value || "";
+  const email = document.getElementById("careerEmail")?.value || "";
+  const phone = document.getElementById("careerPhone")?.value || "";
+  const role = document.getElementById("careerRole")?.value || "";
 
   const subject = `Application for ${role} - HouseThat`;
 
-  const body =
-`Dear HouseThat Team,
+  const body = `Dear HouseThat Team,
 
 I would like to apply for the position of ${role}.
 
@@ -226,30 +163,29 @@ Please find my resume attached.
 Regards,
 ${name}`;
 
-  const mailtoURL =
-    `mailto:${ownerEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const mailtoURL = `mailto:${ownerEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   window.location.href = mailtoURL;
 }
-}
 
+// ---------- OPEN EMAIL ----------
 function openEmail(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    const email = "jaydhas238@gmail.com"; 
-    const subject = "Website Enquiry";
+  const email = "jaydhas238@gmail.com";
+  const subject = "Website Enquiry";
 
-    if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-        window.location.href =
-            `mailto:${email}?subject=${encodeURIComponent(subject)}`;
-    } else {
-        window.open(
-            `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}`,
-            "_blank"
-        );
-    }
+  if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+  } else {
+    window.open(
+      `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}`,
+      "_blank"
+    );
+  }
 }
 
+// ---------- SANGLE PROJECT SLIDES ----------
 const sangleSlides = [
   {
     image: "images/sangle1.jpg",
@@ -279,8 +215,9 @@ const sangleSlides = [
 
 let sangleIndex = 0;
 
-function flipSangle(){
+function flipSangle() {
   const card = document.getElementById("sangleFlipCard");
+  if (!card) return;
 
   card.classList.add("flipping");
 
@@ -297,44 +234,94 @@ function flipSangle(){
   }, 400);
 }
 
+// ---------- KOMAL PROJECT SLIDES ----------
 const komalSlides = [
-{
-image:"images/komal1.jpg",
-label:"Luxury Reception",
-title:"A welcoming beauty studio designed with elegance.",
-text:"Soft colours, premium finishes and thoughtful lighting create a relaxing first impression."
-},
-{
-image:"images/komal2.jpg",
-label:"Premium Styling Area",
-title:"Designed for comfort and professional beauty services.",
-text:"A modern styling space with elegant interiors that blends functionality with luxury."
-},
-{
-image:"images/komal3.jpg",
-label:"Makeover Corner",
-title:"Refined interiors for an elevated client experience.",
-text:"Carefully selected finishes and lighting create the perfect atmosphere for professional makeovers."
-},
-{
-image:"images/komal4.jpg",
-label:"Studio Details",
-title:"Every corner reflects sophistication and craftsmanship.",
-text:"Clean lines, premium materials and thoughtful detailing bring timeless elegance to the space."
-}
+  {
+    image: "images/komal1.jpg",
+    label: "Luxury Reception",
+    title: "A welcoming beauty studio designed with elegance.",
+    text: "Soft colours, premium finishes and thoughtful lighting create a relaxing first impression."
+  },
+  {
+    image: "images/komal2.jpg",
+    label: "Premium Styling Area",
+    title: "Designed for comfort and professional beauty services.",
+    text: "A modern styling space with elegant interiors that blends functionality with luxury."
+  },
+  {
+    image: "images/komal3.jpg",
+    label: "Makeover Corner",
+    title: "Refined interiors for an elevated client experience.",
+    text: "Carefully selected finishes and lighting create the perfect atmosphere for professional makeovers."
+  },
+  {
+    image: "images/komal4.jpg",
+    label: "Studio Details",
+    title: "Every corner reflects sophistication and craftsmanship.",
+    text: "Clean lines, premium materials and thoughtful detailing bring timeless elegance to the space."
+  }
 ];
 
-let komalIndex=0;
+let komalIndex = 0;
 
-function flipKomal(){
+function flipKomal() {
+  const card = document.getElementById("komalFlipCard");
+  if (!card) return;
 
-komalIndex=(komalIndex+1)%komalSlides.length;
+  card.classList.add("flipping");
 
-const slide=komalSlides[komalIndex];
+  setTimeout(() => {
+    komalIndex = (komalIndex + 1) % komalSlides.length;
+    const slide = komalSlides[komalIndex];
 
-document.getElementById("komalFlipImage").src=slide.image;
-document.getElementById("komalFlipLabel").textContent=slide.label;
-document.getElementById("komalFlipTitle").textContent=slide.title;
-document.getElementById("komalFlipText").textContent=slide.text;
+    document.getElementById("komalFlipImage").src = slide.image;
+    document.getElementById("komalFlipLabel").textContent = slide.label;
+    document.getElementById("komalFlipTitle").textContent = slide.title;
+    document.getElementById("komalFlipText").textContent = slide.text;
 
+    card.classList.remove("flipping");
+  }, 400);
+}
+
+// ---------- OSWAL PROJECT SLIDES ----------
+const oswalSlides = [
+  {
+    image: "images/oswal1.jpg",
+    label: "Elegant Living Space",
+    title: "Contemporary interiors designed for everyday luxury.",
+    text: "Warm materials, refined finishes and thoughtful planning create a calm and sophisticated living environment."
+  },
+  {
+    image: "images/oswal2.jpg",
+    label: "Refined Bedroom",
+    title: "A peaceful bedroom shaped with soft tones and comfort.",
+    text: "Balanced lighting, premium textures and clean detailing create a restful private space."
+  },
+  {
+    image: "images/oswal3.jpg",
+    label: "Modern Detailing",
+    title: "Every detail designed with purpose.",
+    text: "Minimal lines, subtle material contrast and timeless finishes bring elegance to the home."
+  }
+];
+
+let oswalIndex = 0;
+
+function flipOswal() {
+  const card = document.getElementById("oswalFlipCard");
+  if (!card) return;
+
+  card.classList.add("flipping");
+
+  setTimeout(() => {
+    oswalIndex = (oswalIndex + 1) % oswalSlides.length;
+    const slide = oswalSlides[oswalIndex];
+
+    document.getElementById("oswalFlipImage").src = slide.image;
+    document.getElementById("oswalFlipLabel").textContent = slide.label;
+    document.getElementById("oswalFlipTitle").textContent = slide.title;
+    document.getElementById("oswalFlipText").textContent = slide.text;
+
+    card.classList.remove("flipping");
+  }, 400);
 }
