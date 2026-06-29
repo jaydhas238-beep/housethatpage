@@ -1607,3 +1607,8 @@ html {
   pointer-events: none !important;
 }
 
+.bijou-project-img{
+    background-image:url('../images/gehna1.jpg') !important;
+    background-size:cover;
+    background-position:center;
+}
