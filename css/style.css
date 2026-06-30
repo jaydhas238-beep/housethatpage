@@ -2301,3 +2301,14 @@ html {
 
     color:#6f6658;
 }
+
+.cta-description{
+    max-width:650px;
+    margin:40px auto;
+    font-family:'Cormorant Garamond', serif;
+    font-size:34px;
+    font-weight:300;
+    line-height:1.45;
+    color:#5d564d;
+    text-align:center;
+}
