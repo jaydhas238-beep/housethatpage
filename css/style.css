@@ -1647,13 +1647,28 @@ html {
 
 .projects-page .project-item p,
 .project-showcase.projects-grid .project-item p{
-  margin-top:22px;
+
+    margin-top:22px;
+    font-family:'Montserrat', sans-serif;
+    font-size:.78rem;
+    text-transform:uppercase;
+    letter-spacing:.35em;
+    color:#b88a2d;
+    font-weight:600;
+
 }
 
 .projects-page .project-item h3,
 .project-showcase.projects-grid .project-item h3{
-  font-size:42px;
-  line-height:1;
+
+    font-family:'Cormorant Garamond', serif;
+    font-size:52px;
+    font-weight:300;
+    line-height:1.05;
+    letter-spacing:-0.02em;
+    color:#111;
+    margin:16px 0 20px;
+
 }
 
 @media(max-width:900px){
@@ -2463,6 +2478,26 @@ html {
     background:url("../images/bijou1.jpg") center center/cover no-repeat;
 }
 
-.dubai-project-img{
-    background:url("../images/dubai1.jpg") center center/cover no-repeat;
+
+
+
+/* ===============================
+   PROJECT DESCRIPTION
+================================= */
+
+.projects-page .project-item span,
+.project-showcase.projects-grid .project-item span{
+
+    display:block;
+    margin-top:18px;
+
+    font-family:'Inter', sans-serif;
+    font-size:17px;
+    line-height:1.8;
+    font-weight:400;
+
+    color:#5b5b5b;
+
+    letter-spacing:.02em;
+
 }
