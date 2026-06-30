@@ -2484,49 +2484,21 @@ html {
 /* ===============================
    PROJECT DESCRIPTION
 ================================= */
-
 .projects-page .project-item span,
 .project-showcase.projects-grid .project-item span{
 
     display:block;
-    margin-top:18px;
 
-    font-family:'Inter', sans-serif;
-    font-size:17px;
-    line-height:1.8;
-    font-weight:400;
+    margin-top:16px;
 
-    color:#5b5b5b;
+    font-family:'Cormorant Garamond', serif;
 
-    letter-spacing:.02em;
+    font-size:26px;
 
-}
+    font-weight:300;
 
-.projects-page .project-item small,
-.project-showcase.projects-grid .project-item small{
+    line-height:1.45;
 
-    display:inline-block;
-    margin-top:22px;
-
-    font-size:12px;
-
-    letter-spacing:.28em;
-
-    text-transform:uppercase;
-
-    color:#b88a2d;
-
-    font-weight:600;
-
-    transition:.4s;
-
-}
-
-.projects-page .project-item:hover small,
-.project-showcase.projects-grid .project-item:hover small{
-
-    letter-spacing:.36em;
-
-    color:#111;
+    color:#666;
 
 }
