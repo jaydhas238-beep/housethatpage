@@ -2175,3 +2175,45 @@ html {
     height:420px;
   }
 }
+
+.process-section{
+  background:var(--ivory);
+}
+
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+}
+
+.process-card{
+  background:var(--white);
+  padding:38px 30px;
+  border:1px solid var(--line);
+}
+
+.process-card span{
+  font-size:11px;
+  letter-spacing:.24em;
+  color:var(--gold);
+}
+
+.process-card h3{
+  margin-top:24px;
+  font-family:var(--serif);
+  font-size:38px;
+  font-weight:300;
+}
+
+.process-card p{
+  margin-top:16px;
+  color:var(--stone);
+  line-height:1.8;
+  font-size:15px;
+}
+
+@media(max-width:900px){
+  .process-grid{
+    grid-template-columns:1fr;
+  }
+}
