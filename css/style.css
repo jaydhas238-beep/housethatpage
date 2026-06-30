@@ -2538,3 +2538,27 @@ html {
     transform:translateY(-3px);
 
 }
+
+.project-btn{
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+  margin-top:24px;
+  padding:14px 30px;
+  border:1px solid #111;
+  font-size:11px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:#111;
+  font-family:'Inter', sans-serif;
+}
+
+@media(max-width:700px){
+  .project-btn{
+    width:100%;
+    max-width:240px;
+    padding:14px 20px;
+    font-size:10px;
+    letter-spacing:.2em;
+  }
+}
