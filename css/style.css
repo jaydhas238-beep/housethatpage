@@ -2501,3 +2501,32 @@ html {
     letter-spacing:.02em;
 
 }
+
+.projects-page .project-item small,
+.project-showcase.projects-grid .project-item small{
+
+    display:inline-block;
+    margin-top:22px;
+
+    font-size:12px;
+
+    letter-spacing:.28em;
+
+    text-transform:uppercase;
+
+    color:#b88a2d;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.projects-page .project-item:hover small,
+.project-showcase.projects-grid .project-item:hover small{
+
+    letter-spacing:.36em;
+
+    color:#111;
+
+}
