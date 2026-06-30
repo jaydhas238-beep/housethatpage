@@ -2405,3 +2405,64 @@ html {
     grid-template-columns:1fr;
   }
 }
+
+
+/* ===============================
+   NEW PROJECT IMAGES
+================================= */
+
+.oberoi-project-img{
+    background:url("../images/oberoi-eternia.jpg") center center/cover no-repeat;
+}
+
+.prabha-project-img{
+    background:url("../images/prabha-villa.jpg") center center/cover no-repeat;
+}
+
+.bihar-project-img{
+    background:url("../images/bihar-mansion.jpg") center center/cover no-repeat;
+}
+
+.insight-project-img{
+    background:url("../images/first-insight-office.jpg") center center/cover no-repeat;
+}
+
+.joy-project-img{
+    background:url("../images/planet-of-joy.jpg") center center/cover no-repeat;
+}
+
+.trillium-project-img{
+    background:url("../images/trillium.jpg") center center/cover no-repeat;
+}
+
+.suga-project-img{
+    background:url("../images/shri-suga-bungalow.jpg") center center/cover no-repeat;
+}
+
+.akar-project-img{
+    background:url("../images/akar-celesta.jpg") center center/cover no-repeat;
+}
+
+/* ===============================
+   EXISTING PROJECTS
+================================= */
+
+.komal-project-img{
+    background:url("../images/komal1.jpg") center center/cover no-repeat;
+}
+
+.oswal-project-img{
+    background:url("../images/oswal1.jpg") center center/cover no-repeat;
+}
+
+.rooftop-project-img{
+    background:url("../images/rooftop1.jpg") center center/cover no-repeat;
+}
+
+.bijou-project-img{
+    background:url("../images/bijou1.jpg") center center/cover no-repeat;
+}
+
+.dubai-project-img{
+    background:url("../images/dubai1.jpg") center center/cover no-repeat;
+}
