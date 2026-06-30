@@ -2217,3 +2217,45 @@ html {
     grid-template-columns:1fr;
   }
 }
+
+.testimonial-slider{
+  display:flex;
+  gap:24px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  padding-bottom:20px;
+}
+
+.testimonial-card{
+  min-width:420px;
+  max-width:420px;
+  background:#fffdf8;
+  border:1px solid rgba(17,17,17,.12);
+  padding:42px;
+  scroll-snap-align:start;
+}
+
+.testimonial-card p{
+  font-size:18px;
+  line-height:1.8;
+  color:#333;
+}
+
+.testimonial-card h4{
+  margin-top:28px;
+  font-size:11px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:#b88a32;
+}
+
+@media(max-width:900px){
+  .testimonial-card{
+    min-width:82%;
+    padding:30px;
+  }
+
+  .testimonial-card p{
+    font-size:16px;
+  }
+}
