@@ -2134,3 +2134,44 @@ html {
     grid-template-columns:1fr;
   }
 }
+
+.work-teaser{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:7vw;
+  align-items:center;
+  background:var(--warm);
+}
+
+.work-image{
+  height:680px;
+  background:url('../images/Project1.jpg') center/cover no-repeat;
+  border-radius:28px;
+  box-shadow:0 30px 100px rgba(0,0,0,.12);
+}
+
+.work-content h2{
+  font-family:var(--serif);
+  font-size:clamp(46px,5vw,82px);
+  font-weight:300;
+  line-height:.95;
+  letter-spacing:-.04em;
+}
+
+.work-content p:not(.section-label){
+  margin-top:28px;
+  color:var(--stone);
+  font-size:17px;
+  line-height:1.9;
+  max-width:520px;
+}
+
+@media(max-width:900px){
+  .work-teaser{
+    grid-template-columns:1fr;
+  }
+
+  .work-image{
+    height:420px;
+  }
+}
