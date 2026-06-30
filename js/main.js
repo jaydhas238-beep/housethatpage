@@ -431,3 +431,66 @@ function flipRooftop(){
     card.classList.remove("flipping");
   }, 400);
 }
+
+function makeFlip(prefix, slides){
+  let index = 0;
+  window["flip" + prefix] = function(){
+    const key = prefix.charAt(0).toLowerCase() + prefix.slice(1);
+    const card = document.getElementById(key + "FlipCard");
+    if(!card) return;
+
+    card.classList.add("flipping");
+
+    setTimeout(function(){
+      index = (index + 1) % slides.length;
+      const s = slides[index];
+
+      document.getElementById(key + "FlipImage").src = s.image;
+      document.getElementById(key + "FlipLabel").textContent = s.label;
+      document.getElementById(key + "FlipTitle").textContent = s.title;
+      document.getElementById(key + "FlipText").textContent = s.text;
+
+      card.classList.remove("flipping");
+    }, 400);
+  }
+}
+
+makeFlip("Bihar", [
+  {image:"images/bihar-mansion.jpg", label:"Grand Residence", title:"A spacious mansion shaped with timeless architectural presence.", text:"A large-scale residence designed with refined planning, luxurious interiors and elegant detailing."},
+  {image:"images/bihar-mansion.jpg", label:"Design Story", title:"A home designed around scale, comfort and family living.", text:"Every area is planned to feel impressive yet warm, combining architecture with everyday functionality."}
+]);
+
+makeFlip("Oberoi", [
+  {image:"images/oberoi-eternia.jpg", label:"Refined Apartment", title:"A vibrant residence crafted for modern luxury living.", text:"Thoughtful planning, premium finishes and warm detailing create an elegant everyday home."},
+  {image:"images/oberoi-eternia.jpg", label:"Material Palette", title:"A home where colour, texture and detail work together.", text:"Every finish is selected to balance comfort, personality and timeless appeal."}
+]);
+
+makeFlip("Trillium", [
+  {image:"images/trillium.jpg", label:"Premium Living", title:"A sophisticated apartment balanced with warmth and comfort.", text:"Modern materials, soft tones and refined detailing create a calm luxury home."},
+  {image:"images/trillium.jpg", label:"Interior Mood", title:"Soft luxury shaped for everyday living.", text:"The design creates an elegant yet practical home with a refined visual rhythm."}
+]);
+
+makeFlip("Suga", [
+  {image:"images/shri-suga-bungalow.jpg", label:"Bespoke Bungalow", title:"A bungalow designed with timeless character and comfort.", text:"Elegant architecture and thoughtful interiors come together to create a refined private residence."},
+  {image:"images/shri-suga-bungalow.jpg", label:"Private Residence", title:"A home connected to lifestyle, detail and warmth.", text:"Each space is planned to feel personal, calm and beautifully complete."}
+]);
+
+makeFlip("Prabha", [
+  {image:"images/prabha-villa.jpg", label:"Contemporary Villa", title:"A villa shaped around light, comfort and refined living.", text:"Sophisticated interiors and practical planning create a home that feels both premium and personal."},
+  {image:"images/prabha-villa.jpg", label:"Villa Story", title:"Modern design with a timeless residential soul.", text:"Natural light, elegant finishes and thoughtful layouts define the experience."}
+]);
+
+makeFlip("Akar", [
+  {image:"images/akar-celesta.jpg", label:"Contemporary Home", title:"A refined apartment designed with understated luxury.", text:"Balanced proportions, elegant materials and clean detailing bring warmth and sophistication together."},
+  {image:"images/akar-celesta.jpg", label:"Luxury Detail", title:"A calm home shaped through refined details.", text:"The interior language stays minimal, warm and effortlessly premium."}
+]);
+
+makeFlip("Insight", [
+  {image:"images/first-insight-office.jpg", label:"Modern Workplace", title:"A workplace designed for productivity, clarity and premium function.", text:"Elegant planning, efficient layouts and refined finishes shape a professional office environment."},
+  {image:"images/first-insight-office.jpg", label:"Commercial Interior", title:"A professional space with strong functional flow.", text:"The design supports teamwork, focus and a polished brand experience."}
+]);
+
+makeFlip("Joy", [
+  {image:"images/planet-of-joy.jpg", label:"Experience Space", title:"A vibrant commercial environment designed to create memorable experiences.", text:"Colour, form and thoughtful detailing come together to create an energetic and engaging space."},
+  {image:"images/planet-of-joy.jpg", label:"Commercial Story", title:"A space made to feel joyful, active and memorable.", text:"Every design decision supports engagement, comfort and a strong visual identity."}
+]);
