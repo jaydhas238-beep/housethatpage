@@ -2502,3 +2502,41 @@ html {
     color:#666;
 
 }
+
+.project-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-top:28px;
+
+    padding:15px 38px;
+
+    border:1px solid #111;
+
+    text-transform:uppercase;
+
+    letter-spacing:.22em;
+
+    font-size:12px;
+
+    font-family:'Montserrat',sans-serif;
+
+    color:#111;
+
+    transition:.45s ease;
+
+    cursor:pointer;
+
+}
+
+.project-item:hover .project-btn{
+
+    background:#111;
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
