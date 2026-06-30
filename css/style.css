@@ -2312,3 +2312,10 @@ html {
     color:#5d564d;
     text-align:center;
 }
+
+.preloader-logo{
+  width:180px;
+  height:auto;
+  object-fit:contain;
+  background:transparent;
+}
