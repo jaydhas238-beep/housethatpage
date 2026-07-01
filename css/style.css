@@ -976,9 +976,12 @@ a{
 }
 
 .mobile-menu a{
-  font-family:var(--serif);
-  font-size:42px;
-  color:var(--charcoal);
+    font-family:var(--serif);
+    font-size:34px;
+    font-weight:300;
+    line-height:1.15;
+    letter-spacing:-0.02em;
+    color:var(--charcoal);
 }
 
 @media(max-width:900px){
