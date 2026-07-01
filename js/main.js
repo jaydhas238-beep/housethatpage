@@ -3,25 +3,6 @@
 // =========================
 
 
-window.addEventListener("load", function () {
-
-    const preloader = document.getElementById("preloader");
-
-    if(preloader){
-
-        setTimeout(function(){
-
-            preloader.classList.add("hide");
-
-            setTimeout(function(){
-                preloader.remove();
-            },800);
-
-        },1200);
-
-    }
-
-});
 
 
 // ---------- HEADER EFFECT ----------
