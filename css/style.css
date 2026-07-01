@@ -2627,7 +2627,9 @@ function flipDubai(){
 #preloader{
     position:fixed;
     inset:0;
-    background:#0b0b0b;
+   background:#f8f4ee;
+/* or */
+background:var(--ivory);
     display:flex;
     justify-content:center;
     align-items:center;
@@ -2636,10 +2638,11 @@ function flipDubai(){
 }
 
 #preloader img{
-    width:140px;
+    width:240px;
+    max-width:70vw;
     height:auto;
     animation:loaderPulse 1.8s ease-in-out infinite;
-    border-radius:4px;
+    border-radius:8px;
 }
 
 #preloader.hide{
@@ -2650,8 +2653,8 @@ function flipDubai(){
 
 @keyframes loaderPulse{
     0%{
-        opacity:.55;
-        transform:scale(.95);
+        opacity:.75;
+        transform:scale(.96);
     }
 
     50%{
@@ -2660,7 +2663,7 @@ function flipDubai(){
     }
 
     100%{
-        opacity:.55;
-        transform:scale(.95);
+        opacity:.75;
+        transform:scale(.96);
     }
 }
