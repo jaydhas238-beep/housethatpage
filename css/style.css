@@ -2640,18 +2640,35 @@ function flipDubai(){
 .info-row{
     display:grid;
     grid-template-columns:80px 1fr auto;
-    gap:40px;
+    gap:50px;
     align-items:center;
-    padding:40px 0;
+    padding:48px 0;
     border-bottom:1px solid rgba(0,0,0,.08);
+    transition:.4s ease;
 }
-
 .info-row span{
     color:var(--gold);
     letter-spacing:.2em;
     font-size:16px;
 }
 
+    .info-row h3{
+    margin:0;
+    font-family:var(--serif);
+    font-size:clamp(42px,3.8vw,62px);
+    font-weight:300;
+    line-height:1;
+    color:var(--charcoal);
+}
+
+.info-row small{
+    justify-self:end;
+    font-family:var(--sans);
+    font-size:13px;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    color:#8d7a60;
+}
 
 .contact-info h3,
 .info-row h3{
