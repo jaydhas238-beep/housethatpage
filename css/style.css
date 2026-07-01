@@ -1454,20 +1454,33 @@ height:auto;
 }
 
 .flip-card{
-  perspective:1400px;
-}
-
-.flip-card-inner{
-  transition:transform .8s ease;
-  transform-style:preserve-3d;
+.flip-card{
+    position:relative;
+    overflow:hidden;
+    transition:.45s ease;
 }
 
 .flip-card.flipping{
-    opacity:.15;
-    transform:scale(.98);
-    transition:.35s ease;
+    opacity:.25;
+    transform:translateY(10px) scale(.985);
 }
 
+.flip-card img{
+    transition:.6s ease;
+}
+
+.flip-card:hover img{
+    transform:scale(1.03);
+}
+
+.flip-content{
+    transition:.45s ease;
+}
+
+.flip-card.flipping .flip-content{
+    opacity:0;
+    transform:translateY(20px);
+}
 .flip-face{
   display:grid;
   grid-template-columns:.9fr 1fr;
