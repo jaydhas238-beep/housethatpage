@@ -209,9 +209,10 @@ function flipSangle() {
   const card = document.getElementById("sangleFlipCard");
   if (!card) return;
 
-  card.classList.add("flipping");
+ card.classList.add("flipping");
 
-  setTimeout(() => {
+setTimeout(() => {
+
     sangleIndex = (sangleIndex + 1) % sangleSlides.length;
     const slide = sangleSlides[sangleIndex];
 
@@ -220,8 +221,13 @@ function flipSangle() {
     document.getElementById("sangleFlipTitle").textContent = slide.title;
     document.getElementById("sangleFlipText").textContent = slide.text;
 
-    card.classList.remove("flipping");
-  }, 400);
+   },250);
+
+setTimeout(() => {
+
+   card.classList.remove("flipping");
+
+},500);
 }
 
 // ---------- KOMAL PROJECT SLIDES ----------
@@ -258,9 +264,10 @@ function flipKomal() {
   const card = document.getElementById("komalFlipCard");
   if (!card) return;
 
-  card.classList.add("flipping");
+ card.classList.add("flipping");
 
-  setTimeout(() => {
+setTimeout(() => {
+
     komalIndex = (komalIndex + 1) % komalSlides.length;
     const slide = komalSlides[komalIndex];
 
@@ -269,8 +276,13 @@ function flipKomal() {
     document.getElementById("komalFlipTitle").textContent = slide.title;
     document.getElementById("komalFlipText").textContent = slide.text;
 
-    card.classList.remove("flipping");
-  }, 400);
+   },250);
+
+setTimeout(() => {
+
+   card.classList.remove("flipping");
+
+},500);
 }
 
 // ---------- OSWAL PROJECT SLIDES ----------
@@ -303,7 +315,7 @@ function flipOswal() {
 
   card.classList.add("flipping");
 
-  setTimeout(() => {
+setTimeout(() => {
     oswalIndex = (oswalIndex + 1) % oswalSlides.length;
     const slide = oswalSlides[oswalIndex];
 
@@ -312,8 +324,13 @@ function flipOswal() {
     document.getElementById("oswalFlipTitle").textContent = slide.title;
     document.getElementById("oswalFlipText").textContent = slide.text;
 
-    card.classList.remove("flipping");
-  }, 400);
+   },250);
+
+setTimeout(() => {
+
+   card.classList.remove("flipping");
+
+},500);
 }
 
 
@@ -345,10 +362,10 @@ var bijouIndex = 0;
 function flipBijou() {
   var card = document.getElementById("bijouFlipCard");
   if (!card) return;
+  
+card.classList.add("flipping");
 
-  card.classList.add("flipping");
-
-  setTimeout(function () {
+setTimeout(() => {
     bijouIndex = (bijouIndex + 1) % bijouSlides.length;
     var slide = bijouSlides[bijouIndex];
 
@@ -356,9 +373,13 @@ function flipBijou() {
     document.getElementById("bijouFlipLabel").textContent = slide.label;
     document.getElementById("bijouFlipTitle").textContent = slide.title;
     document.getElementById("bijouFlipText").textContent = slide.text;
+},250);
 
-    card.classList.remove("flipping");
-  }, 400);
+setTimeout(() => {
+
+   card.classList.remove("flipping");
+
+},500);
 }
 
 
@@ -404,7 +425,9 @@ function flipRooftop(){
 
   card.classList.add("flipping");
 
-  setTimeout(function(){
+setTimeout(() => {
+
+
     rooftopIndex = (rooftopIndex + 1) % rooftopSlides.length;
     var slide = rooftopSlides[rooftopIndex];
 
@@ -413,8 +436,13 @@ function flipRooftop(){
     document.getElementById("rooftopFlipTitle").textContent = slide.title;
     document.getElementById("rooftopFlipText").textContent = slide.text;
 
-    card.classList.remove("flipping");
-  }, 400);
+  },250);
+
+setTimeout(() => {
+
+   card.classList.remove("flipping");
+
+},500);
 }
 
 function makeFlip(prefix, slides){
@@ -424,9 +452,10 @@ function makeFlip(prefix, slides){
     const card = document.getElementById(key + "FlipCard");
     if(!card) return;
 
-    card.classList.add("flipping");
+  card.classList.add("flipping");
 
-    setTimeout(function(){
+setTimeout(() => {
+
       index = (index + 1) % slides.length;
       const s = slides[index];
 
@@ -435,8 +464,13 @@ function makeFlip(prefix, slides){
       document.getElementById(key + "FlipTitle").textContent = s.title;
       document.getElementById(key + "FlipText").textContent = s.text;
 
-      card.classList.remove("flipping");
-    }, 400);
+     },250);
+
+setTimeout(() => {
+
+   card.classList.remove("flipping");
+
+},500);
   }
 }
 
@@ -589,10 +623,10 @@ var dubaiIndex = 0;
 function flipDubai(){
   var card = document.getElementById("dubaiFlipCard");
   if(!card) return;
+card.classList.add("flipping");
 
-  card.classList.add("flipping");
+setTimeout(() => {
 
-  setTimeout(function(){
     dubaiIndex = (dubaiIndex + 1) % dubaiSlides.length;
     var slide = dubaiSlides[dubaiIndex];
 
@@ -601,6 +635,11 @@ function flipDubai(){
     document.getElementById("dubaiFlipTitle").textContent = slide.title;
     document.getElementById("dubaiFlipText").textContent = slide.text;
 
-    card.classList.remove("flipping");
-  },400);
+   },250);
+
+setTimeout(() => {
+
+   card.classList.remove("flipping");
+
+},500);
 }
