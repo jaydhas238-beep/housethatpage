@@ -7,7 +7,7 @@
 :root{
   --ivory:#f8f5ef;
   --warm:#efe7dc;
-  --white:#fffdf8;.
+  --white:#fffdf8;
   --charcoal:#111111;
   --soft-black:#1b1b1b;
   --stone:#756f66;
@@ -1578,18 +1578,7 @@ height:auto;
 
 
 
-function flipOswal(){
 
-oswalIndex = (oswalIndex + 1) % oswalSlides.length;
-
-const slide = oswalSlides[oswalIndex];
-
-document.getElementById("oswalFlipImage").src = slide.image;
-document.getElementById("oswalFlipLabel").textContent = slide.label;
-document.getElementById("oswalFlipTitle").textContent = slide.title;
-document.getElementById("oswalFlipText").textContent = slide.text;
-
-}
 
 .project-card {
   display: grid;
