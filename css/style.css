@@ -1022,11 +1022,29 @@ a{
 }
 
 .mobile-menu a{
-  font-family:var(--serif);
-  font-size:42px;
-  color:var(--charcoal);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: none;
+    color: #111;
+    text-decoration: none;
+    margin: 14px 0;
+    transition: 0.3s ease;
 }
 
+.mobile-menu a:hover{
+    color: #c7a86d; /* your gold color */
+    transform: translateX(8px);
+}
+
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
 @media(max-width:900px){
   .book-link{
     display:none;
