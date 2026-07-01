@@ -2602,3 +2602,12 @@ function flipDubai(){
     card.classList.remove("flipping");
   },400);
 }
+
+    .request-list .recognition-row{
+    display:grid;
+    grid-template-columns:90px 1fr auto;
+    align-items:center;
+    text-decoration:none;
+    color:inherit;
+    cursor:default;
+}
