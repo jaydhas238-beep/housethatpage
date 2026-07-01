@@ -1462,11 +1462,9 @@ height:auto;
   transform-style:preserve-3d;
 }
 
-/*
 .flip-card.flipping .flip-card-inner{
     transform: rotateY(180deg);
 }
-*/
 
 .flip-face{
   display:grid;
