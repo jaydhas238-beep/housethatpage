@@ -2833,3 +2833,44 @@ function flipDubai(){
     color:#777;
     letter-spacing:.05em;
 }
+
+    .request-list a{
+    display:grid;
+    grid-template-columns:80px 1fr auto;
+    align-items:center;
+    gap:40px;
+    padding:38px 0;
+    border-bottom:1px solid rgba(0,0,0,.08);
+    text-decoration:none;
+    color:inherit;
+}
+
+.request-list h3{
+    margin:0;
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(42px,4vw,68px);
+    font-weight:300;
+    line-height:1;
+    color:var(--charcoal);
+    transition:.35s;
+}
+
+.request-list small{
+    justify-self:end;
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    color:#8c744d;
+}
+
+.request-list span{
+    color:var(--gold);
+    font-size:15px;
+    letter-spacing:.22em;
+}
+
+.request-list a:hover h3{
+    color:var(--gold);
+    transform:translateX(12px);
+}
