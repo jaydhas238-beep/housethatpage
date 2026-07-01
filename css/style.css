@@ -553,9 +553,13 @@ a{
     display:grid;
     grid-template-columns:80px 1fr auto;
     align-items:center;
-    gap:40px;
-    padding:42px 0;
-    border-bottom:1px solid rgba(0,0,0,.08);
+    gap:56px;
+padding:52px 0;
+border-bottom:1px solid rgba(0,0,0,.05);
+transition:.4s ease;
+}
+.request-item:hover{
+    padding-left:16px;
 }
 
 .request-item span{
@@ -611,10 +615,10 @@ a{
 .request-list span,
 .request-list small{
   font-family:var(--sans);
-  font-size:11px;
-  letter-spacing:.22em;
-  text-transform:uppercase;
-  color:var(--stone);
+ font-size:11px;
+letter-spacing:.28em;
+opacity:.65;
+text-transform:uppercase;
 }
 
 .quote-section{
@@ -773,7 +777,18 @@ a{
     grid-template-columns:1fr;
     gap:12px;
     font-size:40px;
+    padding:38px 0;
+    transition:.45s ease;
   }
+
+  .request-list a:hover{
+    padding-left:18px;
+}
+
+.request-list a:hover p,
+.request-list a:hover h3{
+    color:var(--gold);
+}
 
   .main-footer{
     grid-template-columns:1fr;
@@ -2627,6 +2642,16 @@ function flipDubai(){
     text-decoration:none;
     color:inherit;
     cursor:default;
+}
+
+    .request-list .recognition-row{
+    padding:38px 0;
+    transition:.4s ease;
+    border-bottom:1px solid rgba(0,0,0,.06);
+}
+
+.request-list .recognition-row:hover{
+    padding-left:16px;
 }
 
 
