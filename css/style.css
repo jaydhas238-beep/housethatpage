@@ -2373,23 +2373,23 @@ html {
 ================================= */
 
 .oberoi-project-img{
-    background:url("../images/oberoi-eternia.jpg") center center/cover no-repeat;
+background:url("../images/oberoi1.jpg") center center/cover no-repeat;
 }
 
 .prabha-project-img{
-    background:url("../images/prabha-villa.jpg") center center/cover no-repeat;
+background:url("../images/prabha1.jpg") center center/cover no-repeat;
 }
 
 .bihar-project-img{
-    background:url("../images/bihar-mansion.jpg") center center/cover no-repeat;
+background:url("../images/bihar1.jpg") center center/cover no-repeat;
+}
+
+.joy-project-img{
+background:url("../images/joy1.jpg") center center/cover no-repeat;
 }
 
 .insight-project-img{
     background:url("../images/first-insight-office.jpg") center center/cover no-repeat;
-}
-
-.joy-project-img{
-    background:url("../images/planet-of-joy.jpg") center center/cover no-repeat;
 }
 
 .trillium-project-img{
