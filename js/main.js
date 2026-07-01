@@ -209,10 +209,9 @@ function flipSangle() {
   const card = document.getElementById("sangleFlipCard");
   if (!card) return;
 
- card.classList.add("flipping");
+  card.classList.add("flipping");
 
-setTimeout(() => {
-
+  setTimeout(() => {
     sangleIndex = (sangleIndex + 1) % sangleSlides.length;
     const slide = sangleSlides[sangleIndex];
 
@@ -221,13 +220,8 @@ setTimeout(() => {
     document.getElementById("sangleFlipTitle").textContent = slide.title;
     document.getElementById("sangleFlipText").textContent = slide.text;
 
-   },250);
-
-setTimeout(() => {
-
-   card.classList.remove("flipping");
-
-},500);
+    card.classList.remove("flipping");
+  }, 400);
 }
 
 // ---------- KOMAL PROJECT SLIDES ----------
@@ -264,10 +258,9 @@ function flipKomal() {
   const card = document.getElementById("komalFlipCard");
   if (!card) return;
 
- card.classList.add("flipping");
+  card.classList.add("flipping");
 
-setTimeout(() => {
-
+  setTimeout(() => {
     komalIndex = (komalIndex + 1) % komalSlides.length;
     const slide = komalSlides[komalIndex];
 
@@ -276,13 +269,8 @@ setTimeout(() => {
     document.getElementById("komalFlipTitle").textContent = slide.title;
     document.getElementById("komalFlipText").textContent = slide.text;
 
-   },250);
-
-setTimeout(() => {
-
-   card.classList.remove("flipping");
-
-},500);
+    card.classList.remove("flipping");
+  }, 400);
 }
 
 // ---------- OSWAL PROJECT SLIDES ----------
@@ -315,7 +303,7 @@ function flipOswal() {
 
   card.classList.add("flipping");
 
-setTimeout(() => {
+  setTimeout(() => {
     oswalIndex = (oswalIndex + 1) % oswalSlides.length;
     const slide = oswalSlides[oswalIndex];
 
@@ -324,13 +312,8 @@ setTimeout(() => {
     document.getElementById("oswalFlipTitle").textContent = slide.title;
     document.getElementById("oswalFlipText").textContent = slide.text;
 
-   },250);
-
-setTimeout(() => {
-
-   card.classList.remove("flipping");
-
-},500);
+    card.classList.remove("flipping");
+  }, 400);
 }
 
 
@@ -362,10 +345,10 @@ var bijouIndex = 0;
 function flipBijou() {
   var card = document.getElementById("bijouFlipCard");
   if (!card) return;
-  
-card.classList.add("flipping");
 
-setTimeout(() => {
+  card.classList.add("flipping");
+
+  setTimeout(function () {
     bijouIndex = (bijouIndex + 1) % bijouSlides.length;
     var slide = bijouSlides[bijouIndex];
 
@@ -373,13 +356,9 @@ setTimeout(() => {
     document.getElementById("bijouFlipLabel").textContent = slide.label;
     document.getElementById("bijouFlipTitle").textContent = slide.title;
     document.getElementById("bijouFlipText").textContent = slide.text;
-},250);
 
-setTimeout(() => {
-
-   card.classList.remove("flipping");
-
-},500);
+    card.classList.remove("flipping");
+  }, 400);
 }
 
 
@@ -425,9 +404,7 @@ function flipRooftop(){
 
   card.classList.add("flipping");
 
-setTimeout(() => {
-
-
+  setTimeout(function(){
     rooftopIndex = (rooftopIndex + 1) % rooftopSlides.length;
     var slide = rooftopSlides[rooftopIndex];
 
@@ -436,13 +413,8 @@ setTimeout(() => {
     document.getElementById("rooftopFlipTitle").textContent = slide.title;
     document.getElementById("rooftopFlipText").textContent = slide.text;
 
-  },250);
-
-setTimeout(() => {
-
-   card.classList.remove("flipping");
-
-},500);
+    card.classList.remove("flipping");
+  }, 400);
 }
 
 function makeFlip(prefix, slides){
@@ -452,10 +424,9 @@ function makeFlip(prefix, slides){
     const card = document.getElementById(key + "FlipCard");
     if(!card) return;
 
-  card.classList.add("flipping");
+    card.classList.add("flipping");
 
-setTimeout(() => {
-
+    setTimeout(function(){
       index = (index + 1) % slides.length;
       const s = slides[index];
 
@@ -464,57 +435,19 @@ setTimeout(() => {
       document.getElementById(key + "FlipTitle").textContent = s.title;
       document.getElementById(key + "FlipText").textContent = s.text;
 
-     },250);
-
-setTimeout(() => {
-
-   card.classList.remove("flipping");
-
-},500);
+      card.classList.remove("flipping");
+    }, 400);
   }
 }
 
 makeFlip("Bihar", [
-{
-image:"images/bihar1.jpg",
-label:"Grand Entrance",
-title:"A luxurious mansion designed with timeless architecture.",
-text:"Elegant proportions, premium materials and refined detailing create a residence that reflects sophistication."
-},
-{
-image:"images/bihar2.jpg",
-label:"Luxury Living",
-title:"Large open spaces crafted for modern family living.",
-text:"Natural light, warm textures and bespoke interiors create a calm and luxurious atmosphere."
-}
+  {image:"images/bihar-mansion.jpg", label:"Grand Residence", title:"A spacious mansion shaped with timeless architectural presence.", text:"A large-scale residence designed with refined planning, luxurious interiors and elegant detailing."},
+  {image:"images/bihar-mansion.jpg", label:"Design Story", title:"A home designed around scale, comfort and family living.", text:"Every area is planned to feel impressive yet warm, combining architecture with everyday functionality."}
 ]);
 
-
 makeFlip("Oberoi", [
-{
-image:"images/oberoi1.jpg",
-label:"Contemporary Living",
-title:"A residence designed around elegance and comfort.",
-text:"Clean lines, natural textures and refined craftsmanship create a timeless interior."
-},
-{
-image:"images/oberoi2.jpg",
-label:"Premium Interior",
-title:"Luxury living shaped with thoughtful planning.",
-text:"Balanced lighting and bespoke detailing create a warm residential experience."
-},
-{
-image:"images/oberoi3.jpg",
-label:"Elegant Detailing",
-title:"Every corner reflects craftsmanship and precision.",
-text:"Carefully selected finishes elevate the everyday living experience."
-},
-{
-image:"images/oberoi4.jpg",
-label:"Sophisticated Spaces",
-title:"Designed for modern lifestyles with timeless appeal.",
-text:"Minimal forms and premium materials create lasting elegance."
-}
+  {image:"images/oberoi-eternia.jpg", label:"Refined Apartment", title:"A vibrant residence crafted for modern luxury living.", text:"Thoughtful planning, premium finishes and warm detailing create an elegant everyday home."},
+  {image:"images/oberoi-eternia.jpg", label:"Material Palette", title:"A home where colour, texture and detail work together.", text:"Every finish is selected to balance comfort, personality and timeless appeal."}
 ]);
 
 makeFlip("Trillium", [
@@ -528,30 +461,8 @@ makeFlip("Suga", [
 ]);
 
 makeFlip("Prabha", [
-{
-image:"images/prabha1.jpg",
-label:"Villa Entrance",
-title:"A grand entrance that sets the tone for luxury living.",
-text:"Elegant architecture welcomes residents with warmth and sophistication."
-},
-{
-image:"images/prabha2.jpg",
-label:"Living Experience",
-title:"Open spaces designed for comfort and connection.",
-text:"Natural light and premium materials create a welcoming atmosphere."
-},
-{
-image:"images/prabha3.jpg",
-label:"Luxury Bedroom",
-title:"Private spaces crafted for relaxation and elegance.",
-text:"Soft textures and refined finishes create a timeless retreat."
-},
-{
-image:"images/prabha4.jpg",
-label:"Architectural Details",
-title:"Every element designed with purpose and precision.",
-text:"Thoughtful detailing enhances the overall character of the villa."
-}
+  {image:"images/prabha-villa.jpg", label:"Contemporary Villa", title:"A villa shaped around light, comfort and refined living.", text:"Sophisticated interiors and practical planning create a home that feels both premium and personal."},
+  {image:"images/prabha-villa.jpg", label:"Villa Story", title:"Modern design with a timeless residential soul.", text:"Natural light, elegant finishes and thoughtful layouts define the experience."}
 ]);
 
 makeFlip("Akar", [
@@ -565,31 +476,10 @@ makeFlip("Insight", [
 ]);
 
 makeFlip("Joy", [
-{
-image:"images/joy1.jpg",
-label:"Experience Centre",
-title:"A vibrant destination designed for memorable experiences.",
-text:"Dynamic interiors encourage interaction and create lasting impressions."
-},
-{
-image:"images/joy2.jpg",
-label:"Interactive Spaces",
-title:"Spaces that balance creativity with functionality.",
-text:"Colour, lighting and materials combine to create an engaging environment."
-},
-{
-image:"images/joy3.jpg",
-label:"Entertainment Zone",
-title:"Designed for excitement and comfort.",
-text:"Flexible layouts support social interaction and enjoyable experiences."
-},
-{
-image:"images/joy4.jpg",
-label:"Design Identity",
-title:"A bold commercial space with a playful personality.",
-text:"Strong visual language and thoughtful planning define the project."
-}
+  {image:"images/planet-of-joy.jpg", label:"Experience Space", title:"A vibrant commercial environment designed to create memorable experiences.", text:"Colour, form and thoughtful detailing come together to create an energetic and engaging space."},
+  {image:"images/planet-of-joy.jpg", label:"Commercial Story", title:"A space made to feel joyful, active and memorable.", text:"Every design decision supports engagement, comfort and a strong visual identity."}
 ]);
+
 
 var dubaiSlides = [
   {
@@ -623,10 +513,10 @@ var dubaiIndex = 0;
 function flipDubai(){
   var card = document.getElementById("dubaiFlipCard");
   if(!card) return;
-card.classList.add("flipping");
 
-setTimeout(() => {
+  card.classList.add("flipping");
 
+  setTimeout(function(){
     dubaiIndex = (dubaiIndex + 1) % dubaiSlides.length;
     var slide = dubaiSlides[dubaiIndex];
 
@@ -635,11 +525,6 @@ setTimeout(() => {
     document.getElementById("dubaiFlipTitle").textContent = slide.title;
     document.getElementById("dubaiFlipText").textContent = slide.text;
 
-   },250);
-
-setTimeout(() => {
-
-   card.classList.remove("flipping");
-
-},500);
+    card.classList.remove("flipping");
+  },400);
 }
