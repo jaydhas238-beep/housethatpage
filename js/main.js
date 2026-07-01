@@ -2,7 +2,22 @@
 // HOUSETHAT LUXURY WEBSITE
 // =========================
 
+function hidePreloader() {
+  const preloader = document.getElementById("preloader");
+  if (preloader) {
+    preloader.classList.add("hide");
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 900);
+  }
+}
 
+window.addEventListener("load", () => {
+  setTimeout(hidePreloader, 1800);
+});
+
+// backup: hide even if JS/image loading issue
+setTimeout(hidePreloader, 3500);
 // ---------- REVEAL ANIMATION ----------
 const revealItems = document.querySelectorAll(".reveal-section");
 
@@ -479,52 +494,3 @@ makeFlip("Joy", [
   {image:"images/planet-of-joy.jpg", label:"Experience Space", title:"A vibrant commercial environment designed to create memorable experiences.", text:"Colour, form and thoughtful detailing come together to create an energetic and engaging space."},
   {image:"images/planet-of-joy.jpg", label:"Commercial Story", title:"A space made to feel joyful, active and memorable.", text:"Every design decision supports engagement, comfort and a strong visual identity."}
 ]);
-
-
-var dubaiSlides = [
-  {
-    image:"images/Dubai1.jpg",
-    label:"Luxury Bathspace",
-    title:"A refined bathspace shaped with stone, light and precision.",
-    text:"Recognized among Dubai’s Top 10 bathspaces, this project brings together natural stone, warm lighting and spa-inspired luxury."
-  },
-  {
-    image:"images/Dubai2.jpg",
-    label:"Seamless Spatial Flow",
-    title:"A bathspace connected through clean architectural lines.",
-    text:"The layout connects vanity, dressing and wellness zones with clarity, calmness and premium detailing."
-  },
-  {
-    image:"images/Dubai3.jpg",
-    label:"Wellness Zone",
-    title:"A contemporary retreat designed for everyday luxury.",
-    text:"Frameless glass, refined stone and minimalist fixtures create a spa-inspired experience."
-  },
-  {
-    image:"images/Dubai4.jpg",
-    label:"Crafted Detail",
-    title:"A harmonious composition of premium materials and timeless comfort.",
-    text:"Every surface, light source and material selection contributes to a private sanctuary experience."
-  }
-];
-
-var dubaiIndex = 0;
-
-function flipDubai(){
-  var card = document.getElementById("dubaiFlipCard");
-  if(!card) return;
-
-  card.classList.add("flipping");
-
-  setTimeout(function(){
-    dubaiIndex = (dubaiIndex + 1) % dubaiSlides.length;
-    var slide = dubaiSlides[dubaiIndex];
-
-    document.getElementById("dubaiFlipImage").src = slide.image;
-    document.getElementById("dubaiFlipLabel").textContent = slide.label;
-    document.getElementById("dubaiFlipTitle").textContent = slide.title;
-    document.getElementById("dubaiFlipText").textContent = slide.text;
-
-    card.classList.remove("flipping");
-  },400);
-}
