@@ -2,6 +2,7 @@
 // HOUSETHAT LUXURY WEBSITE
 // =========================
 
+/*
 window.addEventListener("load", function () {
 
     const preloader = document.getElementById("preloader");
@@ -13,9 +14,7 @@ window.addEventListener("load", function () {
             preloader.classList.add("hide");
 
             setTimeout(function(){
-
                 preloader.remove();
-
             },800);
 
         },1200);
@@ -23,6 +22,7 @@ window.addEventListener("load", function () {
     }
 
 });
+*/
 
 // ---------- HEADER EFFECT ----------
 const header = document.querySelector(".main-header");
