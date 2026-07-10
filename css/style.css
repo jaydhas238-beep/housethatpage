@@ -2969,3 +2969,26 @@ font-size:48px;
 }
 
 }
+
+.process-section{
+
+    position:relative;
+
+    background:
+        linear-gradient(rgba(247,243,237,.88),
+        rgba(247,243,237,.88)),
+        url('../images/marble.jpg') center/cover no-repeat;
+
+    padding:160px 7%;
+
+}
+
+.process-card{
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.5);
+
+}
