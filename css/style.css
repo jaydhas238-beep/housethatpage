@@ -2611,17 +2611,12 @@ FEATURED PROJECTS
 }
 
 .featured-project{
-
     display:grid;
-
-    grid-template-columns:1.2fr .8fr;
-
-    gap:80px;
-
+    grid-template-columns:1fr 1fr;
+    gap:100px;
+    max-width:1400px;
+    margin:160px auto;
     align-items:center;
-
-    margin-bottom:180px;
-
 }
 
 .featured-project-image{
