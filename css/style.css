@@ -2587,3 +2587,129 @@ var dubaiIndex = 0;
 
 }
 
+/* ==========================================
+FEATURED PROJECTS
+========================================== */
+
+.featured-projects{
+    padding:140px 7%;
+    background:#f8f4ee;
+}
+
+.featured-heading{
+    max-width:900px;
+    margin:0 auto 120px;
+    text-align:center;
+}
+
+.featured-heading h2{
+    font-family:var(--serif);
+    font-size:clamp(48px,6vw,90px);
+    font-weight:300;
+    line-height:1;
+    color:#111;
+}
+
+.featured-project{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    gap:80px;
+
+    align-items:center;
+
+    margin-bottom:180px;
+
+}
+
+.featured-project-image{
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+}
+
+.featured-project-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:22px;
+
+    transition:transform 1.5s ease;
+
+}
+
+.featured-project:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.featured-project-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.project-category{
+
+    text-transform:uppercase;
+
+    letter-spacing:.25em;
+
+    font-size:12px;
+
+    color:#9a7a45;
+
+}
+
+.featured-project-content h3{
+
+    margin:18px 0;
+
+    font-size:56px;
+
+    font-family:var(--serif);
+
+    font-weight:300;
+
+}
+
+.featured-project-content p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#555;
+
+    margin-bottom:35px;
+
+}
+
+@media(max-width:991px){
+
+.featured-project{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+}
+
+.featured-project-content h3{
+
+font-size:42px;
+
+}
+
+}
