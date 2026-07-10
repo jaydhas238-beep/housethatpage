@@ -190,4 +190,70 @@ function openEmail(e) {
   }
 }
 
+
+document.querySelectorAll(".project-slider").forEach(slider=>{
+
+    const slides=slider.querySelectorAll(".slides img");
+
+    const prev=slider.querySelector(".slider-prev");
+
+    const next=slider.querySelector(".slider-next");
+
+    const dotsContainer=slider.querySelector(".slider-dots");
+
+    const counter=slider.querySelector(".slider-count");
+
+    let current=0;
+
+    slides.forEach((img,index)=>{
+
+        const dot=document.createElement("div");
+
+        dot.className="slider-dot";
+
+        dot.onclick=()=>show(index);
+
+        dotsContainer.appendChild(dot);
+
+    });
+
+    const dots=dotsContainer.querySelectorAll(".slider-dot");
+
+    function show(index){
+
+        slides.forEach(img=>img.classList.remove("active"));
+
+        dots.forEach(dot=>dot.classList.remove("active"));
+
+        current=index;
+
+        slides[current].classList.add("active");
+
+        dots[current].classList.add("active");
+
+        counter.innerHTML=(current+1)+" / "+slides.length;
+
+    }
+
+    next.onclick=()=>{
+
+        show((current+1)%slides.length);
+
+    };
+
+    prev.onclick=()=>{
+
+        show((current-1+slides.length)%slides.length);
+
+    };
+
+    setInterval(()=>{
+
+        show((current+1)%slides.length);
+
+    },4500);
+
+    show(0);
+
+});
 // ---------- SANGLE PROJECT SLIDES ----------
