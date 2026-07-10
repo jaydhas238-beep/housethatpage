@@ -1471,91 +1471,10 @@ height:auto;
 
 }
 
-.flip-project{
-  background:var(--ivory);
-}
-
-.flip-card{
-  perspective:1400px;
-}
-
-.flip-card-inner{
-  transition:transform .8s ease;
-  transform-style:preserve-3d;
-}
-
-.flip-card.flipping .flip-card-inner{
-  transform:rotateY(180deg);
-}
-
-.flip-face{
-  display:grid;
-  grid-template-columns:.9fr 1fr;
-  gap:34px;
-  align-items:center;
-}
-.flip-face img{
-    width:100%;
-    height:380px;
-    object-fit:cover;
-    display:block;
-    border-radius:12px;
-
-    backface-visibility:hidden;
-    -webkit-backface-visibility:hidden;
-
-    transform:translateZ(0);
-}
-
-.flip-content h3{
-  font-size:clamp(30px,3.5vw,56px);
-}
-
-.flip-content p:not(.section-label){
-  margin-top:28px;
-  color:var(--stone);
-  line-height:1.9;
-  max-width:520px;
-}
-
-.flip-btn{
-  margin-top:34px;
-  background:transparent;
-  border:none;
-  border-bottom:1px solid var(--gold);
-  color:var(--gold);
-  font-size:11px;
-  letter-spacing:.24em;
-  text-transform:uppercase;
-  cursor:pointer;
-  padding-bottom:8px;
-}
-
-@media(max-width:900px){
-  .flip-face{
-    grid-template-columns:1fr;
-    padding:20px;
-  }
-
-  .flip-face img{
-    height:auto;
-  }
-}
 
 
 
-function flipOswal(){
 
-oswalIndex = (oswalIndex + 1) % oswalSlides.length;
-
-const slide = oswalSlides[oswalIndex];
-
-document.getElementById("oswalFlipImage").src = slide.image;
-document.getElementById("oswalFlipLabel").textContent = slide.label;
-document.getElementById("oswalFlipTitle").textContent = slide.title;
-document.getElementById("oswalFlipText").textContent = slide.text;
-
-}
 
 .project-card {
   display: grid;
@@ -2592,24 +2511,7 @@ var dubaiSlides = [
 
 var dubaiIndex = 0;
 
-function flipDubai(){
-  var card = document.getElementById("dubaiFlipCard");
-  if(!card) return;
 
-  card.classList.add("flipping");
-
-  setTimeout(function(){
-    dubaiIndex = (dubaiIndex + 1) % dubaiSlides.length;
-    var slide = dubaiSlides[dubaiIndex];
-
-    document.getElementById("dubaiFlipImage").src = slide.image;
-    document.getElementById("dubaiFlipLabel").textContent = slide.label;
-    document.getElementById("dubaiFlipTitle").textContent = slide.title;
-    document.getElementById("dubaiFlipText").textContent = slide.text;
-
-    card.classList.remove("flipping");
-  },400);
-}
 
     .request-list .recognition-row{
     display:grid;
