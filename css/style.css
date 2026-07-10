@@ -2619,3 +2619,68 @@ function flipDubai(){
     color:inherit;
     cursor:default;
 }
+
+      /* ===========================
+   RECOGNITION PAGE
+=========================== */
+
+.recognition-info{
+    max-width:1400px;
+    margin:90px auto 0;
+    border-top:1px solid rgba(0,0,0,.08);
+}
+
+.info-row{
+    display:grid;
+    grid-template-columns:70px 280px 1fr;
+    align-items:center;
+    gap:40px;
+    padding:38px 0;
+    border-bottom:1px solid rgba(0,0,0,.08);
+    transition:.35s ease;
+}
+
+.info-row:hover{
+    padding-left:14px;
+}
+
+.info-row span{
+    font-family:var(--sans);
+    font-size:12px;
+    letter-spacing:.25em;
+    color:var(--gold);
+}
+
+.info-row h3{
+    font-family:var(--serif);
+    font-size:32px;
+    font-weight:300;
+    margin:0;
+    color:var(--charcoal);
+}
+
+.info-row p{
+    margin:0;
+    font-family:var(--sans);
+    font-size:18px;
+    line-height:1.8;
+    color:#666;
+}
+
+      @media(max-width:900px){
+
+.info-row{
+    grid-template-columns:1fr;
+    gap:10px;
+    padding:28px 0;
+}
+
+.info-row h3{
+    font-size:28px;
+}
+
+.info-row p{
+    font-size:16px;
+}
+
+}
