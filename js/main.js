@@ -564,3 +564,118 @@ showSlide((index+1)%slides.length);
 showSlide(0);
 
 }
+/* ==========================================
+   OSWAL SLIDER
+========================================== */
+
+const oswalSlider=document.querySelector("#oswal-slider");
+
+if(oswalSlider){
+
+const slides=oswalSlider.querySelectorAll(".slides img");
+const prev=oswalSlider.querySelector(".prev");
+const next=oswalSlider.querySelector(".next");
+const current=oswalSlider.querySelector(".current");
+const dotsContainer=oswalSlider.querySelector(".slider-dots");
+
+let index=0;
+
+slides.forEach((_,i)=>{
+
+const dot=document.createElement("span");
+
+if(i===0) dot.classList.add("active");
+
+dot.onclick=()=>showSlide(i);
+
+dotsContainer.appendChild(dot);
+
+});
+
+const dots=dotsContainer.querySelectorAll("span");
+
+function showSlide(i){
+
+slides.forEach(img=>img.classList.remove("active"));
+dots.forEach(dot=>dot.classList.remove("active"));
+
+index=i;
+
+slides[index].classList.add("active");
+dots[index].classList.add("active");
+
+current.textContent=String(index+1).padStart(2,"0");
+
+}
+
+next.onclick=()=>showSlide((index+1)%slides.length);
+
+prev.onclick=()=>showSlide((index-1+slides.length)%slides.length);
+
+setInterval(()=>{
+
+showSlide((index+1)%slides.length);
+
+},5000);
+
+showSlide(0);
+
+}
+
+/* ==========================================
+   BIJOU SLIDER
+========================================== */
+
+const bijouSlider=document.querySelector("#bijou-slider");
+
+if(bijouSlider){
+
+const slides=bijouSlider.querySelectorAll(".slides img");
+const prev=bijouSlider.querySelector(".prev");
+const next=bijouSlider.querySelector(".next");
+const current=bijouSlider.querySelector(".current");
+const dotsContainer=bijouSlider.querySelector(".slider-dots");
+
+let index=0;
+
+slides.forEach((_,i)=>{
+
+const dot=document.createElement("span");
+
+if(i===0) dot.classList.add("active");
+
+dot.onclick=()=>showSlide(i);
+
+dotsContainer.appendChild(dot);
+
+});
+
+const dots=dotsContainer.querySelectorAll("span");
+
+function showSlide(i){
+
+slides.forEach(img=>img.classList.remove("active"));
+dots.forEach(dot=>dot.classList.remove("active"));
+
+index=i;
+
+slides[index].classList.add("active");
+dots[index].classList.add("active");
+
+current.textContent=String(index+1).padStart(2,"0");
+
+}
+
+next.onclick=()=>showSlide((index+1)%slides.length);
+
+prev.onclick=()=>showSlide((index-1+slides.length)%slides.length);
+
+setInterval(()=>{
+
+showSlide((index+1)%slides.length);
+
+},5000);
+
+showSlide(0);
+
+}
