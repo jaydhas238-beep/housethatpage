@@ -256,4 +256,152 @@ document.querySelectorAll(".project-slider").forEach(slider=>{
     show(0);
 
 });
-// ---------- SANGLE PROJECT SLIDES ----------
+/* ==========================================================
+   HOUSETHAT UNIVERSAL PROJECT SLIDER
+========================================================== */
+
+document.querySelectorAll(".project-slider").forEach((slider) => {
+
+    const slides = slider.querySelectorAll(".slides img");
+    const prev = slider.querySelector(".slider-prev");
+    const next = slider.querySelector(".slider-next");
+    const dotsContainer = slider.querySelector(".slider-dots");
+    const counter = slider.querySelector(".slider-count");
+
+    let current = 0;
+    let autoPlay;
+
+    // Create Dots
+    slides.forEach((_, index) => {
+
+        const dot = document.createElement("div");
+
+        dot.classList.add("slider-dot");
+
+        if(index === 0){
+            dot.classList.add("active");
+        }
+
+        dot.onclick = () => {
+            showSlide(index);
+            restartAutoPlay();
+        };
+
+        dotsContainer.appendChild(dot);
+
+    });
+
+    const dots = dotsContainer.querySelectorAll(".slider-dot");
+
+    function showSlide(index){
+
+        slides.forEach(slide => slide.classList.remove("active"));
+        dots.forEach(dot => dot.classList.remove("active"));
+
+        current = index;
+
+        slides[current].classList.add("active");
+        dots[current].classList.add("active");
+
+        counter.innerHTML =
+            (current + 1) + " / " + slides.length;
+
+    }
+
+    function nextSlide(){
+
+        current++;
+
+        if(current >= slides.length){
+            current = 0;
+        }
+
+        showSlide(current);
+
+    }
+
+    function prevSlide(){
+
+        current--;
+
+        if(current < 0){
+            current = slides.length - 1;
+        }
+
+        showSlide(current);
+
+    }
+
+    next.onclick = () => {
+
+        nextSlide();
+
+        restartAutoPlay();
+
+    };
+
+    prev.onclick = () => {
+
+        prevSlide();
+
+        restartAutoPlay();
+
+    };
+
+    function startAutoPlay(){
+
+        autoPlay = setInterval(nextSlide, 5000);
+
+    }
+
+    function stopAutoPlay(){
+
+        clearInterval(autoPlay);
+
+    }
+
+    function restartAutoPlay(){
+
+        stopAutoPlay();
+
+        startAutoPlay();
+
+    }
+
+    slider.addEventListener("mouseenter", stopAutoPlay);
+
+    slider.addEventListener("mouseleave", startAutoPlay);
+
+    // Touch Support
+
+    let startX = 0;
+
+    slider.addEventListener("touchstart", (e)=>{
+
+        startX = e.touches[0].clientX;
+
+    });
+
+    slider.addEventListener("touchend", (e)=>{
+
+        let endX = e.changedTouches[0].clientX;
+
+        if(startX - endX > 60){
+
+            nextSlide();
+
+        }
+
+        if(endX - startX > 60){
+
+            prevSlide();
+
+        }
+
+    });
+
+    showSlide(0);
+
+    startAutoPlay();
+
+});
