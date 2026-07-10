@@ -448,3 +448,61 @@ if (dubaiSlider) {
     showSlide(0);
 
 }
+
+/* ==========================================
+   ROOFTOP SLIDER
+========================================== */
+
+const rooftopSlider=document.querySelector("#rooftop-slider");
+
+if(rooftopSlider){
+
+const slides=rooftopSlider.querySelectorAll(".slides img");
+const prev=rooftopSlider.querySelector(".prev");
+const next=rooftopSlider.querySelector(".next");
+const current=rooftopSlider.querySelector(".current");
+const dotsContainer=rooftopSlider.querySelector(".slider-dots");
+
+let index=0;
+
+slides.forEach((_,i)=>{
+
+const dot=document.createElement("span");
+
+if(i===0) dot.classList.add("active");
+
+dot.onclick=()=>showSlide(i);
+
+dotsContainer.appendChild(dot);
+
+});
+
+const dots=dotsContainer.querySelectorAll("span");
+
+function showSlide(i){
+
+slides.forEach(img=>img.classList.remove("active"));
+dots.forEach(dot=>dot.classList.remove("active"));
+
+index=i;
+
+slides[index].classList.add("active");
+dots[index].classList.add("active");
+
+current.textContent=String(index+1).padStart(2,"0");
+
+}
+
+next.onclick=()=>showSlide((index+1)%slides.length);
+
+prev.onclick=()=>showSlide((index-1+slides.length)%slides.length);
+
+setInterval(()=>{
+
+showSlide((index+1)%slides.length);
+
+},5000);
+
+showSlide(0);
+
+}
