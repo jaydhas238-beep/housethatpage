@@ -2702,3 +2702,63 @@ var dubaiIndex = 0;
 }
 
 }
+
+.project-grid{
+    display:grid;
+    grid-template-columns:1.25fr .75fr;
+    gap:70px;
+    align-items:center;
+}
+
+.project-content h3{
+    font-family:var(--serif);
+    font-size:44px;
+    font-weight:300;
+    line-height:1.2;
+    margin:20px 0;
+}
+
+.project-content p{
+    font-size:17px;
+    line-height:1.9;
+    color:#666;
+}
+
+.project-meta{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+    margin:40px 0;
+    padding-top:30px;
+    border-top:1px solid rgba(0,0,0,.08);
+}
+
+.project-meta span{
+    display:block;
+    font-size:11px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:#b88a32;
+    margin-bottom:8px;
+}
+
+.project-meta strong{
+    font-family:var(--serif);
+    font-size:22px;
+    font-weight:400;
+}
+
+@media(max-width:900px){
+    .project-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .project-content h3{
+        font-size:34px;
+    }
+
+    .project-meta{
+        grid-template-columns:1fr;
+    }
+}
