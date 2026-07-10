@@ -2991,3 +2991,169 @@ font-size:48px;
         linear-gradient(rgba(247,243,237,.90), rgba(247,243,237,.90)),
         url('../images/service.jpg') center center/cover no-repeat;
 }
+
+
+/*==================================================
+ DESIGN LANGUAGE
+==================================================*/
+
+.design-language{
+    padding:140px 7%;
+    background:#f7f3ed;
+}
+
+.design-language .section-head{
+    max-width:620px;
+    margin-bottom:70px;
+}
+
+.design-language .section-label{
+    color:#b78b37;
+    text-transform:uppercase;
+    letter-spacing:.35em;
+    font-size:12px;
+    margin-bottom:18px;
+}
+
+.design-language .section-head h2{
+    font-size:78px;
+    line-height:.95;
+    font-family:"Cormorant Garamond",serif;
+    font-weight:500;
+    color:#111;
+}
+
+.design-strip{
+    position:relative;
+    display:block;
+    width:100%;
+    height:430px;
+    margin-bottom:40px;
+    border-radius:28px;
+    overflow:hidden;
+    text-decoration:none;
+}
+
+.design-strip img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform 8s ease;
+}
+
+.design-strip:hover img{
+    transform:scale(1.08);
+}
+
+.design-strip .overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to right,
+        rgba(0,0,0,.68),
+        rgba(0,0,0,.22)
+    );
+    transition:.5s;
+}
+
+.design-strip:hover .overlay{
+    background:linear-gradient(
+        to right,
+        rgba(0,0,0,.76),
+        rgba(0,0,0,.35)
+    );
+}
+
+.design-content{
+    position:absolute;
+    left:70px;
+    bottom:65px;
+    color:#fff;
+    z-index:2;
+}
+
+.design-content span{
+    display:block;
+    color:#d3a64d;
+    letter-spacing:.35em;
+    font-size:13px;
+    margin-bottom:18px;
+}
+
+.design-content h3{
+    font-family:"Cormorant Garamond",serif;
+    font-size:72px;
+    font-weight:500;
+    line-height:1;
+    margin-bottom:20px;
+    transition:.4s;
+}
+
+.design-content p{
+    font-size:15px;
+    letter-spacing:.25em;
+    text-transform:uppercase;
+    opacity:.9;
+}
+
+.design-strip:hover h3{
+    transform:translateX(12px);
+    color:#e0b04d;
+}
+
+.design-strip::after{
+    content:"→";
+    position:absolute;
+    right:60px;
+    bottom:60px;
+    width:72px;
+    height:72px;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    transition:.45s;
+}
+
+.design-strip:hover::after{
+    transform:translateX(10px);
+    background:#d3a64d;
+}
+
+@media(max-width:991px){
+
+.design-language{
+    padding:90px 6%;
+}
+
+.design-language .section-head h2{
+    font-size:48px;
+}
+
+.design-strip{
+    height:280px;
+}
+
+.design-content{
+    left:35px;
+    bottom:35px;
+}
+
+.design-content h3{
+    font-size:42px;
+}
+
+.design-strip::after{
+    right:25px;
+    bottom:25px;
+    width:55px;
+    height:55px;
+}
+
+}
