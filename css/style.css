@@ -1954,7 +1954,7 @@ html {
   inset:0;
   background:
     linear-gradient(90deg, rgba(0,0,0,.65), rgba(0,0,0,.20)),
-    url('../images/Project1.jpg') center/cover no-repeat;
+    url('../images/main.jpg') center/cover no-repeat;
   transform:scale(1.04);
 }
 
