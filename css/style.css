@@ -2984,14 +2984,10 @@ font-size:48px;
 }
 
 
-.supporting-services{
-
-    position:relative;
-    padding:160px 7%;
-
+.support-services{
+    position: relative;
+    padding: 160px 7%;
     background:
-    linear-gradient(rgba(247,243,237,.90),
-    rgba(247,243,237,.90)),
-    url('../images/service.jpg') center/cover no-repeat;
-
+        linear-gradient(rgba(247,243,237,.90), rgba(247,243,237,.90)),
+        url('../images/service.jpg') center center/cover no-repeat;
 }
