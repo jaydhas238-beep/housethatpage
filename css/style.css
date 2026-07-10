@@ -2762,3 +2762,24 @@ var dubaiIndex = 0;
         grid-template-columns:1fr;
     }
 }
+
+
+.project-section{
+    margin-bottom:140px;
+}
+
+.project-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.project-content .primary-btn{
+    width:max-content;
+    margin-top:20px;
+}
+
+.project-slider img{
+    border-radius:18px;
+    box-shadow:0 30px 80px rgba(0,0,0,.12);
+}
