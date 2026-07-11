@@ -3158,182 +3158,187 @@ font-size:48px;
 
 }
 
-/*====================================
-3D VISUALIZATION
-====================================*/
+/*==================================================
+3D VISUALIZATION SECTION
+==================================================*/
 
 .visualization-section{
-
     padding:140px 7%;
-
     background:#f7f3ed;
-
 }
 
 .visualization-section .featured-project{
-
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     align-items:center;
-
     gap:90px;
-
 }
 
 .visualization-section .featured-project-image{
-
-    width:100%;
-
+    position:relative;
 }
 
 .visualization-section .featured-project-content{
-
-    max-width:620px;
-
+    max-width:600px;
 }
 
 .visualization-section .section-label{
-
-    color:#b78b37;
-
-    letter-spacing:.28em;
-
+    display:block;
+    margin-bottom:18px;
+    font-size:13px;
+    letter-spacing:.35em;
     text-transform:uppercase;
-
-    font-size:12px;
-
-    margin-bottom:20px;
-
+    color:#b98b3b;
 }
 
 .visualization-section h2{
-
     font-family:"Cormorant Garamond",serif;
-
     font-size:74px;
-
     line-height:.95;
-
-    font-weight:500;
-
+    font-weight:400;
     color:#111;
-
-    margin-bottom:35px;
-
+    margin-bottom:30px;
 }
 
 .visualization-section p{
-
     font-size:19px;
-
     line-height:1.9;
-
     color:#555;
-
     margin-bottom:40px;
-
-}
-
-.visualization-section .service-features{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:18px;
-
-    list-style:none;
-
-    padding:0;
-
-    margin:0 0 45px;
-
-}
-
-.visualization-section .service-features li{
-
-    position:relative;
-
-    padding-left:22px;
-
-    color:#333;
-
-}
-
-.visualization-section .service-features li::before{
-
-    content:"•";
-
-    position:absolute;
-
-    left:0;
-
-    color:#d4af37;
-
-    font-size:22px;
-
 }
 
 .visualization-section .outline-btn{
-
     display:inline-flex;
-
     align-items:center;
-
     justify-content:center;
-
-    padding:18px 38px;
-
+    padding:18px 42px;
     border:1px solid #111;
-
     color:#111;
-
     text-decoration:none;
-
     letter-spacing:.22em;
-
     font-size:13px;
-
+    text-transform:uppercase;
     transition:.35s;
-
 }
 
 .visualization-section .outline-btn:hover{
-
     background:#111;
-
     color:#fff;
+}
 
+.visualization-section .project-slider{
+    position:relative;
+    width:100%;
+    aspect-ratio:4/3;
+    overflow:hidden;
+    border-radius:22px;
+    background:#f1ede7;
+}
+
+.visualization-section .project-slider .slides{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.visualization-section .project-slider .slides img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity .8s ease,transform 6s ease;
+    transform:scale(1);
+}
+
+.visualization-section .project-slider .slides img.active{
+    opacity:1;
+    transform:scale(1.05);
+}
+
+.visualization-section .slider-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:46px;
+    height:46px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.92);
+    color:#111;
+    cursor:pointer;
+    z-index:20;
+    transition:.35s;
+    font-size:20px;
+}
+
+.visualization-section .slider-btn:hover{
+    background:#111;
+    color:#fff;
+}
+
+.visualization-section .slider-btn.prev{
+    left:20px;
+}
+
+.visualization-section .slider-btn.next{
+    right:20px;
+}
+
+.visualization-section .slider-counter{
+    position:absolute;
+    bottom:25px;
+    right:25px;
+    padding:10px 16px;
+    background:rgba(0,0,0,.55);
+    color:#fff;
+    border-radius:30px;
+    font-size:13px;
+    letter-spacing:.15em;
+    z-index:20;
+}
+
+.visualization-section .slider-dots{
+    position:absolute;
+    left:50%;
+    bottom:28px;
+    transform:translateX(-50%);
+    display:flex;
+    gap:10px;
+    z-index:20;
+}
+
+.visualization-section .slider-dots span{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:rgba(255,255,255,.45);
+    transition:.3s;
+}
+
+.visualization-section .slider-dots span.active{
+    background:#fff;
+    transform:scale(1.35);
 }
 
 @media(max-width:991px){
 
 .visualization-section{
-
     padding:90px 6%;
-
 }
 
 .visualization-section .featured-project{
-
     grid-template-columns:1fr;
-
     gap:60px;
-
 }
 
 .visualization-section h2{
-
-    font-size:48px;
-
+    font-size:50px;
 }
 
-.visualization-section .service-features{
-
-    grid-template-columns:1fr;
-
+.visualization-section .featured-project-content{
+    max-width:100%;
 }
 
 }
