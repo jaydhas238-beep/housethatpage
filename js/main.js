@@ -976,3 +976,64 @@ showSlide((index+1)%slides.length);
 showSlide(0);
 
 }
+
+/* ===========================
+   3D VISUALIZATION SLIDER
+=========================== */
+
+initProjectSlider("renderSlider");
+
+function initProjectSlider(id){
+
+    const slider = document.getElementById(id);
+
+    if(!slider) return;
+
+    const slides = slider.querySelectorAll(".slides img");
+    const prev = slider.querySelector(".prev");
+    const next = slider.querySelector(".next");
+    const dotsWrap = slider.querySelector(".slider-dots");
+    const current = slider.querySelector(".current");
+    const total = slider.querySelector(".total");
+
+    let index = 0;
+
+    total.textContent = String(slides.length).padStart(2,"0");
+
+    slides.forEach((_,i)=>{
+
+        const dot=document.createElement("span");
+
+        if(i===0) dot.classList.add("active");
+
+        dot.addEventListener("click",()=>showSlide(i));
+
+        dotsWrap.appendChild(dot);
+
+    });
+
+    const dots=dotsWrap.querySelectorAll("span");
+
+    function showSlide(i){
+
+        slides[index].classList.remove("active");
+
+        dots[index].classList.remove("active");
+
+        index=(i+slides.length)%slides.length;
+
+        slides[index].classList.add("active");
+
+        dots[index].classList.add("active");
+
+        current.textContent=String(index+1).padStart(2,"0");
+
+    }
+
+    prev.addEventListener("click",()=>showSlide(index-1));
+
+    next.addEventListener("click",()=>showSlide(index+1));
+
+    setInterval(()=>showSlide(index+1),5000);
+
+}
