@@ -1036,3 +1036,8 @@ showSlide(0);
     },5000);
 
 })();
+
+
+document.querySelectorAll('a[href="project-details.html"]').forEach(link => {
+    link.removeAttribute("href");
+});
