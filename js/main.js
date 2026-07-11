@@ -912,6 +912,58 @@ showSlide(0);
 
 }
 
+/* ==========================
+   PRABHA VILLA SLIDER
+========================== */
+
+const prabhaSlides = document.querySelectorAll(".prabha-slide");
+const prabhaPrev = document.querySelector(".prabha-prev");
+const prabhaNext = document.querySelector(".prabha-next");
+const prabhaDots = document.querySelectorAll(".prabha-dot");
+const prabhaCurrent = document.querySelector(".prabha-current");
+const prabhaTotal = document.querySelector(".prabha-total");
+
+let prabhaIndex = 0;
+
+if (prabhaTotal) {
+    prabhaTotal.textContent = String(prabhaSlides.length).padStart(2, "0");
+}
+
+function updatePrabhaSlider() {
+
+    prabhaSlides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === prabhaIndex);
+    });
+
+    prabhaDots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === prabhaIndex);
+    });
+
+    if (prabhaCurrent) {
+        prabhaCurrent.textContent = String(prabhaIndex + 1).padStart(2, "0");
+    }
+}
+
+prabhaNext?.addEventListener("click", () => {
+    prabhaIndex = (prabhaIndex + 1) % prabhaSlides.length;
+    updatePrabhaSlider();
+});
+
+prabhaPrev?.addEventListener("click", () => {
+    prabhaIndex =
+        (prabhaIndex - 1 + prabhaSlides.length) % prabhaSlides.length;
+    updatePrabhaSlider();
+});
+
+prabhaDots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+        prabhaIndex = i;
+        updatePrabhaSlider();
+    });
+});
+
+updatePrabhaSlider();
+
 
 /*==============================
 PHOTOGRAPHY SLIDER
