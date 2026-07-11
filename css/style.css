@@ -3158,113 +3158,65 @@ font-size:48px;
 
 }
 
-/*==============================
-PHOTOGRAPHY SERVICE
-==============================*/
+/* ===== 3D VISUALIZATION TYPOGRAPHY ===== */
 
-.photography-service{
-
-    max-width:1400px;
-    margin:180px auto;
-    padding:0 7%;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:90px;
-    align-items:center;
-
+#renderSlider,
+.render-visuals{
+    font-family: inherit;
 }
 
-.service-number{
-
-    display:block;
-    font-size:14px;
-    letter-spacing:.35em;
-    color:#b68a3d;
-    margin-bottom:35px;
-
+.visualization-section h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(72px, 6vw, 88px);
+    font-weight: 400;
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    color: #111;
+    margin: 28px 0 34px;
 }
 
-.service-label{
-
-    text-transform:uppercase;
-    letter-spacing:.25em;
-    font-size:13px;
-    color:#9d8c70;
-    margin-bottom:20px;
-
+.visualization-section p{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #5d5d5d;
+    max-width: 620px;
 }
 
-.photography-service h2{
-
-    font-size:72px;
-    line-height:1.05;
-    font-family:"Cormorant Garamond",serif;
-    font-weight:500;
-    margin-bottom:30px;
-
+.visualization-section .section-label{
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    letter-spacing: .45em;
+    text-transform: uppercase;
+    color: #b88b3d;
+    margin-bottom: 22px;
 }
 
-.service-description{
-
-    max-width:520px;
-    font-size:19px;
-    line-height:1.9;
-    color:#666;
-    margin-bottom:45px;
-
+.visualization-section .project-number{
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    color: #b88b3d;
+    margin-bottom: 18px;
 }
 
-.service-image{
-
-    width:100%;
-
+.visualization-section .outline-btn{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 18px 44px;
+    border: 1px solid #111;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    letter-spacing: .28em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111;
+    transition: .35s;
 }
 
-.photography-service .project-slider{
-
-    aspect-ratio:4/3;
-    border-radius:24px;
-    overflow:hidden;
-
-}
-
-@media(max-width:991px){
-
-.photography-service{
-
-grid-template-columns:1fr;
-gap:60px;
-
-}
-
-.photography-service h2{
-
-font-size:48px;
-
-}
-
-}
-
-.process-section{
-
-    position:relative;
-
-    background:
-        linear-gradient(rgba(247,243,237,.88),
-        rgba(247,243,237,.88)),
-        url('../images/black.jpg') center/cover no-repeat;
-
-    padding:160px 7%;
-
-}
-
-
-.support-services{
-    position: relative;
-    padding: 160px 7%;
-    background:
-        linear-gradient(rgba(247,243,237,.90), rgba(247,243,237,.90)),
-        url('../images/service.jpg') center center/cover no-repeat;
+.visualization-section .outline-btn:hover{
+    background:#111;
+    color:#fff;
 }
 
 
