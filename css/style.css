@@ -3157,3 +3157,183 @@ font-size:48px;
 }
 
 }
+
+/*====================================
+3D VISUALIZATION
+====================================*/
+
+.visualization-section{
+
+    padding:140px 7%;
+
+    background:#f7f3ed;
+
+}
+
+.visualization-section .featured-project{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:90px;
+
+}
+
+.visualization-section .featured-project-image{
+
+    width:100%;
+
+}
+
+.visualization-section .featured-project-content{
+
+    max-width:620px;
+
+}
+
+.visualization-section .section-label{
+
+    color:#b78b37;
+
+    letter-spacing:.28em;
+
+    text-transform:uppercase;
+
+    font-size:12px;
+
+    margin-bottom:20px;
+
+}
+
+.visualization-section h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:74px;
+
+    line-height:.95;
+
+    font-weight:500;
+
+    color:#111;
+
+    margin-bottom:35px;
+
+}
+
+.visualization-section p{
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    color:#555;
+
+    margin-bottom:40px;
+
+}
+
+.visualization-section .service-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 45px;
+
+}
+
+.visualization-section .service-features li{
+
+    position:relative;
+
+    padding-left:22px;
+
+    color:#333;
+
+}
+
+.visualization-section .service-features li::before{
+
+    content:"•";
+
+    position:absolute;
+
+    left:0;
+
+    color:#d4af37;
+
+    font-size:22px;
+
+}
+
+.visualization-section .outline-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 38px;
+
+    border:1px solid #111;
+
+    color:#111;
+
+    text-decoration:none;
+
+    letter-spacing:.22em;
+
+    font-size:13px;
+
+    transition:.35s;
+
+}
+
+.visualization-section .outline-btn:hover{
+
+    background:#111;
+
+    color:#fff;
+
+}
+
+@media(max-width:991px){
+
+.visualization-section{
+
+    padding:90px 6%;
+
+}
+
+.visualization-section .featured-project{
+
+    grid-template-columns:1fr;
+
+    gap:60px;
+
+}
+
+.visualization-section h2{
+
+    font-size:48px;
+
+}
+
+.visualization-section .service-features{
+
+    grid-template-columns:1fr;
+
+}
+
+}
