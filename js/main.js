@@ -977,15 +977,13 @@ showSlide(0);
 
 }
 
-/* ===========================
-   3D VISUALIZATION SLIDER
-=========================== */
+/*=============================
+3D VISUALIZATION SLIDER
+=============================*/
 
-initProjectSlider("renderSlider");
+(function(){
 
-function initProjectSlider(id){
-
-    const slider = document.getElementById(id);
+    const slider = document.getElementById("renderSlider");
 
     if(!slider) return;
 
@@ -1000,7 +998,7 @@ function initProjectSlider(id){
 
     total.textContent = String(slides.length).padStart(2,"0");
 
-    slides.forEach((_,i)=>{
+    slides.forEach((img,i)=>{
 
         const dot=document.createElement("span");
 
@@ -1017,13 +1015,11 @@ function initProjectSlider(id){
     function showSlide(i){
 
         slides[index].classList.remove("active");
-
         dots[index].classList.remove("active");
 
         index=(i+slides.length)%slides.length;
 
         slides[index].classList.add("active");
-
         dots[index].classList.add("active");
 
         current.textContent=String(index+1).padStart(2,"0");
@@ -1031,9 +1027,12 @@ function initProjectSlider(id){
     }
 
     prev.addEventListener("click",()=>showSlide(index-1));
-
     next.addEventListener("click",()=>showSlide(index+1));
 
-    setInterval(()=>showSlide(index+1),5000);
+    setInterval(()=>{
 
-}
+        showSlide(index+1);
+
+    },5000);
+
+})();
