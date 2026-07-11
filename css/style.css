@@ -3158,4 +3158,113 @@ font-size:48px;
 
 }
 
+/*==============================
+PHOTOGRAPHY SERVICE
+==============================*/
+
+.photography-service{
+
+    max-width:1400px;
+    margin:180px auto;
+    padding:0 7%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:90px;
+    align-items:center;
+
+}
+
+.service-number{
+
+    display:block;
+    font-size:14px;
+    letter-spacing:.35em;
+    color:#b68a3d;
+    margin-bottom:35px;
+
+}
+
+.service-label{
+
+    text-transform:uppercase;
+    letter-spacing:.25em;
+    font-size:13px;
+    color:#9d8c70;
+    margin-bottom:20px;
+
+}
+
+.photography-service h2{
+
+    font-size:72px;
+    line-height:1.05;
+    font-family:"Cormorant Garamond",serif;
+    font-weight:500;
+    margin-bottom:30px;
+
+}
+
+.service-description{
+
+    max-width:520px;
+    font-size:19px;
+    line-height:1.9;
+    color:#666;
+    margin-bottom:45px;
+
+}
+
+.service-image{
+
+    width:100%;
+
+}
+
+.photography-service .project-slider{
+
+    aspect-ratio:4/3;
+    border-radius:24px;
+    overflow:hidden;
+
+}
+
+@media(max-width:991px){
+
+.photography-service{
+
+grid-template-columns:1fr;
+gap:60px;
+
+}
+
+.photography-service h2{
+
+font-size:48px;
+
+}
+
+}
+
+.process-section{
+
+    position:relative;
+
+    background:
+        linear-gradient(rgba(247,243,237,.88),
+        rgba(247,243,237,.88)),
+        url('../images/black.jpg') center/cover no-repeat;
+
+    padding:160px 7%;
+
+}
+
+
+.support-services{
+    position: relative;
+    padding: 160px 7%;
+    background:
+        linear-gradient(rgba(247,243,237,.90), rgba(247,243,237,.90)),
+        url('../images/service.jpg') center center/cover no-repeat;
+}
+
 
