@@ -3158,20 +3158,20 @@ font-size:48px;
 
 }
 
-/*==================================================
-3D VISUALIZATION SECTION
-==================================================*/
+/*=========================================
+3D VISUALIZATION
+=========================================*/
 
 .visualization-section{
     padding:140px 7%;
-    background:#f7f3ed;
+    background:var(--ivory);
 }
 
 .visualization-section .featured-project{
     display:grid;
     grid-template-columns:1fr 1fr;
+    gap:7vw;
     align-items:center;
-    gap:90px;
 }
 
 .visualization-section .featured-project-image{
@@ -3179,29 +3179,24 @@ font-size:48px;
 }
 
 .visualization-section .featured-project-content{
-    max-width:600px;
+    max-width:560px;
 }
 
 .visualization-section .section-label{
-    display:block;
     margin-bottom:18px;
-    font-size:13px;
-    letter-spacing:.35em;
-    text-transform:uppercase;
-    color:#b98b3b;
 }
 
 .visualization-section h2{
     font-family:"Cormorant Garamond",serif;
-    font-size:74px;
-    line-height:.95;
+    font-size:clamp(54px,6vw,82px);
+    line-height:.92;
     font-weight:400;
-    color:#111;
-    margin-bottom:30px;
+    color:var(--black);
+    margin-bottom:28px;
 }
 
 .visualization-section p{
-    font-size:19px;
+    font-size:20px;
     line-height:1.9;
     color:#555;
     margin-bottom:40px;
@@ -3212,19 +3207,21 @@ font-size:48px;
     align-items:center;
     justify-content:center;
     padding:18px 42px;
-    border:1px solid #111;
-    color:#111;
+    border:1px solid var(--black);
+    color:var(--black);
     text-decoration:none;
     letter-spacing:.22em;
-    font-size:13px;
     text-transform:uppercase;
+    font-size:13px;
     transition:.35s;
 }
 
 .visualization-section .outline-btn:hover{
-    background:#111;
+    background:var(--black);
     color:#fff;
 }
+
+/*========== Slider ==========*/
 
 .visualization-section .project-slider{
     position:relative;
@@ -3235,13 +3232,13 @@ font-size:48px;
     background:#f1ede7;
 }
 
-.visualization-section .project-slider .slides{
+.visualization-section .slides{
     position:relative;
     width:100%;
     height:100%;
 }
 
-.visualization-section .project-slider .slides img{
+.visualization-section .slides img{
     position:absolute;
     inset:0;
     width:100%;
@@ -3252,7 +3249,7 @@ font-size:48px;
     transform:scale(1);
 }
 
-.visualization-section .project-slider .slides img.active{
+.visualization-section .slides img.active{
     opacity:1;
     transform:scale(1.05);
 }
@@ -3261,16 +3258,16 @@ font-size:48px;
     position:absolute;
     top:50%;
     transform:translateY(-50%);
-    width:46px;
-    height:46px;
+    width:56px;
+    height:56px;
     border:none;
     border-radius:50%;
-    background:rgba(255,255,255,.92);
+    background:rgba(255,255,255,.95);
     color:#111;
     cursor:pointer;
     z-index:20;
     transition:.35s;
-    font-size:20px;
+    font-size:22px;
 }
 
 .visualization-section .slider-btn:hover{
@@ -3279,23 +3276,23 @@ font-size:48px;
 }
 
 .visualization-section .slider-btn.prev{
-    left:20px;
+    left:22px;
 }
 
 .visualization-section .slider-btn.next{
-    right:20px;
+    right:22px;
 }
 
 .visualization-section .slider-counter{
     position:absolute;
-    bottom:25px;
-    right:25px;
-    padding:10px 16px;
-    background:rgba(0,0,0,.55);
+    bottom:24px;
+    right:24px;
+    padding:10px 18px;
+    background:rgba(0,0,0,.60);
     color:#fff;
     border-radius:30px;
     font-size:13px;
-    letter-spacing:.15em;
+    letter-spacing:.18em;
     z-index:20;
 }
 
@@ -3322,6 +3319,8 @@ font-size:48px;
     transform:scale(1.35);
 }
 
+/*========== Mobile ==========*/
+
 @media(max-width:991px){
 
 .visualization-section{
@@ -3333,12 +3332,12 @@ font-size:48px;
     gap:60px;
 }
 
-.visualization-section h2{
-    font-size:50px;
-}
-
 .visualization-section .featured-project-content{
     max-width:100%;
+}
+
+.visualization-section h2{
+    font-size:52px;
 }
 
 }
