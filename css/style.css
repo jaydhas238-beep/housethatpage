@@ -3220,3 +3220,59 @@ font-size:48px;
 }
 
 
+@media (max-width:768px){
+
+.visualization-section .featured-project{
+    display:flex;
+    flex-direction:column;
+}
+
+.visualization-section .featured-project-image{
+    order:1;
+}
+
+.visualization-section .featured-project-content{
+    order:2;
+}
+
+}
+
+@media (max-width:768px){
+
+.visualization-section h2{
+    font-size:56px;
+    line-height:.95;
+}
+
+}
+
+@media (max-width:768px){
+
+.visualization-section p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+}
+
+@media (max-width:768px){
+
+.visualization-section{
+    padding:70px 24px;
+}
+
+.visualization-section .featured-project{
+    gap:45px;
+}
+
+}
+
+@media (max-width:768px){
+
+.visualization-section .outline-btn{
+    width:auto;
+    display:inline-flex;
+    padding:16px 34px;
+}
+
+}
