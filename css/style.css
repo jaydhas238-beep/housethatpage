@@ -3481,20 +3481,59 @@ Premium Dropdown
     display:none;
 }
 
-.mobile-menu details a{
+/* MOBILE DROPDOWN */
 
-    display:block;
-
-    padding:12px 50px;
-
-    color:#bbb;
-
-    text-decoration:none;
-
-    font-size:14px;
+.mobile-menu .has-dropdown > a{
+    color:#111 !important;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.mobile-menu details a:hover{
+.mobile-menu .dropdown-menu{
 
-    color:#fff;
+    position:static;
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:none;
+
+    width:100%;
+
+    background:transparent;
+
+    border:none;
+
+    box-shadow:none;
+
+    padding:0;
+
+    display:none;
+
+}
+
+.mobile-menu .dropdown-menu a{
+
+    color:#111 !important;
+
+    padding:12px 45px;
+
+    font-size:14px;
+
+    letter-spacing:.08em;
+
+    text-transform:none;
+
+}
+
+.mobile-menu .dropdown-menu a:hover{
+
+    background:transparent;
+
+    color:#000;
+
+    padding-left:50px;
+
 }
