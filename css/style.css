@@ -3672,3 +3672,85 @@ SERVICES HERO
 .service-card:hover .service-arrow{
     transform:translateX(6px);
 }
+
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:1024px){
+
+    .services-grid{
+        width:92%;
+        gap:35px;
+    }
+
+    .service-card img{
+        height:320px;
+    }
+
+    .service-overlay{
+        padding:28px;
+    }
+
+    .service-overlay h2{
+        font-size:46px;
+    }
+
+    .service-arrow{
+        width:64px;
+        height:64px;
+        font-size:28px;
+    }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .services-grid{
+        width:94%;
+        gap:24px;
+        margin:40px auto 70px;
+    }
+
+    .service-card{
+        border-radius:18px;
+    }
+
+    .service-card img{
+        height:220px;
+    }
+
+    .service-overlay{
+        padding:20px;
+    }
+
+    .service-number{
+        font-size:11px;
+        margin-bottom:8px;
+    }
+
+    .service-overlay h2{
+        font-size:34px;
+        margin-bottom:8px;
+    }
+
+    .service-overlay p{
+        font-size:11px;
+        letter-spacing:.12em;
+        line-height:1.6;
+    }
+
+    .service-arrow{
+        width:54px;
+        height:54px;
+        right:20px;
+        bottom:20px;
+        font-size:22px;
+    }
+
+}
