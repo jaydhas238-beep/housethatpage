@@ -3456,3 +3456,45 @@ Premium Dropdown
     font-size:12px;
 
 }
+
+.mobile-menu details{
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.mobile-menu summary{
+
+    list-style:none;
+    cursor:pointer;
+
+    padding:18px 30px;
+
+    color:#fff;
+
+    font-size:15px;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+}
+
+.mobile-menu summary::-webkit-details-marker{
+    display:none;
+}
+
+.mobile-menu details a{
+
+    display:block;
+
+    padding:12px 50px;
+
+    color:#bbb;
+
+    text-decoration:none;
+
+    font-size:14px;
+}
+
+.mobile-menu details a:hover{
+
+    color:#fff;
+}
