@@ -3276,3 +3276,80 @@ font-size:48px;
 }
 
 }
+
+
+/*=========================
+Premium Dropdown Navigation
+=========================*/
+
+.nav-dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+
+    position:absolute;
+
+    top:130%;
+
+    left:0;
+
+    min-width:240px;
+
+    background:#fffdf8;
+
+    padding:18px 0;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    box-shadow:0 18px 60px rgba(0,0,0,.08);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(12px);
+
+    transition:.35s;
+
+    z-index:999;
+
+}
+
+.nav-dropdown:hover .dropdown-menu{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.dropdown-menu a{
+
+    display:block;
+
+    padding:12px 24px;
+
+    font-size:11px;
+
+    letter-spacing:.20em;
+
+    text-transform:uppercase;
+
+    color:#333;
+
+    transition:.3s;
+
+}
+
+.dropdown-menu a:hover{
+
+    background:#111;
+
+    color:#fff;
+
+    padding-left:32px;
+
+}
