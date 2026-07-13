@@ -3364,3 +3364,95 @@ display:none;
 }
 
 }
+
+/*==========================
+Premium Dropdown
+==========================*/
+
+.has-dropdown{
+    position:relative;
+}
+
+.dropdown-menu{
+
+    position:absolute;
+
+    top:120%;
+
+    left:0;
+
+    width:280px;
+
+    background:#fff;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    box-shadow:0 25px 70px rgba(0,0,0,.12);
+
+    padding:18px 0;
+
+    list-style:none;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(15px);
+
+    transition:.35s;
+
+    z-index:999;
+
+}
+
+.has-dropdown:hover .dropdown-menu{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.dropdown-menu li{
+    margin:0;
+}
+
+.dropdown-menu a{
+
+    display:block;
+
+    padding:14px 24px;
+
+    color:#222;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    letter-spacing:.15em;
+
+    text-transform:uppercase;
+
+    transition:.3s;
+
+}
+
+.dropdown-menu a:hover{
+
+    background:#111;
+
+    color:#fff;
+
+    padding-left:34px;
+
+}
+
+.dropdown-arrow{
+
+    margin-left:6px;
+
+    font-size:12px;
+
+}
