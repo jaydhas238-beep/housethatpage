@@ -3754,3 +3754,87 @@ SERVICES HERO
     }
 
 }
+
+/*==============================
+PROJECTS HERO
+==============================*/
+
+.projects-hero{
+
+    width:min(1100px,90%);
+    margin:180px auto 100px;
+    text-align:center;
+
+}
+
+.projects-hero .section-number{
+
+    display:block;
+
+    font-size:12px;
+
+    letter-spacing:.25em;
+
+    text-transform:uppercase;
+
+    color:#b58a57;
+
+    margin-bottom:22px;
+
+}
+
+.projects-hero h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(64px,7vw,88px);
+
+    font-weight:400;
+
+    margin-bottom:24px;
+
+    color:#111;
+
+}
+
+.projects-hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#666;
+
+}
+.project-category{
+
+    width:min(1300px,92%);
+    margin:90px auto 40px;
+
+}
+
+.project-category span{
+
+    color:#b58a57;
+
+    letter-spacing:.25em;
+
+    font-size:13px;
+
+}
+
+.project-category h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:58px;
+
+    font-weight:400;
+
+    margin-top:12px;
+
+}
