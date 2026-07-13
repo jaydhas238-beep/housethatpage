@@ -1,0 +1,42 @@
+/*==============================
+SERVICES HERO
+==============================*/
+
+.services-hero{
+
+    width:min(1100px,90%);
+    margin:180px auto 120px;
+    text-align:center;
+
+}
+
+.services-hero .section-number{
+
+    display:block;
+    color:#a88a57;
+    letter-spacing:.25em;
+    font-size:12px;
+    text-transform:uppercase;
+    margin-bottom:22px;
+
+}
+
+.services-hero h1{
+
+    font-family:"Cormorant Garamond",serif;
+    font-size:84px;
+    font-weight:400;
+    margin-bottom:28px;
+    color:#111;
+
+}
+
+.services-hero p{
+
+    max-width:620px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.9;
+    color:#666;
+
+}
