@@ -12,107 +12,78 @@
 
  <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/founder.css">
-  <link rel="stylesheet" href="css/navbar.css">
 </head>
 
 <body>
  
   
-<!-- ===========================
-PREMIUM NAVBAR
-=========================== -->
+  <!-- NAVBAR -->
+<header class="main-header">
 
-<header class="navbar" id="navbar">
+    <a href="index.html" class="brand">
+        <img src="images/image5.jpg" alt="HouseThat Logo">
+    </a>
 
-    <div class="nav-container">
+   <nav class="desktop-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <li class="has-dropdown">
 
-        <!-- Logo -->
+    <a href="services.html">
+        Services
+        <span class="dropdown-arrow">▾</span>
+    </a>
 
-        <a href="index.html" class="brand">
+    <ul class="dropdown-menu">
 
-            <img src="images/image5.jpg" alt="HouseThat">
+        <li><a href="services.html#interior">Interior Design</a></li>
 
-        </a>
+        <li><a href="services.html#architecture">Architecture</a></li>
 
-        <!-- Desktop Navigation -->
+        <li><a href="services.html#construction">Construction & Turnkey</a></li>
 
-        <nav class="desktop-nav">
+        <li><a href="services.html#photography">Photography</a></li>
 
-            <a href="index.html">Home</a>
+        <li><a href="services.html#visualization">3D Visualization</a></li>
 
-            <a href="about.html">About</a>
+        <li><a href="products.html">Art</a></li>
 
-            <div class="nav-dropdown">
+    </ul>
 
-                <a href="services.html">
+</li>
+   <li class="has-dropdown">
 
-                    Services
+    <a href="projects.html">
+        Projects
+        <span class="dropdown-arrow">▾</span>
+    </a>
 
-                    <span>▾</span>
+    <ul class="dropdown-menu">
 
-                </a>
+        <li><a href="projects.html#residential">Residential</a></li>
 
-                <div class="dropdown-menu">
+        <li><a href="projects.html#commercial">Commercial</a></li>
 
-                    <a href="services.html#interior">Interior Design</a>
+        <li><a href="projects.html#hospitality">Hospitality</a></li>
 
-                    <a href="services.html#architecture">Architecture</a>
+        <li><a href="projects.html#retail">Retail & Showrooms</a></li>
 
-                    <a href="services.html#construction">Construction & Turnkey</a>
+    </ul>
 
-                    <a href="services.html#photography">Photography</a>
+</li>
+    <a href="awards.html">Recognition</a>
+    <a href="products.html">Products</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-                    <a href="services.html#visualization">3D Visualization</a>
-
-                    <a href="products.html">Art Collection</a>
-
-                </div>
-
-            </div>
-
-            <div class="nav-dropdown">
-
-                <a href="projects.html">
-
-                    Projects
-
-                    <span>▾</span>
-
-                </a>
-
-                <div class="dropdown-menu">
-
-                    <a href="projects.html#residential">Residential</a>
-
-                    <a href="projects.html#commercial">Retail & Commercial</a>
-
-                    <a href="projects.html#hospitality">Hospitality</a>
-
-                </div>
-
-            </div>
-
-            <a href="awards.html">Recognition</a>
-
-            <a href="products.html">Products</a>
-
-            <a href="careers.html">Careers</a>
-
-            <a href="contact.html">Contact</a>
-
-        </nav>
-
-      <!-- ===========================
-MOBILE NAVIGATION
-=========================== -->
-      <button class="menu-btn" id="menuBtn">
-    ☰
-</button>
-
-<div class="mobile-nav" id="mobileNav">
+    <a href="contact.html" class="book-link">Book</a>
+    <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+                                                   
+  </header>
+ <div class="mobile-menu" id="mobileMenu">
 
     <a href="index.html">Home</a>
-
     <a href="about.html">About</a>
 
     <details>
@@ -123,15 +94,16 @@ MOBILE NAVIGATION
         <a href="services.html#construction">Construction & Turnkey</a>
         <a href="services.html#photography">Photography</a>
         <a href="services.html#visualization">3D Visualization</a>
-        <a href="products.html">Art Collection</a>
+        <a href="products.html">Art</a>
     </details>
 
     <details>
         <summary>Projects</summary>
 
         <a href="projects.html#residential">Residential</a>
-        <a href="projects.html#commercial">Retail & Commercial</a>
+        <a href="projects.html#commercial">Commercial</a>
         <a href="projects.html#hospitality">Hospitality</a>
+        <a href="projects.html#retail">Retail & Showrooms</a>
     </details>
 
     <a href="awards.html">Recognition</a>
@@ -140,12 +112,6 @@ MOBILE NAVIGATION
     <a href="contact.html">Contact</a>
 
 </div>
-
-</div> <!-- nav-container -->
-
-</header>
-
-<main>
 
   <main>
 
@@ -449,9 +415,9 @@ OUR PROCESS
 
       <div class="dubai-content">
         <span>Featured Project</span>
-        <h2>Bathspace designed<br>like private sanctuaries.</h2>
+        <h2>Bathrooms designed<br>like private sanctuaries.</h2>
         <p>
-          A celebrated Project of refined bathrooms spaces shaped with international detailing, precision and atmosphere.
+          A celebrated Project of refined bathroom spaces shaped with international detailing, precision and atmosphere.
         </p>
       <a href="project-details.html" class="primary-btn light-btn">View Project</a>
       </div>
