@@ -17,98 +17,140 @@
 <body>
  
   
-  <!-- NAVBAR -->
-<header class="main-header">
+<!-- ===========================
+PREMIUM NAVBAR
+=========================== -->
 
-    <a href="index.html" class="brand">
-        <img src="images/image5.jpg" alt="HouseThat Logo">
-    </a>
+<header class="navbar" id="navbar">
 
-   <nav class="desktop-nav">
+    <div class="nav-container">
+
+        <!-- Logo -->
+
+        <a href="index.html" class="brand">
+
+            <img src="images/image5.jpg" alt="HouseThat">
+
+        </a>
+
+        <!-- Desktop Navigation -->
+
+        <nav class="desktop-nav">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <div class="nav-dropdown">
+
+                <a href="services.html">
+
+                    Services
+
+                    <span>▾</span>
+
+                </a>
+
+                <div class="dropdown-menu">
+
+                    <a href="services.html#interior">Interior Design</a>
+
+                    <a href="services.html#architecture">Architecture</a>
+
+                    <a href="services.html#construction">Construction & Turnkey</a>
+
+                    <a href="services.html#photography">Photography</a>
+
+                    <a href="services.html#visualization">3D Visualization</a>
+
+                    <a href="products.html">Art Collection</a>
+
+                </div>
+
+            </div>
+
+            <div class="nav-dropdown">
+
+                <a href="projects.html">
+
+                    Projects
+
+                    <span>▾</span>
+
+                </a>
+
+                <div class="dropdown-menu">
+
+                    <a href="projects.html#residential">Residential</a>
+
+                    <a href="projects.html#commercial">Retail & Commercial</a>
+
+                    <a href="projects.html#hospitality">Hospitality</a>
+
+                </div>
+
+            </div>
+
+            <a href="awards.html">Recognition</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="careers.html">Careers</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+      <!-- ===========================
+MOBILE NAVIGATION
+=========================== -->
+
+<div class="mobile-nav" id="mobileNav">
+
     <a href="index.html">Home</a>
+
     <a href="about.html">About</a>
-    <li class="has-dropdown">
 
-    <a href="services.html">
-        Services
-        <span class="dropdown-arrow">▾</span>
-    </a>
-
-    <ul class="dropdown-menu">
-
-        <li><a href="services.html#interior">Interior Design</a></li>
-
-        <li><a href="services.html#architecture">Architecture</a></li>
-
-        <li><a href="services.html#construction">Construction & Turnkey</a></li>
-
-        <li><a href="services.html#photography">Photography</a></li>
-
-        <li><a href="services.html#visualization">3D Visualization</a></li>
-
-        <li><a href="products.html">Art</a></li>
-
-    </ul>
-
-</li>
-   <li class="has-dropdown">
-
-    <a href="projects.html">
-        Projects
-        <span class="dropdown-arrow">▾</span>
-    </a>
-
-    <ul class="dropdown-menu">
-
-        <li><a href="projects.html#residential">Residential</a></li>
-
-        <li><a href="projects.html#commercial">Commercial</a></li>
-
-        <li><a href="projects.html#hospitality">Hospitality</a></li>
-
-        <li><a href="projects.html#retail">Retail & Showrooms</a></li>
-
-    </ul>
-
-</li>
-    <a href="awards.html">Recognition</a>
-    <a href="products.html">Products</a>
-    <a href="careers.html">Careers</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
-    <a href="contact.html" class="book-link">Book</a>
-    <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
-                                                   
-  </header>
- <div class="mobile-menu" id="mobileMenu">
-
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <!-- SERVICES -->
 
     <details>
+
         <summary>Services</summary>
 
         <a href="services.html#interior">Interior Design</a>
+
         <a href="services.html#architecture">Architecture</a>
+
         <a href="services.html#construction">Construction & Turnkey</a>
+
         <a href="services.html#photography">Photography</a>
+
         <a href="services.html#visualization">3D Visualization</a>
-        <a href="products.html">Art</a>
+
+        <a href="products.html">Art Collection</a>
+
     </details>
 
+    <!-- PROJECTS -->
+
     <details>
+
         <summary>Projects</summary>
 
         <a href="projects.html#residential">Residential</a>
-        <a href="projects.html#commercial">Commercial</a>
+
+        <a href="projects.html#commercial">Retail & Commercial</a>
+
         <a href="projects.html#hospitality">Hospitality</a>
-        <a href="projects.html#retail">Retail & Showrooms</a>
+
     </details>
 
     <a href="awards.html">Recognition</a>
+
     <a href="products.html">Products</a>
+
     <a href="careers.html">Careers</a>
+
     <a href="contact.html">Contact</a>
 
 </div>
