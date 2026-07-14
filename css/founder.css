@@ -1,0 +1,133 @@
+/*=========================
+FOUNDER
+==========================*/
+
+.founder-section{
+
+    background:#111;
+
+    color:#fff;
+
+    padding:120px 6%;
+
+}
+
+.founder-container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.founder-image{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+}
+
+.founder-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.8s;
+
+}
+
+.founder-image:hover img{
+
+    transform:scale(1.04);
+
+}
+
+.founder-label{
+
+    color:#b58a57;
+
+    letter-spacing:.28em;
+
+    text-transform:uppercase;
+
+    font-size:12px;
+
+}
+
+.founder-content h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:72px;
+
+    font-weight:400;
+
+    margin:18px 0 8px;
+
+}
+
+.founder-content h4{
+
+    font-weight:400;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    color:#b58a57;
+
+    margin-bottom:35px;
+
+}
+
+.founder-content p{
+
+    color:#d0d0d0;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    max-width:520px;
+
+}
+
+.founder-btn{
+
+    display:inline-block;
+
+    margin-top:40px;
+
+    padding:16px 34px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    letter-spacing:.15em;
+
+    text-transform:uppercase;
+
+    transition:.35s;
+
+}
+
+.founder-btn:hover{
+
+    background:#b58a57;
+
+    border-color:#b58a57;
+
+}
