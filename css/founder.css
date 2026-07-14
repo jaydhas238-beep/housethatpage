@@ -293,3 +293,7 @@ FOUNDER STATS
 }
 
 }
+
+.stat h3{
+    white-space: nowrap;
+}
