@@ -131,3 +131,80 @@ FOUNDER
     border-color:#b58a57;
 
 }
+
+
+@media(max-width:1400px){
+
+.founder-content h2{
+
+    font-size:60px;
+
+}
+
+.founder-container{
+
+    gap:60px;
+
+}
+
+}
+
+@media(max-width:1024px){
+
+.founder-container{
+
+    grid-template-columns:1fr;
+
+    gap:60px;
+
+}
+
+.founder-content{
+
+    text-align:center;
+
+}
+
+.founder-content p{
+
+    margin:auto;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.founder-section{
+
+    padding:70px 22px;
+
+}
+
+.founder-content h2{
+
+    font-size:42px;
+
+}
+
+.founder-content h4{
+
+    font-size:12px;
+
+}
+
+.founder-content p{
+
+    font-size:16px;
+
+}
+
+.founder-btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+}
