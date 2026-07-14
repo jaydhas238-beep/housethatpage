@@ -208,3 +208,88 @@ FOUNDER
 }
 
 }
+
+/*==========================
+FOUNDER STATS
+==========================*/
+
+.founder-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:55px;
+
+    padding-top:35px;
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+}
+
+.stat h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:42px;
+
+    font-weight:400;
+
+    color:#b58a57;
+
+    margin-bottom:8px;
+
+}
+
+.stat span{
+
+    font-size:12px;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    color:#c9c9c9;
+
+}
+@media(max-width:1024px){
+
+.founder-stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+    text-align:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.founder-stats{
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+.stat h3{
+
+    font-size:32px;
+
+}
+
+.stat span{
+
+    font-size:11px;
+
+}
+
+}
