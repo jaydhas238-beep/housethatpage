@@ -372,65 +372,158 @@ a{
   white-space:nowrap;
 }
 
+/* ===========================
+   SELECTED PROJECTS
+=========================== */
 
-/* ==========================
-FOUNDER IMAGE
-========================== */
-
-.founder-image{
-
-    width:100%;
-    border-radius:20px;
-    overflow:hidden;
-
+.project-showcase{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:40px;
+    margin-top:80px;
+    align-items:start;
 }
 
-.founder-image img{
-
-    width:100%;
-    height:100%;
-
+.project-item{
     display:block;
-
-    object-fit:cover;
-    object-position:center top;
-
+    text-decoration:none;
+    color:#111;
+    transition:0.5s ease;
 }
 
-.founder-image{
-
-    height:700px;
-
+.project-item:hover{
+    transform:translateY(-10px);
 }
 
-@media (max-width:1400px){
-
-.founder-image{
-
-    height:620px;
-
-}
-
-}
-
-@media (max-width:768px){
-
-.founder-image{
-
-    height:auto;
-
-}
-
-.founder-image img{
-
+.project-img{
     width:100%;
-    height:auto;
-
-    object-fit:contain;
-
+    height:520px;
+    display:block;
+    background-size:cover !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+    border-radius:8px;
 }
 
+.project-img-one{
+    background-image:url('../images/sangle4.jpg') !important;
 }
+
+.project-img-two{
+    background-image:url('../images/komal2.jpg') !important;
+}
+
+.project-img-three{
+    background-image:url('../images/oswal.jpg') !important;
+}
+.project-item:hover .project-img{
+    transform:scale(1.04);
+}
+
+.project-item.large .project-img{
+    height:700px;
+}
+
+.project-item p{
+    margin-top:24px;
+    font-size:11px;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    color:#b78935;
+}
+
+.project-item h3{
+    margin-top:10px;
+    font-size:34px;
+    font-weight:300;
+    font-family:"Cormorant Garamond",serif;
+    line-height:1.1;
+}
+
+.section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:40px;
+}
+
+.section-head h2{
+    font-size:72px;
+    font-weight:300;
+    line-height:0.95;
+    font-family:"Cormorant Garamond",serif;
+}
+
+.section-head a{
+    color:#111;
+    text-decoration:none;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    font-size:12px;
+    border-bottom:1px solid #b78935;
+    padding-bottom:8px;
+}
+
+.section-head a:hover{
+    color:#b78935;
+}
+
+@media(max-width:900px){
+
+    .project-showcase{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .project-img,
+    .project-item.large .project-img{
+        height:420px;
+    }
+
+    .section-head{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .section-head h2{
+        font-size:48px;
+    }
+}
+
+.project-item h3{
+  margin-top:9px;
+  font-family:var(--serif);
+  font-size:36px;
+  font-weight:300;
+}
+
+.founder-home{
+  min-height:100vh;
+  background:var(--charcoal);
+  color:var(--ivory);
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:8vw;
+  align-items:center;
+  padding:120px 5vw;
+}
+
+.founder-photo{
+  height:720px;
+  background:url('../images/Founder1.jpg') center center/cover no-repeat;
+  filter:saturate(.9);
+}
+
+.founder-text p{
+  max-width:480px;
+  margin-top:30px;
+  color:#c8c0b5;
+}
+
+.founder-text a{
+  color:var(--gold);
+}
+
 .dubai-feature{
   min-height:100vh;
   position:relative;
@@ -4153,5 +4246,3 @@ PROCESS SECTION
 }
 
 }
-
-
