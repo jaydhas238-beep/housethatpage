@@ -372,158 +372,221 @@ a{
   white-space:nowrap;
 }
 
-/* ===========================
-   SELECTED PROJECTS
-=========================== */
 
-.project-showcase{
-    display:grid;
-    grid-template-columns:1.4fr 1fr 1fr;
-    gap:40px;
-    margin-top:80px;
-    align-items:start;
-}
 
-.project-item{
-    display:block;
-    text-decoration:none;
-    color:#111;
-    transition:0.5s ease;
-}
-
-.project-item:hover{
-    transform:translateY(-10px);
-}
-
-.project-img{
-    width:100%;
-    height:520px;
-    display:block;
-    background-size:cover !important;
-    background-position:center !important;
-    background-repeat:no-repeat !important;
-    border-radius:8px;
-}
-
-.project-img-one{
-    background-image:url('../images/sangle4.jpg') !important;
-}
-
-.project-img-two{
-    background-image:url('../images/komal2.jpg') !important;
-}
-
-.project-img-three{
-    background-image:url('../images/oswal.jpg') !important;
-}
-.project-item:hover .project-img{
-    transform:scale(1.04);
-}
-
-.project-item.large .project-img{
-    height:700px;
-}
-
-.project-item p{
-    margin-top:24px;
-    font-size:11px;
-    letter-spacing:.28em;
-    text-transform:uppercase;
-    color:#b78935;
-}
-
-.project-item h3{
-    margin-top:10px;
-    font-size:34px;
-    font-weight:300;
-    font-family:"Cormorant Garamond",serif;
-    line-height:1.1;
-}
-
-.section-head{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
-    gap:40px;
-}
-
-.section-head h2{
-    font-size:72px;
-    font-weight:300;
-    line-height:0.95;
-    font-family:"Cormorant Garamond",serif;
-}
-
-.section-head a{
-    color:#111;
-    text-decoration:none;
-    letter-spacing:.2em;
-    text-transform:uppercase;
-    font-size:12px;
-    border-bottom:1px solid #b78935;
-    padding-bottom:8px;
-}
-
-.section-head a:hover{
-    color:#b78935;
-}
-
-@media(max-width:900px){
-
-    .project-showcase{
-        grid-template-columns:1fr;
-        gap:60px;
-    }
-
-    .project-img,
-    .project-item.large .project-img{
-        height:420px;
-    }
-
-    .section-head{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
-    .section-head h2{
-        font-size:48px;
-    }
-}
-
-.project-item h3{
-  margin-top:9px;
-  font-family:var(--serif);
-  font-size:36px;
-  font-weight:300;
-}
+/*==================================
+FOUNDER SECTION
+==================================*/
 
 .founder-home{
-  min-height:100vh;
-  background:var(--charcoal);
-  color:var(--ivory);
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:8vw;
-  align-items:center;
-  padding:120px 5vw;
+
+    min-height:100vh;
+
+    background:var(--charcoal);
+
+    color:var(--ivory);
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+    padding:120px 6%;
+
 }
 
 .founder-photo{
-  height:720px;
-  background:url('../images/Founder1.jpg') center center/cover no-repeat;
-  filter:saturate(.9);
+
+    width:100%;
+
+    height:700px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    background:url('../images/Founder1.jpg');
+
+    background-size:cover;
+
+    background-position:center top;
+
+    background-repeat:no-repeat;
+
+}
+
+.founder-text h2{
+
+    font-size:clamp(42px,5vw,72px);
+
+    line-height:1.1;
+
 }
 
 .founder-text p{
-  max-width:480px;
-  margin-top:30px;
-  color:#c8c0b5;
+
+    max-width:520px;
+
+    margin-top:28px;
+
+    color:#c8c0b5;
+
+    font-size:18px;
+
+    line-height:1.9;
+
 }
 
 .founder-text a{
-  color:var(--gold);
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    color:var(--gold);
+
 }
 
+
+/*==========================
+Laptop
+==========================*/
+
+@media(max-width:1400px){
+
+.founder-home{
+
+    gap:60px;
+
+    padding:100px 5%;
+
+}
+
+.founder-photo{
+
+    height:620px;
+
+}
+
+}
+
+
+/*==========================
+Tablet
+==========================*/
+
+@media(max-width:1024px){
+
+.founder-home{
+
+    grid-template-columns:1fr;
+
+    gap:50px;
+
+    text-align:center;
+
+    padding:90px 6%;
+
+}
+
+.founder-photo{
+
+    height:600px;
+
+    background-position:center top;
+
+}
+
+.founder-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.founder-text p{
+
+    max-width:650px;
+
+}
+
+}
+
+
+/*==========================
+Mobile
+==========================*/
+
+@media(max-width:768px){
+
+.founder-home{
+
+    padding:70px 22px;
+
+    gap:35px;
+
+}
+
+.founder-photo{
+
+    height:460px;
+
+    border-radius:14px;
+
+    background-position:center top;
+
+}
+
+.founder-text h2{
+
+    font-size:42px;
+
+}
+
+.founder-text p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    margin-top:20px;
+
+}
+
+}
+
+
+/*==========================
+Small Phones
+==========================*/
+
+@media(max-width:480px){
+
+.founder-photo{
+
+    height:380px;
+
+}
+
+.founder-text h2{
+
+    font-size:34px;
+
+}
+
+.founder-text p{
+
+    font-size:15px;
+
+}
+
+}
 .dubai-feature{
   min-height:100vh;
   position:relative;
