@@ -1093,18 +1093,3 @@ showSlide(0);
 document.querySelectorAll('a[href="project-details.html"]').forEach(link => {
     link.removeAttribute("href");
 });
-
-const menuBtn = document.getElementById("menuBtn");
-const mobileNav = document.getElementById("mobileNav");
-
-menuBtn.addEventListener("click", () => {
-    mobileNav.classList.toggle("active");
-});
-
-
-const menuBtn = document.getElementById("menuBtn");
-const mobileNav = document.getElementById("mobileNav");
-
-menuBtn.addEventListener("click", () => {
-    mobileNav.classList.toggle("active");
-});
