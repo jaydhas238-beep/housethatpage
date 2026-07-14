@@ -399,15 +399,23 @@ FOUNDER SECTION
 }
 
 .founder-photo{
-    width:100%;
-    border-radius:20px;
-    overflow:hidden;
-}
 
-.founder-photo img{
     width:100%;
-    height:auto;
-    display:block;
+
+    height:700px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    background:url('../images/Founder1.jpg');
+
+    background-size:cover;
+
+    background-position:center top;
+
+    background-repeat:no-repeat;
+
 }
 
 .founder-text h2{
