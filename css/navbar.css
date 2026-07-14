@@ -1,1 +1,378 @@
 
+/*=========================================
+PREMIUM NAVBAR
+=========================================*/
+
+.navbar{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(0,0,0,.06);
+
+    transition:.45s ease;
+
+}
+
+.nav-container{
+
+    width:min(1450px,94%);
+    margin:auto;
+
+    height:92px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+
+/*=========================================
+LOGO
+=========================================*/
+
+.brand{
+
+    display:flex;
+    align-items:center;
+
+}
+
+.brand img{
+
+    width:78px;
+    height:auto;
+
+    display:block;
+
+    transition:.45s ease;
+
+}
+
+.brand:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/*=========================================
+DESKTOP MENU
+=========================================*/
+
+.desktop-nav{
+
+    display:flex;
+    align-items:center;
+    gap:34px;
+
+}
+
+.desktop-nav>a,
+.nav-dropdown>a{
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    font-weight:500;
+
+    transition:.35s;
+
+}
+
+.desktop-nav>a:hover,
+.nav-dropdown>a:hover{
+
+    color:#b58a57;
+
+}
+
+/*=========================================
+DROPDOWN
+=========================================*/
+
+.nav-dropdown{
+
+    position:relative;
+
+}
+
+.nav-dropdown>a{
+
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+}
+
+.dropdown-menu{
+
+    position:absolute;
+
+    top:150%;
+
+    left:0;
+
+    width:270px;
+
+    background:#fff;
+
+    border-radius:14px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
+
+    padding:18px 0;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(12px);
+
+    transition:.35s;
+
+}
+
+.nav-dropdown:hover .dropdown-menu{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.dropdown-menu a{
+
+    display:block;
+
+    padding:14px 26px;
+
+    color:#333;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    transition:.3s;
+
+}
+
+.dropdown-menu a:hover{
+
+    color:#b58a57;
+
+    padding-left:34px;
+
+}
+
+/*=========================================
+MENU BUTTON
+=========================================*/
+
+.menu-btn{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+
+/*=========================================
+MOBILE NAVIGATION
+=========================================*/
+
+.mobile-nav{
+
+    position:fixed;
+
+    top:92px;
+
+    right:-100%;
+
+    width:320px;
+
+    height:calc(100vh - 92px);
+
+    background:#111;
+
+    overflow-y:auto;
+
+    transition:.45s;
+
+    z-index:9998;
+
+    padding:30px;
+
+}
+
+.mobile-nav.active{
+
+    right:0;
+
+}
+
+.mobile-nav>a{
+
+    display:block;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:18px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+
+}
+
+/*=========================================
+DETAILS
+=========================================*/
+
+.mobile-nav details{
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.mobile-nav summary{
+
+    list-style:none;
+
+    cursor:pointer;
+
+    padding:18px 0;
+
+    color:#fff;
+
+    letter-spacing:.12em;
+
+    text-transform:uppercase;
+
+    position:relative;
+
+}
+
+.mobile-nav summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+.mobile-nav summary::after{
+
+    content:"+";
+
+    position:absolute;
+
+    right:0;
+
+    transition:.3s;
+
+}
+
+.mobile-nav details[open] summary::after{
+
+    content:"−";
+
+}
+
+.mobile-nav details a{
+
+    display:block;
+
+    padding:12px 20px;
+
+    color:#bdbdbd;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+.mobile-nav details a:hover{
+
+    color:#fff;
+
+    padding-left:28px;
+
+}
+
+/*=========================================
+TABLET
+=========================================*/
+
+@media(max-width:1100px){
+
+.desktop-nav{
+
+    display:none;
+
+}
+
+.menu-btn{
+
+    display:block;
+
+}
+
+}
+
+/*=========================================
+MOBILE
+=========================================*/
+
+@media(max-width:768px){
+
+.nav-container{
+
+    height:78px;
+
+}
+
+.brand img{
+
+    width:65px;
+
+}
+
+.mobile-nav{
+
+    top:78px;
+
+    height:calc(100vh - 78px);
+
+    width:100%;
+
+    padding:26px;
+
+}
+
+}
