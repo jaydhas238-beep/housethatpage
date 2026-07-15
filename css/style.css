@@ -1881,11 +1881,17 @@ html {
 }
 
 .hero-v2-content h1{
-  font-family:var(--serif);
-  font-size:clamp(54px,7vw,104px);
-  font-weight:300;
-  line-height:.95;
-  letter-spacing:-.05em;
+
+    font-family:var(--serif);
+    font-size:clamp(68px,10vw,158px);
+    font-weight:300;
+    line-height:.82;
+    letter-spacing:-.065em;
+
+    color:#ffffff !important;
+
+    text-shadow:0 6px 25px rgba(0,0,0,.35);
+
 }
 
 .hero-v2-content p:not(.section-label){
