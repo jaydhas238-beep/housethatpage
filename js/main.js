@@ -1093,3 +1093,13 @@ showSlide(0);
 document.querySelectorAll('a[href="project-details.html"]').forEach(link => {
     link.removeAttribute("href");
 });
+
+
+const menuBtn = document.getElementById("htMenuBtn");
+const mobileNav = document.getElementById("htMobileNav");
+
+menuBtn.addEventListener("click", function(){
+
+    mobileNav.classList.toggle("active");
+
+});
