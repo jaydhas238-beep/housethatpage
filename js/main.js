@@ -1114,11 +1114,4 @@ mobile.classList.toggle("active");
 
 }
 
-<script>
-const menuBtn = document.getElementById("menuToggle");
-const mobileMenu = document.getElementById("mobileMenu");
 
-menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("active");
-});
-</script> 
