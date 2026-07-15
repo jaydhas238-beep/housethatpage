@@ -9,7 +9,29 @@ MOBILE NAV (HIDDEN ON DESKTOP)
 ========================= */
 
 .ht-mobile-nav{
-    display:none;
+
+position:fixed;
+
+top:82px;
+
+right:-100%;
+
+width:100%;
+
+height:calc(100vh - 82px);
+
+background:#F8F5EF;
+
+transition:.45s;
+
+z-index:9999;
+
+}
+
+.ht-mobile-nav.active{
+
+right:0;
+
 }
 
 .ht-menu-btn{
