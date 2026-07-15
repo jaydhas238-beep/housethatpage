@@ -259,23 +259,35 @@ DROPDOWN
 TABLET & MOBILE
 ========================= */
 
-@media (max-width: 1024px){
+@media (max-width:1024px){
 
-    .ht-nav{
-        display:none;
-    }
+.ht-nav{
 
-    .ht-menu-btn{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        gap:6px;
-        width:40px;
-        height:40px;
-        background:none;
-        border:none;
-        cursor:pointer;
-    }
+display:none !important;
+
+}
+
+.ht-menu-btn{
+
+display:flex !important;
+
+align-items:center;
+
+justify-content:center;
+
+width:42px;
+
+height:42px;
+
+background:none;
+
+border:none;
+
+cursor:pointer;
+
+}
+
+}
 
     .ht-menu-btn span{
         width:24px;
