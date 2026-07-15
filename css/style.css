@@ -589,34 +589,6 @@ a{
   color:var(--gold);
 }
 
-.main-footer{
-  background:var(--charcoal);
-  color:#8f887f;
-  padding:46px 5vw;
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  align-items:center;
-  gap:30px;
-  font-size:12px;
-  letter-spacing:.13em;
-  text-transform:uppercase;
-}
-
-.main-footer img{
-  width:92px;
-  filter:brightness(1.2);
-}
-
-.main-footer div:nth-child(2){
-  text-align:center;
-  line-height:2;
-}
-
-.main-footer div:nth-child(3){
-  display:flex;
-  justify-content:flex-end;
-  gap:26px;
-}
 
 .reveal-section{
   opacity:0;
