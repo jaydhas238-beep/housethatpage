@@ -1105,11 +1105,11 @@ menuBtn.addEventListener("click", function(){
 });
 
 
-const menuBtn = document.getElementById("htMenuBtn");
-const mobileNav = document.getElementById("htMobileNav");
+const menu=document.getElementById("htMenuBtn");
+const mobile=document.getElementById("htMobileNav");
 
-menuBtn.addEventListener("click", function(){
+menu.onclick=function(){
 
-    mobileNav.classList.toggle("active");
+mobile.classList.toggle("active");
 
-});
+}
