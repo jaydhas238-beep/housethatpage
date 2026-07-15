@@ -91,50 +91,9 @@ a{
   to{opacity:1;transform:scale(1)}
 }
 
-.main-header{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:1000;
-  padding:22px 5vw;
-  display:grid;
-  grid-template-columns:1fr auto 1fr;
-  align-items:center;
-  background:rgba(248,245,239,.64);
-  backdrop-filter:blur(18px);
-  border-bottom:1px solid rgba(17,17,17,.05);
-}
 
-.brand img{
-  width:92px;
-}
 
-.desktop-nav{
-  display:flex;
-  align-items:center;
-  gap:36px;
-}
 
-.desktop-nav a,
-.book-link{
-  font-size:11px;
-  letter-spacing:.22em;
-  text-transform:uppercase;
-  color:#514b43;
-  transition:.35s ease;
-}
-
-.desktop-nav a:hover,
-.book-link:hover{
-  color:var(--gold);
-}
-
-.book-link{
-  justify-self:end;
-  border-bottom:1px solid var(--gold);
-  padding-bottom:6px;
-}
 
 .cinematic-hero{
   min-height:100vh;
@@ -945,54 +904,8 @@ a{
   color:var(--stone);
 }
 
-.menu-toggle{
-  display:none;
-  background:none;
-  border:none;
-  font-size:11px;
-  letter-spacing:.22em;
-  text-transform:uppercase;
-  color:var(--charcoal);
-}
 
-.mobile-menu{
-  position:fixed;
-  inset:0;
-  background:var(--ivory);
-  z-index:999;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:28px;
-  opacity:0;
-  visibility:hidden;
-  transition:.4s ease;
-}
 
-.mobile-menu.open{
-  opacity:1;
-  visibility:visible;
-}
-
-.mobile-menu a{
-    font-family:var(--serif);
-    font-size:34px;
-    font-weight:300;
-    line-height:1.15;
-    letter-spacing:-0.02em;
-    color:var(--charcoal);
-}
-
-@media(max-width:900px){
-  .book-link{
-    display:none;
-  }
-
-  .menu-toggle{
-    display:block;
-  }
-}
 .dubai-gallery{
   background:var(--ivory);
 }
@@ -1909,16 +1822,10 @@ html {
     padding-top:130px !important;
   }
 
-  .main-header{
-    height:130px !important;
-  }
 }
+  
 
-@media(max-width:900px){
-  .main-header{
-    border-bottom:none !important;
-    box-shadow:none !important;
-  }
+
 
   main > section:first-child{
     border-top:none !important;
@@ -3366,178 +3273,9 @@ display:none;
 
 }
 
-/*==========================
-Premium Dropdown
-==========================*/
 
-.has-dropdown{
-    position:relative;
-}
 
-.dropdown-menu{
 
-    position:absolute;
-
-    top:120%;
-
-    left:0;
-
-    width:280px;
-
-    background:#fff;
-
-    border:1px solid rgba(0,0,0,.08);
-
-    box-shadow:0 25px 70px rgba(0,0,0,.12);
-
-    padding:18px 0;
-
-    list-style:none;
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transform:translateY(15px);
-
-    transition:.35s;
-
-    z-index:999;
-
-}
-
-.has-dropdown:hover .dropdown-menu{
-
-    opacity:1;
-
-    visibility:visible;
-
-    transform:translateY(0);
-
-}
-
-.dropdown-menu li{
-    margin:0;
-}
-
-.dropdown-menu a{
-
-    display:block;
-
-    padding:14px 24px;
-
-    color:#222;
-
-    text-decoration:none;
-
-    font-size:13px;
-
-    letter-spacing:.15em;
-
-    text-transform:uppercase;
-
-    transition:.3s;
-
-}
-
-.dropdown-menu a:hover{
-
-    background:#111;
-
-    color:#fff;
-
-    padding-left:34px;
-
-}
-
-.dropdown-arrow{
-
-    margin-left:6px;
-
-    font-size:12px;
-
-}
-
-.mobile-menu details{
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.mobile-menu summary{
-
-    list-style:none;
-    cursor:pointer;
-
-    padding:18px 30px;
-
-    color:#fff;
-
-    font-size:15px;
-
-    letter-spacing:.12em;
-
-    text-transform:uppercase;
-}
-
-.mobile-menu summary::-webkit-details-marker{
-    display:none;
-}
-
-/* MOBILE DROPDOWN */
-
-.mobile-menu .has-dropdown > a{
-    color:#111 !important;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.mobile-menu .dropdown-menu{
-
-    position:static;
-
-    opacity:1;
-
-    visibility:visible;
-
-    transform:none;
-
-    width:100%;
-
-    background:transparent;
-
-    border:none;
-
-    box-shadow:none;
-
-    padding:0;
-
-    display:none;
-
-}
-
-.mobile-menu .dropdown-menu a{
-
-    color:#111 !important;
-
-    padding:12px 45px;
-
-    font-size:14px;
-
-    letter-spacing:.08em;
-
-    text-transform:none;
-
-}
-
-.mobile-menu .dropdown-menu a:hover{
-
-    background:transparent;
-
-    color:#000;
-
-    padding-left:50px;
-
-}
 
 /*==============================
 SERVICES HERO
