@@ -1095,19 +1095,21 @@ document.querySelectorAll('a[href="project-details.html"]').forEach(link => {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
+const menuBtn = document.getElementById("htMenuBtn");
+const mobileNav = document.getElementById("htMobileNav");
 
-    const menuBtn = document.getElementById("htMenuBtn");
-    const mobileNav = document.getElementById("htMobileNav");
+menuBtn.addEventListener("click", function(){
 
-    if(menuBtn && mobileNav){
-
-        menuBtn.addEventListener("click", function(){
-
-            mobileNav.classList.toggle("active");
-
-        });
-
-    }
+    mobileNav.classList.toggle("active");
 
 });
+
+
+const menu=document.getElementById("htMenuBtn");
+const mobile=document.getElementById("htMobileNav");
+
+menu.onclick=function(){
+
+mobile.classList.toggle("active");
+
+}
