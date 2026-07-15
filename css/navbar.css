@@ -1,51 +1,59 @@
-/*=====================================
-NAVBAR
-=====================================*/
+/*=========================================
+HOUSETHAT NAVBAR
+=========================================*/
 
-.navbar{
+.ht-navbar{
+
     position:fixed;
+
     top:0;
     left:0;
-    width:100%;
-    z-index:9999;
 
-    background:rgba(248,245,239,.96);
-    backdrop-filter:blur(15px);
+    width:100%;
+
+    z-index:99999;
+
+    background:rgba(248,245,239,.95);
+
+    backdrop-filter:blur(18px);
 
     border-bottom:1px solid rgba(0,0,0,.06);
 
     transition:.4s ease;
+
 }
 
-.nav-container{
+/*========================*/
 
-    max-width:1450px;
-    width:94%;
+.ht-container{
+
+    width:min(1450px,94%);
 
     margin:auto;
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
     min-height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
 
 }
 
-/*=========================
-LOGO
-=========================*/
+/*========================*/
 
-.brand{
+.ht-logo{
 
     display:flex;
+
     align-items:center;
 
     text-decoration:none;
 
 }
 
-.brand img{
+.ht-logo img{
 
     width:82px;
 
@@ -55,13 +63,8 @@ LOGO
 
 }
 
-.brand:hover img{
+.ht-logo:hover img{
 
     transform:scale(1.05);
-
-}
-body{
-
-    padding-top:90px;
 
 }
