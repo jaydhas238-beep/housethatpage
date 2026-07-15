@@ -408,18 +408,19 @@ gap:5px;
 
 .ht-menu-btn span{
 
-width:26px;
+display:block;
+
+width:24px;
 
 height:2px;
 
 background:#111;
 
-transition:.35s;
+margin:5px 0;
 
 border-radius:2px;
 
 }
-
 .ht-mobile-nav{
 
 position:fixed;
