@@ -1103,3 +1103,13 @@ menuBtn.addEventListener("click", function(){
     mobileNav.classList.toggle("active");
 
 });
+
+
+const menuBtn = document.getElementById("htMenuBtn");
+const mobileNav = document.getElementById("htMobileNav");
+
+menuBtn.addEventListener("click", function(){
+
+    mobileNav.classList.toggle("active");
+
+});
