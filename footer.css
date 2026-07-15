@@ -1,0 +1,175 @@
+/*=========================================
+HOUSETHAT FOOTER
+=========================================*/
+
+.ht-footer{
+
+background:#111;
+
+padding:120px 8% 50px;
+
+color:#fff;
+
+}
+
+.footer-container{
+
+max-width:1500px;
+
+margin:auto;
+
+}
+
+/* Top */
+
+.footer-top{
+
+text-align:center;
+
+margin-bottom:90px;
+
+}
+
+.footer-top img{
+
+width:95px;
+
+margin-bottom:35px;
+
+}
+
+.footer-top h2{
+
+font-family:var(--serif);
+
+font-size:clamp(42px,4vw,72px);
+
+font-weight:300;
+
+line-height:1.1;
+
+}
+
+/* Grid */
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:80px;
+
+margin-bottom:80px;
+
+}
+
+.footer-grid h4{
+
+font-size:13px;
+
+letter-spacing:.28em;
+
+text-transform:uppercase;
+
+color:#B88B47;
+
+margin-bottom:30px;
+
+}
+
+.footer-grid a{
+
+display:block;
+
+color:#bfbfbf;
+
+text-decoration:none;
+
+margin-bottom:18px;
+
+font-size:16px;
+
+transition:.35s;
+
+}
+
+.footer-grid a:hover{
+
+color:#fff;
+
+padding-left:8px;
+
+}
+
+/* Bottom */
+
+.footer-bottom{
+
+border-top:1px solid rgba(255,255,255,.08);
+
+padding-top:35px;
+
+text-align:center;
+
+}
+
+.footer-bottom p{
+
+color:#888;
+
+font-size:15px;
+
+letter-spacing:.06em;
+
+}
+
+@media(max-width:1024px){
+
+.footer-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.ht-footer{
+
+padding:90px 24px 40px;
+
+}
+
+.footer-top{
+
+margin-bottom:60px;
+
+}
+
+.footer-top h2{
+
+font-size:46px;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+gap:45px;
+
+text-align:center;
+
+}
+
+.footer-grid a:hover{
+
+padding-left:0;
+
+}
+
+}
