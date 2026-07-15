@@ -382,11 +382,179 @@ cursor:pointer;
 
 }
 
-/*=========================================
-TABLET & MOBILE
-=========================================*/
+/*====================================
+MOBILE & TABLET NAVIGATION
+====================================*/
 
-@media (max-width:1024px){
+.ht-menu-btn{
+    display:none;
+    width:46px;
+    height:46px;
+    border:none;
+    background:none;
+    cursor:pointer;
+
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:6px;
+
+    z-index:10001;
+}
+
+.ht-menu-btn span{
+
+    width:28px;
+    height:2px;
+
+    background:#111;
+
+    transition:.35s;
+
+}
+
+/* Animation */
+
+.ht-menu-btn.active span:nth-child(1){
+
+    transform:translateY(8px) rotate(45deg);
+
+}
+
+.ht-menu-btn.active span:nth-child(2){
+
+    opacity:0;
+
+}
+
+.ht-menu-btn.active span:nth-child(3){
+
+    transform:translateY(-8px) rotate(-45deg);
+
+}
+
+
+/*====================================
+MOBILE MENU
+====================================*/
+
+.ht-mobile-nav{
+
+    position:fixed;
+
+    top:90px;
+    left:0;
+
+    width:100%;
+
+    height:calc(100vh - 90px);
+
+    background:#F8F5EF;
+
+    overflow-y:auto;
+
+    padding:45px 35px;
+
+    transform:translateX(100%);
+
+    transition:.45s ease;
+
+    z-index:9998;
+
+}
+
+.ht-mobile-nav.active{
+
+    transform:translateX(0);
+
+}
+
+
+/* Links */
+
+.ht-mobile-nav>a{
+
+    display:block;
+
+    font-family:var(--serif);
+
+    font-size:32px;
+
+    color:#111;
+
+    text-decoration:none;
+
+    margin-bottom:30px;
+
+}
+
+.ht-mobile-nav>a:hover{
+
+    color:#B88B47;
+
+}
+
+
+/* Dropdown */
+
+.ht-mobile-nav details{
+
+    border-bottom:1px solid rgba(0,0,0,.08);
+
+    padding-bottom:22px;
+
+    margin-bottom:24px;
+
+}
+
+.ht-mobile-nav summary{
+
+    list-style:none;
+
+    cursor:pointer;
+
+    font-family:var(--serif);
+
+    font-size:32px;
+
+    color:#111;
+
+}
+
+.ht-mobile-nav summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+.ht-mobile-nav details a{
+
+    display:block;
+
+    padding:14px 0 14px 18px;
+
+    text-decoration:none;
+
+    color:#666;
+
+    font-size:16px;
+
+    font-family:Inter,sans-serif;
+
+}
+
+.ht-mobile-nav details a:hover{
+
+    color:#B88B47;
+
+}
+
+
+/*====================================
+TABLET
+====================================*/
+
+@media(max-width:1024px){
 
 .ht-nav{
 
@@ -398,161 +566,44 @@ display:none;
 
 display:flex;
 
-align-items:center;
+}
 
-justify-content:center;
+.ht-container{
 
-width:42px;
+height:86px;
 
-height:42px;
-
-background:none;
-
-border:none;
-
-cursor:pointer;
-
-padding:0;
+padding:0 30px;
 
 }
 
-}
+body{
 
-.ht-menu-btn{
-
-display:none;
-
-flex-direction:column;
-
-gap:5px;
+padding-top:86px;
 
 }
 
-.ht-menu-btn span{
-
-display:block;
-
-width:24px;
-
-height:2px;
-
-background:#111;
-
-margin:5px 0;
-
-border-radius:2px;
-
-}
 .ht-mobile-nav{
 
-position:fixed;
+top:86px;
 
-top:82px;
-
-right:-100%;
-
-width:100%;
-
-height:calc(100vh - 82px);
-
-background:#F8F5EF;
-
-padding:40px 35px;
-
-overflow-y:auto;
-
-transition:.45s ease;
-
-z-index:9998;
+height:calc(100vh - 86px);
 
 }
 
-.ht-mobile-nav.active{
-
-right:0;
-
 }
 
-.ht-mobile-nav>a{
 
-display:block;
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:34px;
-
-color:#111;
-
-text-decoration:none;
-
-margin-bottom:28px;
-
-}
-
-.ht-mobile-nav>a:hover{
-
-color:#B88B47;
-
-}
-.ht-mobile-nav details{
-
-margin-bottom:28px;
-
-border-bottom:1px solid rgba(0,0,0,.08);
-
-padding-bottom:18px;
-
-}
-
-.ht-mobile-nav summary{
-
-list-style:none;
-
-cursor:pointer;
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:34px;
-
-color:#111;
-
-}
-
-.ht-mobile-nav summary::-webkit-details-marker{
-
-display:none;
-
-}
-
-.ht-mobile-nav details a{
-
-display:block;
-
-padding:14px 0 14px 18px;
-
-font-family:'Inter',sans-serif;
-
-font-size:16px;
-
-text-decoration:none;
-
-color:#666;
-
-}
-
-.ht-mobile-nav details a:hover{
-
-color:#B88B47;
-
-}
+/*====================================
+MOBILE
+====================================*/
 
 @media(max-width:768px){
 
 .ht-container{
 
-padding:0 22px;
-
 height:76px;
+
+padding:0 24px;
 
 }
 
@@ -564,7 +615,7 @@ padding-top:76px;
 
 .ht-logo img{
 
-width:54px;
+width:58px;
 
 }
 
@@ -574,7 +625,7 @@ top:76px;
 
 height:calc(100vh - 76px);
 
-padding:30px 25px;
+padding:35px 25px;
 
 }
 
@@ -587,6 +638,12 @@ font-size:28px;
 .ht-mobile-nav summary{
 
 font-size:28px;
+
+}
+
+.ht-mobile-nav details a{
+
+font-size:15px;
 
 }
 
