@@ -68,3 +68,149 @@ HOUSETHAT NAVBAR
     transform:scale(1.05);
 
 }
+
+/* =========================
+HOUSETHAT NAVBAR
+========================= */
+
+.ht-navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#f8f5ef;
+    border-bottom:1px solid rgba(0,0,0,.08);
+    z-index:9999;
+}
+
+.ht-container{
+    max-width:1400px;
+    margin:auto;
+    padding:0 40px;
+    height:90px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.ht-logo img{
+    width:72px;
+    display:block;
+}
+
+body{
+    padding-top:90px;
+}
+
+.ht-nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:42px;
+
+}
+
+.ht-nav>a,
+.ht-dropdown>a{
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:13px;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    transition:.35s;
+
+}
+
+.ht-nav>a:hover,
+.ht-dropdown>a:hover{
+
+    color:#b88b47;
+
+}
+
+.ht-dropdown{
+
+    position:relative;
+
+}
+
+.ht-dropdown>a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.ht-arrow{
+
+    font-size:10px;
+
+}
+
+.ht-dropdown-menu{
+
+    position:absolute;
+
+    top:130%;
+
+    left:0;
+
+    min-width:250px;
+
+    background:#fff;
+
+    border-radius:16px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+}
+
+.ht-dropdown:hover .ht-dropdown-menu{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.ht-dropdown-menu a{
+
+    display:block;
+
+    padding:15px 22px;
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-family:'Inter';
+
+    font-size:14px;
+
+}
+
+.ht-dropdown-menu a:hover{
+
+    background:#f5f2eb;
+
+}
