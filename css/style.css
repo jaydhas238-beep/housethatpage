@@ -1874,16 +1874,17 @@ html {
     margin-top:0 !important;
   }
 
-  .about-hero,
-  .career-hero,
-  .contact-hero,
-  .service-hero,
-  .projects-hero,
-  .awards-hero{
-    border-top:none !important;
-    margin-top:0 !important;
+.about-hero,
+.projects-hero,
+.products-hero,
+.career-hero,
+.contact-hero{
+    padding-top:100px !important;
+}
+
+.services-hero,
+.recognition-hero{
     padding-top:170px !important;
-  }
 }
 
 
@@ -4314,16 +4315,18 @@ Mobile
 
     .hero,
     .hero-v2,
-    .about-hero,
-    .projects-hero,
-    .products-hero,
-    .services-hero,
-    .career-hero,
-    .contact-hero,
-    .recognition-hero{
+   .about-hero,
+.projects-hero,
+.products-hero,
+.career-hero,
+.contact-hero{
+    padding-top:100px !important;
+}
 
-        padding-top:110px !important;
-    }
+.services-hero,
+.recognition-hero{
+    padding-top:170px !important;
+}
 
 }
 
