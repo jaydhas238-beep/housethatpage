@@ -152,21 +152,19 @@ HOUSETHAT BRAND
 
     font-family:'Montserrat',sans-serif;
 
-    font-size:34px;
+    font-size:30px;
 
     font-weight:300;
 
-    letter-spacing:.48em;
+    letter-spacing:.22em;
 
     text-transform:uppercase;
 
     text-decoration:none;
 
-    color:#111;
+    display:flex;
 
-    line-height:1;
-
-    transition:.35s;
+    align-items:center;
 
 }
 
@@ -737,5 +735,17 @@ padding:35px 25px;
 font-size:15px;
 
 }
+
+}
+
+.house-black{
+
+    color:#111111;
+
+}
+
+.that-gold{
+
+    color:#C79A46;
 
 }
