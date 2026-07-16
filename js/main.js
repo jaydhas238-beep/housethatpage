@@ -1111,4 +1111,17 @@ if (menuBtn && mobileNav) {
     });
 
 }
+window.addEventListener("scroll",()=>{
+
+const scrolled=window.pageYOffset;
+
+const bg=document.querySelector(".hero-v2-bg");
+
+if(bg){
+
+bg.style.transform=`translateY(${scrolled*0.18}px) scale(1.08)`;
+
+}
+
+});
 
