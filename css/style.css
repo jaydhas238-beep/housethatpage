@@ -4309,91 +4309,33 @@ Mobile
 }
 
 }
-/* REMOVE TOP EMPTY SPACE - MOBILE & TABLET */
-
-
-
-
-/* ===== MOBILE & TABLET HERO SPACING ===== */
+/* =====================================
+   MOBILE & TABLET PAGE SPACING
+===================================== */
 
 @media (max-width:1024px){
 
-    /* Pages with compact spacing */
+    /* Home */
+    .hero,
+    .hero-v2{
+        padding-top:120px !important;
+    }
+
+    /* Pages without empty space */
     .about-hero,
     .projects-hero,
     .products-hero,
     .career-hero,
     .contact-hero{
-        margin-top:120px !important;
+        margin-top:90px !important;
         padding-top:0 !important;
     }
 
-    /* Keep original spacing */
+    /* Keep Services & Recognition with original spacing */
     .services-hero,
     .recognition-hero{
         margin-top:180px !important;
         padding-top:0 !important;
     }
-
-    /* Home page */
-    .hero,
-    .hero-v2{
-        padding-top:150px !important;
-    }
-
-}
-/* =========================
-   MOBILE & TABLET SPACING
-========================= */
-
-@media (max-width:1024px){
-
-    /* HOME */
-    .hero,
-    .hero-v2{
-        padding-top:140px !important;
-    }
-
-    /* ABOUT */
-    .about-hero{
-        margin-top:120px !important;
-        padding-top:0 !important;
-    }
-
-    /* PROJECTS */
-    .projects-hero{
-        margin-top:120px !important;
-        padding-top:0 !important;
-    }
-
-    /* PRODUCTS */
-    .products-hero{
-        margin-top:120px !important;
-        padding-top:0 !important;
-    }
-
-    /* CAREERS */
-    .career-hero{
-        margin-top:120px !important;
-        padding-top:0 !important;
-    }
-
-    /* CONTACT */
-    .contact-hero{
-        margin-top:120px !important;
-        padding-top:0 !important;
-    }
-
-    /* KEEP THESE AS THEY WERE */
-    .services-hero{
-        margin-top:180px !important;
-        padding-top:0 !important;
-    }
-
-    .recognition-hero{
-        margin-top:180px !important;
-        padding-top:0 !important;
-    }
-
 }
 
