@@ -581,7 +581,65 @@ a{
 }
 
 .final-home-cta h2{
-  font-size:clamp(64px,9vw,145px);
+
+    font-family:var(--serif);
+
+    font-size:clamp(58px,7vw,120px);
+
+    line-height:.92;
+
+    font-weight:300;
+
+    letter-spacing:-0.03em;
+
+    margin:22px 0 30px;
+
+}
+
+/*==========================
+Laptop
+==========================*/
+
+@media (min-width:1024px) and (max-width:1440px){
+
+.final-home-cta h2{
+
+    font-size:88px;
+
+}
+
+}
+
+/*==========================
+Tablet
+==========================*/
+
+@media (max-width:1023px){
+
+.final-home-cta h2{
+
+    font-size:64px;
+
+    line-height:1;
+
+}
+
+}
+
+/*==========================
+Mobile
+==========================*/
+
+@media (max-width:768px){
+
+.final-home-cta h2{
+
+    font-size:46px;
+
+    line-height:1.05;
+
+}
+
 }
 
 .final-home-cta em{
