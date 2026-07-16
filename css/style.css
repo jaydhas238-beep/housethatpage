@@ -4332,17 +4332,16 @@ Mobile
 
 @media (max-width:768px){
 
-    .hero,
-    .hero-v2,
-    .about-hero,
-    .projects-hero,
-    .products-hero,
-    .services-hero,
-    .career-hero,
-    .contact-hero,
-    .recognition-hero{
-
-        padding-top:100px !important;
-    }
-
+.about-hero,
+.projects-hero,
+.products-hero,
+.career-hero,
+.contact-hero{
+    padding-top:100px !important;
 }
+
+.services-hero,
+.recognition-hero{
+    padding-top:170px !important;
+}
+
