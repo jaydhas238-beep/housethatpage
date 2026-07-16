@@ -7,31 +7,26 @@ HOUSETHAT CONTACT DOCK
     position:fixed;
 
     left:50%;
-    bottom:24px;
+    bottom:22px;
 
     transform:translateX(-50%);
 
     display:flex;
     align-items:center;
-    justify-content:center;
-    gap:0;
 
-    background:rgba(248,245,239,.88);
+    background:rgba(248,245,239,.95);
 
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
+    backdrop-filter:blur(20px);
 
     border:1px solid rgba(0,0,0,.08);
 
-    border-radius:20px;
+    border-radius:100px;
 
-    padding:10px 14px;
+    overflow:hidden;
 
-    box-shadow:0 18px 45px rgba(0,0,0,.08);
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
 
-    z-index:99999;
-
-    transition:.35s ease;
+    z-index:999999;
 
 }
 
@@ -44,39 +39,38 @@ HOUSETHAT CONTACT DOCK
 .contact-dock a{
 
     display:flex;
+
     align-items:center;
-    justify-content:center;
-    gap:10px;
 
-    min-width:145px;
+    gap:8px;
 
-    padding:14px 18px;
+    padding:16px 28px;
 
     text-decoration:none;
 
-    font-family:'Inter',sans-serif;
+    color:#111;
+
+    font-family:Inter,sans-serif;
 
     font-size:13px;
 
     font-weight:500;
 
-    letter-spacing:.16em;
+    letter-spacing:.15em;
 
     text-transform:uppercase;
 
-    color:#111;
-
-    transition:.35s ease;
-
-    border-radius:14px;
+    transition:.35s;
 
 }
 
+
+
 .contact-dock a:hover{
 
-    color:#B88B47;
+    background:#111;
 
-    transform:translateY(-2px);
+    color:#fff;
 
 }
 
@@ -176,21 +170,15 @@ TABLET
 MOBILE
 =========================================*/
 
-@media (max-width:768px){
+@media(max-width:768px){
 
 .contact-dock{
 
-    width:94%;
+    width:90%;
 
-    left:50%;
+    justify-content:space-around;
 
-    bottom:14px;
-
-    transform:translateX(-50%);
-
-    padding:6px;
-
-    border-radius:16px;
+    bottom:16px;
 
 }
 
@@ -198,15 +186,11 @@ MOBILE
 
     flex-direction:column;
 
-    gap:6px;
-
-    padding:10px 4px;
+    padding:14px 10px;
 
     font-size:10px;
 
-    letter-spacing:.12em;
-
-    min-width:auto;
+}
 
 }
 
