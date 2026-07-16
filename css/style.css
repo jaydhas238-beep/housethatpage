@@ -4312,15 +4312,6 @@ Mobile
 
 @media (max-width:1024px){
 
-    main{
-        padding-top:0 !important;
-    }
-
-    main > section:first-child{
-        margin-top:0 !important;
-        padding-top:0 !important;
-    }
-
     .hero,
     .hero-v2,
     .about-hero,
@@ -4330,10 +4321,10 @@ Mobile
     .career-hero,
     .contact-hero,
     .recognition-hero{
-        margin-top:0 !important;
-        padding-top:90px !important;
-        min-height:auto !important;
+
+        padding-top:110px !important;
     }
+
 }
 
 @media (max-width:768px){
@@ -4347,6 +4338,8 @@ Mobile
     .career-hero,
     .contact-hero,
     .recognition-hero{
-        padding-top:80px !important;
+
+        padding-top:100px !important;
     }
+
 }
