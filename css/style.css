@@ -540,7 +540,7 @@ CAREERS LIST
 
     font-family:var(--serif);
 
-    font-size:clamp(42px,4.5vw,72px);
+   font-size:clamp(36px,3.8vw,58px);
 
     font-weight:300;
 
@@ -4244,7 +4244,7 @@ Laptop
 
 .request-list a{
 
-    font-size:58px;
+   font-size:50px;
 
 }
 
@@ -4254,18 +4254,15 @@ Laptop
 Tablet
 ==========================*/
 
-@media (max-width:1023px){
-
 .request-list a{
 
-    grid-template-columns:60px 1fr;
+    grid-template-columns:90px 1fr auto;
 
-    gap:12px;
+    gap:0;
 
-    font-size:42px;
+    font-size:38px;
 
 }
-
 .request-list a small{
 
     grid-column:2;
@@ -4284,11 +4281,11 @@ Mobile
 
 .request-list a{
 
-    grid-template-columns:45px 1fr;
+    grid-template-columns:70px 1fr;
 
-    gap:10px;
+    gap:8px;
 
-    font-size:30px;
+    font-size:26px;
 
 }
 
