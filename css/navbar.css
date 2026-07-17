@@ -227,13 +227,15 @@ body{
 }
 
 .ht-nav{
-
     display:flex;
-
     align-items:center;
+    gap:30px;
 
-   gap:28px;
-
+    background:#fff;
+    padding:16px 34px;
+    border-radius:999px;
+    border:1px solid rgba(0,0,0,.08);
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
 }
 
 .ht-nav>a,
