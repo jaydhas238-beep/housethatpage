@@ -4590,3 +4590,31 @@ Mobile
 }
 
 }
+
+
+/* ==========================
+   CONTACT PAGE HEADING
+========================== */
+
+.luxury-contact .contact-left h2{
+    font-size:clamp(42px,4vw,58px) !important;
+    line-height:1.08 !important;
+    letter-spacing:-0.02em !important;
+}
+
+@media (max-width:1024px){
+
+.luxury-contact .contact-left h2{
+    font-size:44px !important;
+}
+
+}
+
+@media (max-width:768px){
+
+.luxury-contact .contact-left h2{
+    font-size:30px !important;
+    line-height:1.15 !important;
+}
+
+}
