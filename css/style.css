@@ -4365,19 +4365,6 @@ Mobile
     }
 }
 
-/* Home About Heading */
-.home-about .split-title h2{
-    font-size:clamp(42px,5vw,82px);
-    line-height:1;
-    letter-spacing:-0.03em;
-}
-
-@media (max-width:768px){
-
-.home-about .split-title h2{
-    font-size:48px;
-    line-height:1.1;
-}
 
 }
 /* ==========================
