@@ -4380,3 +4380,35 @@ Mobile
 }
 
 }
+/* ==========================
+   PROJECTS PAGE MOBILE FIX
+========================== */
+
+@media (max-width:768px){
+
+.featured-project{
+    gap:30px;
+    margin:80px auto;
+}
+
+.featured-project-content{
+    padding:0 24px;
+}
+
+.featured-project-content h3{
+    font-size:44px;
+    line-height:1.05;
+}
+
+.featured-project-content p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+.project-category{
+    width:100%;
+    padding:0 24px;
+    margin:60px 0 30px;
+}
+
+}
