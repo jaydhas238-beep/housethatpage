@@ -201,9 +201,12 @@ HOUSETHAT NAVBAR
     top:0;
     left:0;
     width:100%;
-    background:#f8f5ef;
-    border-bottom:1px solid rgba(0,0,0,.08);
-    z-index:9999;
+    z-index:99999;
+
+    background:transparent !important;
+    backdrop-filter:none !important;
+    border-bottom:none !important;
+    box-shadow:none !important;
 }
 
 .ht-container{
