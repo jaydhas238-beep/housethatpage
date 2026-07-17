@@ -4425,3 +4425,29 @@ Mobile
 }
 
 }
+
+/* Testimonials Heading */
+
+.reviews-section .section-head h2{
+    font-size:56px !important;
+    line-height:1.08;
+}
+
+/* Tablet */
+@media (max-width:1024px){
+
+.reviews-section .section-head h2{
+    font-size:44px !important;
+}
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+.reviews-section .section-head h2{
+    font-size:34px !important;
+    line-height:1.15;
+}
+
+}
