@@ -4480,3 +4480,30 @@ Mobile
 }
 
 }
+
+/* Featured Recognition Heading */
+
+.award-owner-text h2{
+    font-size:clamp(42px,4.5vw,64px) !important;
+    line-height:1.08 !important;
+    letter-spacing:-0.02em;
+    max-width:1000px;
+}
+
+@media (max-width:1024px){
+
+.award-owner-text h2{
+    font-size:48px !important;
+    line-height:1.1 !important;
+}
+
+}
+
+@media (max-width:768px){
+
+.award-owner-text h2{
+    font-size:32px !important;
+    line-height:1.15 !important;
+}
+
+}
