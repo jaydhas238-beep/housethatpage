@@ -4507,3 +4507,32 @@ Mobile
 }
 
 }
+
+/* ==========================
+   PRODUCTS HERO HEADING
+========================== */
+
+.products-hero h1{
+    font-size:clamp(48px,5vw,72px) !important;
+    line-height:1.08 !important;
+    letter-spacing:-0.02em;
+    max-width:900px;
+    margin:18px auto 28px;
+}
+
+@media (max-width:1024px){
+
+.products-hero h1{
+    font-size:52px !important;
+}
+
+}
+
+@media (max-width:768px){
+
+.products-hero h1{
+    font-size:34px !important;
+    line-height:1.15 !important;
+}
+
+}
