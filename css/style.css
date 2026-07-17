@@ -256,7 +256,8 @@ a{
 .quote-section h2,
 .final-home-cta h2{
   font-family:var(--serif);
-  font-size:clamp(50px,6.4vw,106px);
+ font-size:clamp(40px,5vw,78px);
+line-height:1.05;
   font-weight:300;
   line-height:.9;
   letter-spacing:-.048em;
@@ -4423,4 +4424,10 @@ Mobile
     line-height:1.12 !important;
 }
 
+}
+
+.home-about-title h2{
+    font-size:clamp(40px,5vw,68px) !important;
+    line-height:1.08 !important;
+    letter-spacing:-0.02em !important;
 }
