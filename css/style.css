@@ -1912,9 +1912,21 @@ html {
 }
 
 .hero-v2-content{
-  position:relative;
-  z-index:2;
-  max-width:860px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+    width:100%;
+    max-width:1100px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    z-index:5;
 }
 
 .hero-v2-content h1{
