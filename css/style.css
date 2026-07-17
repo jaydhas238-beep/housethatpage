@@ -4412,3 +4412,10 @@ Mobile
 }
 
 }
+
+/* Home About Heading */
+.home-about .split-title h2{
+    font-size:clamp(42px, 4.5vw, 72px);
+    line-height:1.08;
+    letter-spacing:-0.02em;
+}
