@@ -1159,8 +1159,10 @@ const projectSwiper = new Swiper(".projectSwiper", {
 
         init: function () {
 
-            document.getElementById("totalSlides").textContent =
-                String(this.slides.length - this.loopedSlides * 2).padStart(2, "0");
+            const totalSlides = document.querySelectorAll(".projectSwiper .swiper-slide").length;
+
+document.getElementById("totalSlides").textContent =
+    String(totalSlides).padStart(2, "0");
 
             document.getElementById("currentSlide").textContent =
                 "01";
