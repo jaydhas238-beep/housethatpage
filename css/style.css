@@ -4633,10 +4633,10 @@ Spline 3D Hero
 .hero-3d{
     position:absolute;
     top:50%;
-    right:-180px;
-    transform:translateY(-50%);
-    width:900px;
-    height:900px;
+   left:50%;
+transform:translate(-50%, -50%);
+    width:1200px;
+     height:1200px;
     z-index:1;
 }
 
