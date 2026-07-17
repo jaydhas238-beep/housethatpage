@@ -776,3 +776,27 @@ padding:35px 25px;
     color:#C79A46;
 
 }
+
+    /* ===========================
+DESKTOP
+=========================== */
+
+@media (min-width:1025px){
+
+    .ht-mobile-nav{
+        display:none !important;
+    }
+
+    .ht-mobile-nav.active{
+        display:none !important;
+    }
+
+    .ht-menu-btn{
+        display:none !important;
+    }
+
+    .ht-nav{
+        display:flex !important;
+    }
+
+}
