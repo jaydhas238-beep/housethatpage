@@ -879,3 +879,33 @@ LOGO
 }
 
 }
+
+.ht-nav-pill{
+    display:flex;
+    align-items:center;
+    gap:34px;
+
+    background:#fff;
+
+    border:1px solid rgba(0,0,0,.08);
+    border-radius:999px;
+
+    padding:16px 34px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+    width:max-content;
+}
+
+.ht-navbar{
+    background:transparent;
+    box-shadow:none;
+}
+
+.ht-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 4%;
+}
