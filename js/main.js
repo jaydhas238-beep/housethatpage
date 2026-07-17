@@ -1124,4 +1124,57 @@ bg.style.transform=`translateY(${scrolled*0.18}px) scale(1.08)`;
 }
 
 });
+/*=========================================
+PROJECT SHOWCASE SWIPER
+=========================================*/
 
+const projectSwiper = new Swiper(".projectSwiper", {
+
+    loop: true,
+
+    speed: 900,
+
+    effect: "slide",
+
+    grabCursor: true,
+
+    spaceBetween: 0,
+
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+
+    navigation: {
+        nextEl: ".project-next",
+        prevEl: ".project-prev",
+    },
+
+    pagination: {
+        el: ".project-pagination",
+        clickable: true,
+    },
+
+    on: {
+
+        init: function () {
+
+            document.getElementById("totalSlides").textContent =
+                String(this.slides.length - this.loopedSlides * 2).padStart(2, "0");
+
+            document.getElementById("currentSlide").textContent =
+                "01";
+        },
+
+        slideChange: function () {
+
+            let current = this.realIndex + 1;
+
+            document.getElementById("currentSlide").textContent =
+                String(current).padStart(2, "0");
+
+        }
+
+    }
+
+});
