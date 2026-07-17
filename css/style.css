@@ -1959,10 +1959,9 @@ html {
 }
 
 .hero-v2 .primary-btn{
-  border-color:#fffdf8;
-  color:#fffdf8;
+    border:none;
+    color:#fffdf8;
 }
-
 .hero-v2 .primary-btn:hover{
   background:#fffdf8;
   color:#111;
