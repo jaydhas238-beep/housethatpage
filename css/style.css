@@ -1894,6 +1894,8 @@ html {
   overflow:hidden;
   color:#fffdf8;
   background:#111;
+  position:relative;
+overflow:hidden;
 }
 
 .hero-v2-bg{
@@ -4615,6 +4617,76 @@ Mobile
 .luxury-contact .contact-left h2{
     font-size:30px !important;
     line-height:1.15 !important;
+}
+
+}
+
+/*==========================
+Spline 3D Hero
+==========================*/
+
+.hero-3d{
+
+position:absolute;
+
+top:50%;
+
+right:-120px;
+
+transform:translateY(-50%);
+
+width:850px;
+
+height:850px;
+
+z-index:1;
+
+pointer-events:auto;
+
+}
+
+.hero-3d iframe{
+
+width:100%;
+
+height:100%;
+
+border:none;
+
+background:transparent;
+
+}
+
+.hero-v2-content{
+
+position:relative;
+
+z-index:5;
+
+max-width:700px;
+
+}
+
+@media(max-width:1024px){
+
+.hero-3d{
+
+width:620px;
+
+height:620px;
+
+right:-180px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-3d{
+
+display:none;
+
 }
 
 }
