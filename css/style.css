@@ -1876,14 +1876,13 @@ html {
 .products-hero,
 .career-hero,
 .contact-hero{
-    padding-top:100px !important;
+    padding-top:140px !important;
 }
 
 .services-hero,
 .recognition-hero{
-    padding-top:170px !important;
+    padding-top:210px !important;
 }
-
 
 .hero-v2{
   min-height:100vh;
