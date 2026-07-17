@@ -834,3 +834,48 @@ DESKTOP
     }
 
 }
+
+    /* ===========================
+LOGO
+=========================== */
+
+.ht-brand{
+    display:flex;
+    align-items:center;
+}
+
+.ht-logo{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
+.ht-logo img{
+    height:72px;
+    width:auto;
+    display:block;
+    object-fit:contain;
+}
+
+    @media (max-width:1024px){
+
+.ht-logo img{
+    height:60px;
+}
+
+}
+
+    @media (max-width:768px){
+
+.ht-logo img{
+    height:52px;
+}
+
+}
+    @media (max-width:480px){
+
+.ht-logo img{
+    height:46px;
+}
+
+}
