@@ -1912,11 +1912,16 @@ html {
 }
 
 .hero-v2-overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(to top, rgba(0,0,0,.55), transparent 60%);
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.70) 0%,
+            rgba(0,0,0,.50) 50%,
+            rgba(0,0,0,.35) 100%
+        );
 }
-
 .hero-v2-content{
     position:absolute;
     top:50%;
