@@ -4896,3 +4896,29 @@ button,
     font-size:16px !important;
     font-weight:600 !important;
 }
+
+
+/* =========================================
+   CLIENT TYPOGRAPHY
+========================================= */
+
+/* All Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family:'Cormorant Garamond', serif !important;
+    font-size:48px !important;   /* Change this value if needed */
+    font-weight:700 !important;
+    line-height:1.2 !important;
+}
+
+/* Paragraphs */
+p{
+    font-family:'Inter', sans-serif !important;
+    font-size:18px !important;
+    font-weight:400 !important;
+    line-height:1.8 !important;
+}
