@@ -4709,3 +4709,28 @@ small{
     background:#1A1A1A;
     border:1px solid rgba(199,154,70,.18);
 }
+
+
+/* =========================
+PROCESS SECTION
+========================= */
+
+.process-section h2{
+    color:#C79A46 !important;
+}
+
+.process-section h3{
+    color:#C79A46 !important;
+}
+
+.process-section p{
+    color:#F5F2EB !important;
+}
+
+.process-number{
+    color:#C79A46 !important;
+}
+
+.process-section .section-label{
+    color:#C79A46 !important;
+}
