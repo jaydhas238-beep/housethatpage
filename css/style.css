@@ -4966,3 +4966,14 @@ CAREERS FORM
     letter-spacing:0 !important;
     color:#C79A46 !important;
 }
+
+/* PRODUCT CARD TITLES */
+
+.lux-product-content h2{
+    font-family:var(--serif) !important;
+    font-size:24px !important;
+    line-height:1.7 !important;
+    font-weight:400 !important;
+    letter-spacing:0 !important;
+    color:#C79A46 !important;
+}
