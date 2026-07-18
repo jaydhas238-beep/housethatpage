@@ -76,41 +76,4 @@ li{
     background:#111111;
 }
 
-/* ==========================
-   LUXURY NAVBAR
-========================== */
 
-/* Navbar */
-
-.main-header{
-    background:#F8F5EF !important;
-}
-
-.main-header a{
-    color:#111111 !important;
-}
-
-.main-header a:hover{
-    color:#C79A46 !important;
-}
-
-.main-header a.active{
-    color:#111111 !important;
-}
-
-.dropdown-menu{
-    background:#F8F5EF !important;
-}
-
-.dropdown-menu a{
-    color:#111111 !important;
-}
-
-.dropdown-menu a:hover{
-    background:#111111 !important;
-    color:#C79A46 !important;
-}
-
-.dropdown-menu a{
-    color:#C79A46 !important;
-}
