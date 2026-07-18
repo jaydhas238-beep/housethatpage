@@ -4853,3 +4853,13 @@ CAREERS FORM
     color:#C79A46 !important;
     max-width:700px;
 }
+
+/* Testimonials Heading */
+
+.reviews-section .section-head h2{
+    font-size:24px !important;
+    line-height:1.5 !important;
+    font-weight:400 !important;
+    letter-spacing:0 !important;
+    max-width:380px;
+}
