@@ -853,18 +853,20 @@ DESKTOP NAV TEXT
 /* ===== BRAND ===== */
 
 .ht-brand{
-    display:flex !important;
-    flex-direction:row !important;
-    align-items:center !important;
+    display:flex;
+    align-items:center;
     gap:18px;
     text-decoration:none;
 }
 
 .ht-logo-img{
-    width:60px;
-    height:60px;
-    object-fit:contain;
     display:block;
+    width:60px !important;
+    height:60px !important;
+    max-width:60px !important;
+    max-height:60px !important;
+    object-fit:contain;
+    flex-shrink:0;
 }
 
 .brand-divider{
@@ -876,9 +878,10 @@ DESKTOP NAV TEXT
 
 .brand-name{
     font-family:'Cormorant Garamond', serif;
-    font-size:30px;
+    font-size:28px;
     font-weight:600;
     color:#C79A46;
+    letter-spacing:.08em;
     text-transform:uppercase;
     white-space:nowrap;
 }
