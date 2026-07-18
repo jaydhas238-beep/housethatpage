@@ -21,3 +21,57 @@ body{
     background:#111111;
     color:#F5F2EB;
 }
+
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    color:#C79A46;
+}
+
+/* Paragraphs */
+
+p,
+li{
+    color:#D8D4CC;
+}
+
+/* Labels */
+
+.section-label,
+.eyebrow{
+    color:#C79A46;
+}
+
+.primary-btn,
+.secondary-btn{
+    background:transparent;
+    color:#fff;
+    border:1px solid #C79A46;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover{
+    background:#C79A46;
+    color:#111;
+}
+
+.home-about{
+    background:#171717;
+}
+
+.editorial-block{
+    background:#111111;
+}
+
+.process-section{
+    background:#171717;
+}
+
+.reviews-section{
+    background:#111111;
+}
