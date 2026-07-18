@@ -5020,23 +5020,42 @@ CAREERS FORM
 
 
 
+/* Tablet & Mobile Founder Layout */
 @media (max-width:1024px){
 
     .founder-container{
         display:flex;
         flex-direction:column;
+        gap:30px;
     }
 
     .founder-header{
         order:1;
+        text-align:center;
     }
 
     .founder-image{
         order:2;
-        margin:35px 0;
+    }
+
+    .founder-image img{
+        width:100%;
+        height:auto;
+        display:block;
+        border-radius:16px;
     }
 
     .founder-bottom{
         order:3;
+        text-align:center;
+    }
+
+    .founder-btn{
+        margin:35px auto;
+        display:inline-flex;
+    }
+
+    .founder-stats{
+        margin-top:40px;
     }
 }
