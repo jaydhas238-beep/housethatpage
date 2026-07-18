@@ -1691,20 +1691,26 @@ html {
 }
 
 .product-whatsapp-btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  border:1px solid var(--charcoal);
-  padding:16px 30px;
-  font-size:11px;
-  letter-spacing:.24em;
-  text-transform:uppercase;
-  transition:.35s ease;
+    display:inline-block;
+    margin-top:35px;
+    padding:16px 34px;
+
+    border:1px solid #C79A46;
+    color:#C79A46;          /* Gold text */
+    background:transparent;
+
+    text-decoration:none;
+    text-transform:uppercase;
+    letter-spacing:.15em;
+    font-size:13px;
+    font-weight:600;
+
+    transition:.35s;
 }
 
 .product-whatsapp-btn:hover{
-  background:var(--charcoal);
-  color:var(--ivory);
+    background:#C79A46;
+    color:#111111;
 }
 
 @media(max-width:900px){
