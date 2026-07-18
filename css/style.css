@@ -4088,7 +4088,7 @@ FEATURED IN
 
 .featured-in{
 
-    background:#F8F5EF;
+   background:#111111;
 
     padding:140px 7%;
 
@@ -4732,5 +4732,24 @@ PROCESS SECTION
 }
 
 .process-section .section-label{
+    color:#C79A46 !important;
+}
+
+/* Recognition Page */
+
+.featured-in{
+    background:#111111 !important;
+}
+
+.featured-header h2{
+    color:#C79A46 !important;
+}
+
+.featured-header p,
+.featured-in p{
+    color:#F5F2EB !important;
+}
+
+.featured-in .section-label{
     color:#C79A46 !important;
 }
