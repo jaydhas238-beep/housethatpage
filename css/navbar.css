@@ -84,13 +84,14 @@ HOUSETHAT NAVBAR
 
 .ht-container{
     max-width:1400px;
-    margin:auto;
-    padding:0 40px;
-    height:90px;
+    margin:0 auto;
+    padding:20px 4%;
 
     display:flex;
     align-items:center;
     justify-content:space-between;
+
+    flex-wrap:nowrap;      /* ADD THIS */
 }
 
 
@@ -745,19 +746,14 @@ LOGO
     align-items:center;
     gap:34px;
 
+    margin-left:auto;      /* ADD THIS */
+
     background:#fff;
-
-    border:1px solid rgba(0,0,0,.08);
     border-radius:999px;
-
     padding:16px 34px;
 
-    box-shadow:
-        0 10px 30px rgba(0,0,0,.08);
-
-    width:max-content;
+    width:auto;            /* CHANGE from width:max-content */
 }
-
 .ht-navbar{
     background:transparent;
     box-shadow:none;
@@ -853,10 +849,11 @@ DESKTOP NAV TEXT
 /* ===== BRAND ===== */
 
 .ht-brand{
-    display:inline-flex;
+    display:flex;
     align-items:center;
     gap:18px;
-    text-decoration:none;
+    flex-shrink:0;
+    white-space:nowrap;
 }
 
 .brand-logo{
