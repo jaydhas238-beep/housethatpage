@@ -4629,3 +4629,83 @@ Mobile
 }
 
 }
+
+
+/* ==========================================
+   HOUSETHAT BLACK LUXURY THEME
+========================================== */
+
+:root{
+  --ivory:#111111;
+  --warm:#171717;
+  --white:#1A1A1A;
+
+  --gold:#C79A46;
+  --stone:#D8D4CC;
+
+  --line:rgba(199,154,70,.18);
+}
+
+/* Background */
+
+body{
+    background:#111111;
+    color:#F5F2EB;
+}
+
+/* Sections */
+
+.home-about,
+.editorial-block,
+.process-section,
+.products-home,
+.reviews-section,
+.final-home-cta,
+.dubai-gallery,
+.award-owner,
+.luxury-products{
+    background:#111111 !important;
+}
+
+.quote-section,
+.founder-home{
+    background:#171717 !important;
+}
+
+/* Headings */
+
+h1,h2,h3,h4,h5{
+    color:#C79A46;
+}
+
+/* Paragraphs */
+
+p,
+li,
+small{
+    color:#D8D4CC;
+}
+
+/* Buttons */
+
+.primary-btn,
+.secondary-btn{
+    background:transparent;
+    border:1px solid #C79A46;
+    color:#fff;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover{
+    background:#C79A46;
+    color:#111;
+}
+
+/* Cards */
+
+.review-card,
+.process-card,
+.product-card{
+    background:#1A1A1A;
+    border:1px solid rgba(199,154,70,.18);
+}
