@@ -503,12 +503,22 @@ line-height:1.05;
     position:absolute;
     inset:0;
 
-    background:
-        linear-gradient(rgba(0,0,0,.38), rgba(0,0,0,.48)),
-        url("../images/Dubai3.jpg") center center/cover no-repeat;
+    background-image:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("../images/Dubai3.jpg"),
+        url("../images/Dubai4.jpg");
 
-    transform:scale(1.05);
-    filter:saturate(.8);
+    background-size:
+        cover,
+        100% 50%,
+        100% 50%;
+
+    background-position:
+        center,
+        top,
+        bottom;
+
+    background-repeat:no-repeat;
 }
 
 .dubai-content{
