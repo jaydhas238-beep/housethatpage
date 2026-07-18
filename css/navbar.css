@@ -848,34 +848,8 @@ DESKTOP
 LOGO
 =========================== */
 
-.ht-brand{
-    display:flex;
-    align-items:center;
-    gap:18px;
-    text-decoration:none;
-}
 
-.ht-logo-img{
-    height:60px;
-    width:auto;
-    display:block;
-}
 
-.brand-divider{
-    width:1px;
-    height:48px;
-    background:#C79A46;
-    opacity:.5;
-}
-
-.brand-name{
-    font-family:'Cormorant Garamond', serif;
-    font-size:34px;
-    font-weight:600;
-    color:#C79A46;
-    letter-spacing:.02em;
-    line-height:1;
-}
 
 @media(max-width:768px){
     .brand-divider,
@@ -1040,4 +1014,50 @@ DESKTOP NAV TEXT
     height:52px;
 }
 
+}
+/* ===== BRAND ===== */
+
+.ht-brand{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    text-decoration:none;
+    flex-direction:row !important;
+}
+
+.ht-logo-img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+    display:block;
+    flex-shrink:0;
+}
+
+.brand-divider{
+    width:1px;
+    height:42px;
+    background:#C79A46;
+    opacity:.45;
+}
+
+.brand-name{
+    font-family:'Cormorant Garamond',serif;
+    font-size:30px;
+    font-weight:600;
+    color:#C79A46;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    white-space:nowrap;
+}
+
+@media(max-width:768px){
+    .brand-divider,
+    .brand-name{
+        display:none;
+    }
+
+    .ht-logo-img{
+        width:52px;
+        height:52px;
+    }
 }
