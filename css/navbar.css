@@ -851,21 +851,42 @@ LOGO
 .ht-brand{
     display:flex;
     align-items:center;
-}
-
-.ht-logo{
-    display:flex;
-    align-items:center;
+    gap:18px;
     text-decoration:none;
 }
 
-.ht-logo img{
-    height:72px;
+.ht-logo-img{
+    height:60px;
     width:auto;
     display:block;
-    object-fit:contain;
 }
 
+.brand-divider{
+    width:1px;
+    height:48px;
+    background:#C79A46;
+    opacity:.5;
+}
+
+.brand-name{
+    font-family:'Cormorant Garamond', serif;
+    font-size:34px;
+    font-weight:600;
+    color:#C79A46;
+    letter-spacing:.02em;
+    line-height:1;
+}
+
+@media(max-width:768px){
+    .brand-divider,
+    .brand-name{
+        display:none;
+    }
+
+    .ht-logo-img{
+        height:52px;
+    }
+}
     @media (max-width:1024px){
 
 .ht-logo img{
