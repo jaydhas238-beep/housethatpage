@@ -75,3 +75,35 @@ li{
 .reviews-section{
     background:#111111;
 }
+
+/* ==========================
+   LUXURY NAVBAR
+========================== */
+
+.main-header{
+    background:#F8F5EF !important;
+    border:1px solid rgba(0,0,0,.08);
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+}
+
+.main-header .desktop-nav a,
+.main-header .mobile-nav a{
+    color:#C79A46 !important;
+}
+
+.main-header .desktop-nav a:hover,
+.main-header .mobile-nav a:hover{
+    color:#111111 !important;
+}
+
+.main-header .desktop-nav a.active{
+    color:#111111 !important;
+}
+
+.dropdown-menu{
+    background:#F8F5EF !important;
+}
+
+.dropdown-menu a{
+    color:#C79A46 !important;
+}
