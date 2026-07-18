@@ -4886,3 +4886,14 @@ CAREERS FORM
     letter-spacing:0 !important;
     color:#fff !important;
 }
+
+/* PROJECT TITLES - FINAL OVERRIDE */
+
+.featured-project-content h3{
+    font-family:var(--serif) !important;
+    font-size:24px !important;
+    line-height:1.5 !important;
+    font-weight:400 !important;
+    letter-spacing:0 !important;
+    color:#C79A46 !important;
+}
