@@ -4875,3 +4875,14 @@ CAREERS FORM
     color: #C79A46 !important;
     max-width: 600px;
 }
+
+/* SERVICES CARD TITLE - FINAL OVERRIDE */
+
+.service-card .service-overlay h2{
+    font-family:var(--serif) !important;
+    font-size:24px !important;
+    line-height:1.5 !important;
+    font-weight:400 !important;
+    letter-spacing:0 !important;
+    color:#fff !important;
+}
