@@ -22,8 +22,8 @@ html{
 }
 
 body{
-  background:var(--ivory);
-  color:var(--charcoal);
+   background:#111111;
+    color:#F5F2EB;
   font-family:var(--sans);
   overflow-x:hidden;
 }
