@@ -1,4 +1,4 @@
- *{
+*{
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -262,12 +262,6 @@ line-height:1.05;
   line-height:.9;
   letter-spacing:-.048em;
 }
-.home-about-title h2{
-    font-size:24px;
-    line-height:1.7;
-    font-weight:500;
-    letter-spacing:0;
-}
 
 .split-title p,
 .editorial-copy p,
@@ -506,25 +500,13 @@ line-height:1.05;
 }
 
 .dubai-bg{
-    position:absolute;
-    inset:0;
-
-    background-image:
-        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("../images/Dubai3.jpg"),
-        url("../images/Dubai4.jpg");
-
-    background-size:
-        cover,
-        100% 50%,
-        100% 50%;
-
-    background-position:
-        center,
-        top,
-        bottom;
-
-    background-repeat:no-repeat;
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(rgba(0,0,0,.38),rgba(0,0,0,.48)),
+    url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1600&q=85') center/cover;
+  transform:scale(1.05);
+  filter:saturate(.8);
 }
 
 .dubai-content{
