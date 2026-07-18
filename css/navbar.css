@@ -15,7 +15,6 @@ position:fixed;
 top:82px;
 
 right:-100%;
-
 width:100%;
 
 height:calc(100vh - 82px);
@@ -485,7 +484,7 @@ MOBILE & TABLET NAVIGATION
     width:28px;
     height:2px;
 
-    background:#111;
+    background:#C79A46;   /* Gold */
 
     transition:.35s;
 
