@@ -5017,3 +5017,14 @@ CAREERS FORM
     letter-spacing:0 !important;
     color:#111 !important;
 }
+
+/* DUBAI FEATURE HEADING */
+
+.dubai-content h2{
+    font-family:var(--serif) !important;
+    font-size:24px !important;
+    font-weight:400 !important;
+    line-height:1.7 !important;
+    letter-spacing:0 !important;
+    color:#C79A46 !important;
+}
