@@ -5056,3 +5056,24 @@ CAREERS FORM
         margin-top:40px;
     }
 }
+
+@media (max-width:1024px){
+
+    .founder-container{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .founder-header{
+        order:1;
+    }
+
+    .founder-image{
+        order:2;
+        margin:35px 0;
+    }
+
+    .founder-bottom{
+        order:3;
+    }
+}
