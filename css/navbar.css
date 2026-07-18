@@ -946,3 +946,11 @@ DESKTOP NAV TEXT
 .ht-nav a:hover{
     color:#C79A46 !important;
 }
+
+.ht-nav a{
+    color:#111 !important;
+}
+
+.ht-nav .ht-dropdown > a{
+    color:#111 !important;
+}
