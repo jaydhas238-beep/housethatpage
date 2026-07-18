@@ -914,3 +914,24 @@ LOGO
     justify-content:space-between;
     padding:20px 4%;
 }
+
+    /* ===== FORCE DESKTOP NAV TEXT ===== */
+
+.ht-nav a,
+.ht-nav a:link,
+.ht-nav a:visited,
+.ht-dropdown > a,
+.ht-dropdown > a:link,
+.ht-dropdown > a:visited{
+    color:#111111 !important;
+    opacity:1 !important;
+}
+
+.ht-nav a:hover,
+.ht-dropdown > a:hover{
+    color:#C79A46 !important;
+}
+
+.ht-arrow{
+    color:#111111 !important;
+}
