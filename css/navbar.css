@@ -931,3 +931,18 @@ DESKTOP NAV TEXT
 .ht-dropdown > a:hover{
     color:#C79A46 !important;
 }
+
+
+/* FORCE NAV LINK COLOR */
+
+.ht-nav a{
+    color:#111111 !important;
+}
+
+.ht-nav a:visited{
+    color:#111111 !important;
+}
+
+.ht-nav a:hover{
+    color:#C79A46 !important;
+}
