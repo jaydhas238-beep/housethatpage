@@ -5018,44 +5018,7 @@ CAREERS FORM
     color:#111 !important;
 }
 
-@media (max-width:1024px){
 
-    .founder-container{
-        display:flex;
-        flex-direction:column;
-    }
-
-    .founder-content{
-        display:flex;
-        flex-direction:column;
-    }
-
-    .founder-label,
-    .founder-content h2,
-    .founder-content h4{
-        text-align:center;
-    }
-
-    .founder-image{
-        order:4;
-        margin:35px 0;
-    }
-
-    .founder-content p{
-        order:5;
-        text-align:center;
-    }
-
-    .primary-btn{
-        order:6;
-        margin-top:35px;
-    }
-
-    .founder-stats{
-        order:7;
-        margin-top:40px;
-    }
-}
 
 @media (max-width:1024px){
 
