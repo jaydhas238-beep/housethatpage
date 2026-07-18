@@ -4863,3 +4863,15 @@ CAREERS FORM
     letter-spacing:0 !important;
     max-width:380px;
 }
+
+/* ABOUT PAGE HEADING */
+
+.home-about .split-title > h2{
+    font-family: var(--serif) !important;
+    font-size: 24px !important;   /* Same size as body text */
+    line-height: 1.7 !important;
+    font-weight: 400 !important;
+    letter-spacing: 0 !important;
+    color: #C79A46 !important;
+    max-width: 600px;
+}
