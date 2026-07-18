@@ -240,6 +240,10 @@ body{
     border:1px solid rgba(0,0,0,.08);
     box-shadow:0 12px 35px rgba(0,0,0,.08);
 }
+.ht-nav a{
+    color:#111 !important;
+    font-weight:500;
+}
 
 .ht-nav>a,
 .ht-dropdown>a{
