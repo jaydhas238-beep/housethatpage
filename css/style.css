@@ -5059,3 +5059,37 @@ CAREERS FORM
         margin-top:40px;
     }
 }
+
+/* Founder Header */
+
+.founder-header{
+    text-align:center;
+}
+
+.founder-header .founder-label{
+    display:block;
+    font-size:14px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:#C79A46;
+    margin-bottom:20px;
+}
+
+.founder-header h2{
+    font-family:var(--serif);
+    font-size:56px;
+    font-weight:300;
+    line-height:1.05;
+    color:#C79A46;
+    margin:0;
+}
+
+.founder-header h4{
+    margin-top:18px;
+    font-family:var(--sans);
+    font-size:18px;
+    font-weight:500;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#C79A46;
+}
