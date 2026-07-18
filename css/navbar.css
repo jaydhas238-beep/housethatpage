@@ -76,59 +76,7 @@ right:0;
     justify-content:space-between;
 
 }
-@media(max-width:1200px){
 
-.ht-wordmark{
-
-    font-size:28px;
-
- 
-  letter-spacing:.20em;
-}
-
-.ht-tagline{
-
-    font-size:9px;
-
-}
-
-}
-@media(max-width:1024px){
-
-.ht-wordmark{
-
-    font-size:24px;
-
-   letter-spacing:.20em;
-
-}
-
-.ht-tagline{
-
-    font-size:8px;
-
-    letter-spacing:.28em;
-
-}
-
-}
-@media(max-width:768px){
-
-.ht-wordmark{
-
-    font-size:18px;
-
-    letter-spacing:.25em;
-
-}
-
-.ht-tagline{
-
-    display:none;
-
-}
-
-}
 
 /*========================*/
 
@@ -136,61 +84,8 @@ right:0;
 HOUSETHAT BRAND
 ==================================*/
 
-.ht-brand{
 
-    display:flex;
 
-    flex-direction:column;
-
-    justify-content:center;
-
-    text-decoration:none;
-
-}
-
-.ht-wordmark{
-
-    font-family:'Montserrat',sans-serif;
-
-    font-size:30px;
-
-    font-weight:300;
-
-    letter-spacing:.22em;
-
-    text-transform:uppercase;
-
-    text-decoration:none;
-
-    display:flex;
-
-    align-items:center;
-
-}
-
-.ht-wordmark:hover{
-
-    color:#B88B47;
-
-}
-
-.ht-tagline{
-
-    margin-top:10px;
-
-    font-family:'Montserrat',sans-serif;
-
-    font-size:10px;
-
-    font-weight:400;
-
-    letter-spacing:.34em;
-
-    text-transform:uppercase;
-
-    color:#8A7A67;
-
-}
 
 /* =========================
 HOUSETHAT NAVBAR
