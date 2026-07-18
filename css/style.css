@@ -256,8 +256,7 @@ a{
 .quote-section h2,
 .final-home-cta h2{
   font-family:var(--serif);
-font-size:48px;
-font-weight:600;
+ font-size:clamp(40px,5vw,78px);
 line-height:1.05;
   font-weight:300;
   line-height:.9;
@@ -398,8 +397,8 @@ line-height:1.05;
 
 .project-item h3{
     margin-top:10px;
-   font-size:48px;
-font-weight:600;
+    font-size:34px;
+    font-weight:300;
     font-family:"Cormorant Garamond",serif;
     line-height:1.1;
 }
@@ -412,8 +411,8 @@ font-weight:600;
 }
 
 .section-head h2{
-   font-size:48px;
-font-weight:600;
+    font-size:72px;
+    font-weight:300;
     line-height:0.95;
     font-family:"Cormorant Garamond",serif;
 }
@@ -457,8 +456,8 @@ font-weight:600;
 .project-item h3{
   margin-top:9px;
   font-family:var(--serif);
- font-size:48px;
-font-weight:600;
+  font-size:36px;
+  font-weight:300;
 }
 
 .founder-home{
@@ -829,8 +828,7 @@ Mobile
 
 .contact-left h2{
   font-family:var(--serif);
- font-size:48px;
-font-weight:600;
+  font-size:clamp(58px,7vw,120px);
   font-weight:300;
   line-height:.85;
   letter-spacing:-.055em;
@@ -1095,8 +1093,8 @@ height:auto;
 
 .award-owner-text h2{
   font-family:var(--serif);
- font-size:48px;
-font-weight:600;
+  font-size:clamp(50px,6vw,100px);
+  font-weight:300;
   line-height:.9;
   letter-spacing:-.05em;
 }
@@ -1537,8 +1535,8 @@ html {
 .project-showcase.projects-grid .project-item h3{
 
     font-family:'Cormorant Garamond', serif;
-    font-size:48px;
-font-weight:600;
+    font-size:52px;
+    font-weight:300;
     line-height:1.05;
     letter-spacing:-0.02em;
     color:#111;
@@ -1596,8 +1594,8 @@ font-weight:600;
 
 .product-content h3{
   font-family:var(--serif);
- font-size:48px;
-font-weight:600;
+  font-size:42px;
+  font-weight:300;
   line-height:1;
 }
 
@@ -1623,8 +1621,7 @@ font-weight:600;
 
 .products-hero h1{
   font-family:var(--serif);
- font-size:48px;
-font-weight:600;
+  font-size:clamp(56px,7vw,112px);
   font-weight:300;
   line-height:.95;
   letter-spacing:-.05em;
@@ -1941,8 +1938,8 @@ font-weight:600;
 .hero-v2-content h1{
 
     font-family:var(--serif);
-    font-size:48px;
-font-weight:600;
+    font-size:clamp(48px,5.5vw,78px);
+    font-weight:300;
     line-height:.82;
     letter-spacing:-.065em;
 
@@ -1995,8 +1992,7 @@ font-weight:600;
   }
 
   .hero-v2-content h1{
-   font-size:48px;
-font-weight:600;
+    font-size:48px;
   }
 
   .hero-v2-actions{
@@ -2262,8 +2258,8 @@ font-weight:600;
 
 .service-detail h2{
   font-family:var(--serif);
- font-size:48px;
-font-weight:600;
+  font-size:58px;
+font-weight:400;
 line-height:1.05;
 }
 
@@ -2293,8 +2289,8 @@ line-height:1.05;
 
 .support-grid h3{
   font-family:var(--serif);
- font-size:48px;
-font-weight:600;
+  font-size:34px;
+  font-weight:300;
   line-height:1.1;
 }
 
@@ -2589,8 +2585,8 @@ FEATURED PROJECTS
 
 .featured-heading h2{
     font-family:var(--serif);
-    font-size:48px;
-font-weight:600;
+    font-size:clamp(48px,6vw,90px);
+    font-weight:300;
     line-height:1;
     color:#111;
 }
@@ -2656,8 +2652,7 @@ font-weight:600;
 
     margin:18px 0;
 
-   font-size:48px;
-font-weight:600;
+    font-size:56px;
 
     font-family:var(--serif);
 
@@ -2689,8 +2684,7 @@ gap:40px;
 
 .featured-project-content h3{
 
-font-size:48px;
-font-weight:600;
+font-size:42px;
 
 }
 
@@ -3003,8 +2997,7 @@ font-size:48px;
 }
 
 .design-language .section-head h2{
-   font-size:48px;
-font-weight:600;
+    font-size:78px;
     line-height:.95;
     font-family:"Cormorant Garamond",serif;
     font-weight:500;
@@ -3072,8 +3065,8 @@ font-weight:600;
 
 .design-content h3{
     font-family:"Cormorant Garamond",serif;
-   font-size:48px;
-font-weight:600;
+    font-size:72px;
+    font-weight:500;
     line-height:1;
     margin-bottom:20px;
     transition:.4s;
@@ -3122,7 +3115,6 @@ font-weight:600;
 
 .design-language .section-head h2{
     font-size:48px;
-font-weight:600;
 }
 
 .design-strip{
@@ -3135,8 +3127,7 @@ font-weight:600;
 }
 
 .design-content h3{
-  font-size:48px;
-font-weight:600;
+    font-size:42px;
 }
 
 .design-strip::after{
@@ -3385,8 +3376,8 @@ SERVICES HERO
 .services-hero h1{
 
     font-family:"Cormorant Garamond",serif;
-    font-size:48px;
-font-weight:600;
+    font-size:84px;
+    font-weight:400;
     margin-bottom:28px;
     color:#111;
 
@@ -3608,8 +3599,9 @@ PROJECTS HERO
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:48px;
-font-weight:600;
+    font-size:clamp(64px,7vw,88px);
+
+    font-weight:400;
 
     margin-bottom:24px;
 
@@ -3998,8 +3990,9 @@ PROCESS SECTION
 
     font-family:"Cormorant Garamond",serif;
 
-   font-size:48px;
-font-weight:600;
+    font-size:36px;
+
+    font-weight:400;
 
     margin-bottom:14px;
 
@@ -4081,8 +4074,7 @@ font-weight:600;
 
 .process-content h3{
 
-   font-size:48px;
-font-weight:600;
+    font-size:28px;
 
 }
 
@@ -4409,8 +4401,7 @@ Mobile
 }
 
 .featured-project-content h3{
-   font-size:48px;
-font-weight:600;
+    font-size:44px;
     line-height:1.05;
 }
 
@@ -4430,8 +4421,7 @@ font-weight:600;
 /* HOME ABOUT HEADING - FINAL OVERRIDE */
 
 .home-about .split-title > div:first-child h2{
-   font-size:48px;
-font-weight:600;
+    font-size:56px !important;
     line-height:1.08 !important;
     letter-spacing:-0.02em !important;
 }
@@ -4439,8 +4429,7 @@ font-weight:600;
 @media (max-width:1024px){
 
 .home-about .split-title > div:first-child h2{
-   font-size:48px;
-font-weight:600;
+    font-size:42px !important;
 }
 
 }
@@ -4448,8 +4437,7 @@ font-weight:600;
 @media (max-width:768px){
 
 .home-about .split-title > div:first-child h2{
-   font-size:48px;
-font-weight:600;
+    font-size:30px !important;
     line-height:1.2 !important;
 }
 
@@ -4458,8 +4446,7 @@ font-weight:600;
 /* Testimonials Heading */
 
 .reviews-section .section-head h2{
-   font-size:48px;
-font-weight:600;
+    font-size:56px !important;
     line-height:1.08;
 }
 
@@ -4467,8 +4454,8 @@ font-weight:600;
 @media (max-width:1024px){
 
 .reviews-section .section-head h2{
-   font-size:48px;
-font-weight:600;
+    font-size:44px !important;
+}
 
 }
 
@@ -4476,8 +4463,7 @@ font-weight:600;
 @media (max-width:768px){
 
 .reviews-section .section-head h2{
-    font-size:48px;
-font-weight:600;
+    font-size:34px !important;
     line-height:1.15;
 }
 
@@ -4487,8 +4473,7 @@ font-weight:600;
 @media (max-width:1440px){
 
 .hero-v2-content h1{
-   font-size:48px;
-font-weight:600;
+    font-size:64px;
 }
 
 }
@@ -4497,8 +4482,7 @@ font-weight:600;
 @media (max-width:1024px){
 
 .hero-v2-content h1{
-   font-size:48px;
-font-weight:600;
+    font-size:52px;
     line-height:1;
 }
 
@@ -4508,8 +4492,7 @@ font-weight:600;
 @media (max-width:768px){
 
 .hero-v2-content h1{
-   font-size:48px;
-font-weight:600;
+    font-size:36px;
     line-height:1.08;
 }
 
@@ -4518,8 +4501,7 @@ font-weight:600;
 /* Featured Recognition Heading */
 
 .award-owner-text h2{
-   font-size:48px;
-font-weight:600;
+    font-size:clamp(42px,4.5vw,64px) !important;
     line-height:1.08 !important;
     letter-spacing:-0.02em;
     max-width:1000px;
@@ -4528,8 +4510,7 @@ font-weight:600;
 @media (max-width:1024px){
 
 .award-owner-text h2{
-   font-size:48px;
-font-weight:600;
+    font-size:48px !important;
     line-height:1.1 !important;
 }
 
@@ -4538,8 +4519,7 @@ font-weight:600;
 @media (max-width:768px){
 
 .award-owner-text h2{
-   font-size:48px;
-font-weight:600;
+    font-size:32px !important;
     line-height:1.15 !important;
 }
 
@@ -4550,8 +4530,7 @@ font-weight:600;
 ========================== */
 
 .products-hero h1{
-   font-size:48px;
-font-weight:600;
+    font-size:clamp(48px,5vw,72px) !important;
     line-height:1.08 !important;
     letter-spacing:-0.02em;
     max-width:900px;
@@ -4561,16 +4540,15 @@ font-weight:600;
 @media (max-width:1024px){
 
 .products-hero h1{
-   font-size:48px;
-font-weight:600;
+    font-size:52px !important;
+}
 
 }
 
 @media (max-width:768px){
 
 .products-hero h1{
-    font-size:48px;
-font-weight:600;
+    font-size:34px !important;
     line-height:1.15 !important;
 }
 
@@ -4581,8 +4559,7 @@ font-weight:600;
 ========================== */
 
 .products-home .section-head h2{
-   font-size:48px;
-font-weight:600;
+    font-size:clamp(42px,4vw,60px) !important;
     line-height:1.08 !important;
     letter-spacing:-0.02em;
 }
@@ -4590,16 +4567,15 @@ font-weight:600;
 @media (max-width:1024px){
 
 .products-home .section-head h2{
-   font-size:48px;
-font-weight:600;
+    font-size:46px !important;
+}
 
 }
 
 @media (max-width:768px){
 
 .products-home .section-head h2{
-   font-size:48px;
-font-weight:600;
+    font-size:32px !important;
     line-height:1.15 !important;
 }
 
@@ -4610,8 +4586,7 @@ font-weight:600;
 ========================== */
 
 .luxury-contact .contact-left h2{
-   font-size:48px;
-font-weight:600;
+    font-size:clamp(42px,4vw,60px) !important;
     line-height:1.08 !important;
     letter-spacing:-0.02em;
 }
@@ -4619,8 +4594,7 @@ font-weight:600;
 @media (max-width:1024px){
 
 .luxury-contact .contact-left h2{
-   font-size:48px;
-font-weight:600;
+    font-size:46px !important;
 }
 
 }
@@ -4628,8 +4602,7 @@ font-weight:600;
 @media (max-width:768px){
 
 .luxury-contact .contact-left h2{
-  font-size:48px;
-font-weight:600;
+    font-size:32px !important;
     line-height:1.15 !important;
 }
 
@@ -4641,8 +4614,7 @@ font-weight:600;
 ========================== */
 
 .luxury-contact .contact-left h2{
-   font-size:48px;
-font-weight:600;
+    font-size:clamp(42px,4vw,58px) !important;
     line-height:1.08 !important;
     letter-spacing:-0.02em !important;
 }
@@ -4650,8 +4622,7 @@ font-weight:600;
 @media (max-width:1024px){
 
 .luxury-contact .contact-left h2{
-   font-size:48px;
-font-weight:600;
+    font-size:44px !important;
 }
 
 }
@@ -4659,8 +4630,7 @@ font-weight:600;
 @media (max-width:768px){
 
 .luxury-contact .contact-left h2{
-   font-size:48px;
-font-weight:600;
+    font-size:30px !important;
     line-height:1.15 !important;
 }
 
@@ -4832,8 +4802,6 @@ CAREERS FORM
 }
 
 .featured-project-content h3{
-  font-size:48px;
-font-weight:600;
     margin:0 0 18px;
 }
 
