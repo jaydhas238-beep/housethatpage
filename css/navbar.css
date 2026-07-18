@@ -914,3 +914,20 @@ LOGO
     justify-content:space-between;
     padding:20px 4%;
 }
+
+/* =================================
+DESKTOP NAV TEXT
+================================= */
+
+.ht-nav > a,
+.ht-dropdown > a{
+    color:#111111 !important;
+    text-decoration:none;
+    font-family:'Inter',sans-serif;
+    font-weight:500;
+}
+
+.ht-nav > a:hover,
+.ht-dropdown > a:hover{
+    color:#C79A46 !important;
+}
