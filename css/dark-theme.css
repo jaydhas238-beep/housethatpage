@@ -1,1 +1,23 @@
+/* ===================================
+   HOUSETHAT DARK LUXURY THEME
+=================================== */
 
+:root{
+    --ivory:#111111;
+    --warm:#181818;
+    --white:#1A1A1A;
+
+    --charcoal:#111111;
+    --soft-black:#0A0A0A;
+
+    --gold:#C79A46;
+    --stone:#D8D4CC;
+
+    --line:rgba(199,154,70,.18);
+}
+
+html,
+body{
+    background:#111111;
+    color:#F5F2EB;
+}
