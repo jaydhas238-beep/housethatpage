@@ -4759,3 +4759,32 @@ PROCESS SECTION
 .featured-in .section-label{
     color:#C79A46 !important;
 }
+
+/* =========================
+CAREERS FORM
+========================= */
+
+#careerRole,
+#careerRole option{
+    color:#C79A46 !important;
+    background:#1A1A1A;
+}
+
+#careerRole option:disabled{
+    color:#C79A46 !important;
+}
+
+.select-label{
+    color:#C79A46 !important;
+}
+
+.premium-submit{
+    color:#C79A46 !important;
+    border:1px solid #C79A46;
+    background:transparent;
+}
+
+.premium-submit:hover{
+    background:#C79A46;
+    color:#111111 !important;
+}
