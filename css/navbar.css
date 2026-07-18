@@ -958,3 +958,39 @@ DESKTOP NAV TEXT
 .ht-nav .ht-dropdown > a{
     color:#111 !important;
 }
+
+.ht-brand{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.ht-logo img{
+    height:60px;
+    width:auto;
+}
+
+.brand-divider{
+    width:1px;
+    height:42px;
+    background:rgba(199,154,70,.35);
+}
+
+.brand-wordmark{
+    height:22px;      /* adjust until it matches your logo */
+    width:auto;
+    display:block;
+}
+
+@media (max-width:768px){
+
+.brand-divider,
+.brand-wordmark{
+    display:none;
+}
+
+.ht-logo img{
+    height:50px;
+}
+
+}
