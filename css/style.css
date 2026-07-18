@@ -4788,3 +4788,26 @@ CAREERS FORM
     background:#C79A46;
     color:#111111 !important;
 }
+
+/* =========================================
+   PROJECT DETAILS - MOBILE & TABLET
+========================================= */
+
+@media (max-width:1024px){
+
+.featured-project-content{
+    padding:40px 24px !important;
+    width:100%;
+    box-sizing:border-box;
+}
+
+.featured-project-content h3{
+    margin:0 0 18px;
+}
+
+.featured-project-content p{
+    margin:0;
+    line-height:1.8;
+}
+
+}
