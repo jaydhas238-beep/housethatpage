@@ -4941,3 +4941,16 @@ CAREERS FORM
     letter-spacing:0 !important;
     color:#C79A46 !important;
 }
+
+/* RECOGNIZED PROJECT TITLE */
+
+.recognized-project h2,
+.recognized-content h2,
+.award-project h2{
+    font-family:var(--serif) !important;
+    font-size:24px !important;
+    line-height:1.7 !important;
+    font-weight:400 !important;
+    letter-spacing:0 !important;
+    color:#C79A46 !important;
+}
