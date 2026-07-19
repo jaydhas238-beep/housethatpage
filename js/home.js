@@ -1,6 +1,23 @@
-const menuToggle = document.getElementById("menuToggle");
-const dropdownMenu = document.getElementById("dropdownMenu");
+const swiper = new Swiper(".testimonialSwiper", {
 
-menuToggle.addEventListener("click", () => {
-    dropdownMenu.classList.toggle("active");
+    loop: true,
+
+    effect: "fade",
+
+    autoplay: {
+
+        delay: 5000,
+
+        disableOnInteraction: false,
+
+    },
+
+    pagination: {
+
+        el: ".swiper-pagination",
+
+        clickable: true,
+
+    },
+
 });
