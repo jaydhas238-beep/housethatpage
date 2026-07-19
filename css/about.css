@@ -188,15 +188,23 @@ ABOUT HOUSETHAT
 
 @media(max-width:768px){
 
+@media (max-width:768px){
+
 .about-section{
-
-    grid-template-columns:1fr;
-
-    gap:35px;
 
     width:100%;
 
     margin:20px 0 70px;
+
+    gap:35px;
+
+}
+
+.about-image{
+
+    width:100%;
+
+    height:420px;
 
 }
 
@@ -209,6 +217,20 @@ ABOUT HOUSETHAT
     object-fit:cover;
 
     display:block;
+
+}
+
+/* Add padding only to the text */
+
+.about-content{
+
+    width:100%;
+
+    padding:0 24px;
+
+    box-sizing:border-box;
+
+}
 
 }
 
