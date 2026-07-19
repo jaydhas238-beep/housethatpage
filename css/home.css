@@ -472,3 +472,69 @@ padding-bottom: 3px;
     border-color:#C79A46;
 
 }
+
+/* ==========================
+   TESTIMONIALS
+========================== */
+
+.testimonial-section{
+
+    width:100%;
+
+    background:#111111;
+
+    padding:100px 20px;
+
+    margin-top:8px;
+
+    text-align:center;
+
+}
+.testimonial-content{
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+.testimonial-content span{
+
+    display:block;
+
+    font-size:15px;
+
+    font-family:'Inter',sans-serif;
+
+    color:#F5F2EB;
+
+    letter-spacing:4px;
+
+    margin-bottom:35px;
+
+}
+.testimonial-content blockquote{
+
+    font-size:15px;
+
+    line-height:2;
+
+    color:#F5F2EB;
+
+    font-family:'Inter',sans-serif;
+
+    font-style:normal;
+
+    margin-bottom:25px;
+
+}
+.testimonial-content h4{
+
+    font-size:15px;
+
+    font-weight:400;
+
+    color:#C79A46;
+
+    font-family:'Inter',sans-serif;
+
+}
