@@ -966,3 +966,12 @@ DESKTOP NAV TEXT
     transform:translateX(-50%);
     z-index:9999;
 }
+    .ht-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: transparent;
+}
