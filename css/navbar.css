@@ -224,9 +224,7 @@ HOUSETHAT NAVBAR
     display:block;
 }
 
-body{
-    padding-top:90px;
-}
+
 
 .ht-nav{
     display:flex;
@@ -656,11 +654,7 @@ padding:0 30px;
 
 }
 
-body{
 
-padding-top:86px;
-
-}
 
 .ht-mobile-nav{
 
@@ -687,11 +681,8 @@ padding:0 24px;
 
 }
 
-body{
 
-padding-top:76px;
 
-}
 
 .ht-logo img{
 
