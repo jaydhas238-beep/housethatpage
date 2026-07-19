@@ -339,3 +339,11 @@ body{
 .split-section{
     padding-top:20px;
 }
+
+.split-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;              /* Small gap between Founder & About */
+    margin-top:8px;       /* Same gap as Hero → Split section */
+    background:#111111;
+}
