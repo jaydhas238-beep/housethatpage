@@ -256,87 +256,39 @@ MEET THE FOUNDER
 .founder-section{
 
     width:min(1400px,90%);
-
     margin:120px auto;
 
     display:grid;
-
     grid-template-columns:1fr 1fr;
 
-    gap:80px;
-
+    gap:90px;
     align-items:center;
 
 }
 
-/* Left Content */
-
 .founder-content{
 
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
 
 }
 
-.founder-content .section-label{
-
-    font-family:'Inter',sans-serif;
-
-    font-size:15px;
-
-    font-weight:500;
-
-    letter-spacing:5px;
-
-    text-transform:uppercase;
-
-    color:#C79A46;
-
-    margin-bottom:35px;
-
-}
-
-.founder-content p{
-
-    font-family:'Inter',sans-serif;
-
-    font-size:15px;
-
-    line-height:2;
-
-    color:#F5F2EB;
-
-    margin:0;
-
-}
-
-/* Right Image */
-
 .founder-image{
 
     width:100%;
-
     height:700px;
-
-    overflow:hidden;
 
 }
 
 .founder-image img{
 
     width:100%;
-
     height:100%;
-
     object-fit:cover;
-
     display:block;
 
 }
-
 /*=====================================
 TABLET
 =====================================*/
