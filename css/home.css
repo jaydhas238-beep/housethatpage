@@ -1,4 +1,27 @@
 
+/* ==========================
+   HOME VARIABLES
+========================== */
+
+:root{
+
+    --black:#111111;
+
+    --white:#F5F2EB;
+
+    --gold:#C79A46;
+
+    --overlay:rgba(0,0,0,.35);
+
+    --glass:rgba(255,255,255,.08);
+
+    --border:rgba(255,255,255,.12);
+
+    --heading-font:'Cormorant Garamond', serif;
+
+    --body-font:'Inter', sans-serif;
+
+}
 .hero{
     position:relative;
     width:100%;
