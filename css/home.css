@@ -554,3 +554,61 @@ padding-bottom: 3px;
 .testimonial-section h4{
     color:#C79A46;
 }
+
+.testimonial-section{
+
+    background:#111111;
+
+    padding:100px 20px;
+
+    text-align:center;
+
+}
+
+.testimonial-section h2{
+
+    font-size:15px;
+
+    letter-spacing:4px;
+
+    color:#ffffff;
+
+    margin-bottom:60px;
+
+}
+
+.swiper{
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+.swiper-slide p{
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    line-height:2;
+
+    margin-bottom:30px;
+
+}
+
+.swiper-slide span{
+
+    color:#C79A46;
+
+    font-size:15px;
+
+}
+
+.swiper-pagination{
+
+    margin-top:40px;
+
+    position:relative;
+
+}
