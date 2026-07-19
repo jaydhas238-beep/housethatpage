@@ -776,3 +776,22 @@ FOOTER
 }
 
 }
+
+.hero{
+
+    margin-top:-90px;
+
+    padding-top:90px;
+
+}
+@media(max-width:768px){
+
+.hero{
+
+    margin-top:-76px;
+
+    padding-top:76px;
+
+}
+
+}
