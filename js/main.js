@@ -1289,3 +1289,4 @@ document.getElementById("totalSlides").textContent =
     }
 
 });
+
