@@ -39,3 +39,156 @@
 
     border-radius:50px;
 }
+
+.nav-left{
+
+    display:flex;
+
+    align-items:center;
+}
+
+.consultation-btn{
+
+    font-family:Inter,sans-serif;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    text-decoration:none;
+
+    color:#F5F2EB;
+
+    text-transform:uppercase;
+
+    position:relative;
+
+    padding-bottom:4px;
+}
+
+.consultation-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    height:1px;
+
+    background:#F5F2EB;
+
+    transition:.35s;
+}
+
+.consultation-btn:hover{
+
+    color:#C79A46;
+}
+
+.consultation-btn:hover::after{
+
+    background:#C79A46;
+}
+
+.nav-center{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.logo img{
+
+    width:110px;
+
+    display:block;
+}
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+}
+
+.menu-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:7px;
+}
+
+.menu-btn span{
+
+    width:28px;
+
+    height:1.5px;
+
+    background:#F5F2EB;
+
+    transition:.3s;
+}
+
+.menu-btn:hover span{
+
+    background:#C79A46;
+}
+@media(max-width:768px){
+
+.navbar{
+
+    width:94%;
+
+    height:64px;
+
+    padding:0 18px;
+}
+
+.consultation-btn{
+
+    display:none;
+}
+
+.logo img{
+
+    width:85px;
+}
+
+.logo-tagline{
+
+    display:none;
+}
+
+.menu-btn span{
+
+    width:24px;
+}
+
+}
