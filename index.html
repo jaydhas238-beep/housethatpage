@@ -3,8 +3,7 @@
 <html>
 <head>
     <!-- Meta tags -->
-    <link rel="stylesheet" href="css/
-        navbar.css">
+    <link rel="stylesheet" href="css/navbar.css">
 <link rel="stylesheet" href="css/home.css">
     <!-- Fonts -->
     <!-- CSS links -->
@@ -15,86 +14,142 @@
     <!-- Navbar -->
   
 
-<header class="navbar">
+<!-- =========================
+HOUSETHAT NAVBAR
+========================= -->
 
-    <a href="contact.html" class="book-btn">
-        BOOK CONSULTATION
-    </a>
+<header class="ht-navbar">
 
-    <a href="index.html" class="nav-logo">
+    <div class="ht-container">
+
+        <!-- HOUSETHAT BRAND -->
+
+<div class="ht-brand">
+
+    <a href="index.html" class="ht-logo">
         <img src="images/logo2.png" alt="HouseThat">
     </a>
 
-    <button class="menu-toggle" id="menuToggle">
-        MENU
-    </button>
+</div>
+
+        <!-- Desktop Navigation -->
+
+       <nav class="ht-nav ht-nav-pill">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <!-- SERVICES -->
+
+            <div class="ht-dropdown">
+
+                <a href="services.html">
+
+                    Services
+
+                    <span class="ht-arrow">▾</span>
+
+                </a>
+
+                <div class="ht-dropdown-menu">
+
+                   <a href="services.html">Interior Design</a>
+        <a href="services.html">Architecture</a>
+        <a href="services.html">Construction</a>
+        <a href="services.html">Photography</a>
+        <a href="services.html">3D Visualization</a>
+
+                </div>
+
+            </div>
+
+            <!-- PROJECTS -->
+
+            <div class="ht-dropdown">
+
+                <a href="projects.html">
+
+                    Projects
+
+                    <span class="ht-arrow">▾</span>
+
+                </a>
+
+                <div class="ht-dropdown-menu">
+
+                     <a href="projects.html"> Luxury  Interiors</a>
+        <a href="projects.html">  Architecture</a>
+       <a href="awards.html">Construction </a>
+       <a href="projects.html">Commercial And Hospitality Interior</a>
+                </div>
+
+            </div>
+
+            <a href="awards.html">Recognition</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="careers.html">Careers</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <!-- Mobile Menu Button -->
+
+         <button id="htMenuBtn" class="ht-menu-btn">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
 
 </header>
 
-<div class="dropdown-menu" id="dropdownMenu">
+<!-- =========================
+MOBILE NAVIGATION
+========================= -->
+
+<nav id="htMobileNav" class="ht-mobile-nav">
 
     <a href="index.html">Home</a>
-
     <a href="about.html">About</a>
 
-    <div class="dropdown-item">
+     <details>
+        <summary>Services</summary>
+        <a href="services.html">Interior Design</a>
+        <a href="services.html">Architecture</a>
+        <a href="services.html">Construction</a>
+        <a href="services.html">Photography</a>
+        <a href="services.html">3D Visualization</a>
+    </details>
 
-        <button class="submenu-toggle" id="servicesToggle">
-            Services +
-        </button>
+    <details>
+       
+          <summary>Projects</summary>
+        <a href="projects.html"> Luxury  Interiors</a>
+        <a href="projects.html">  Architecture</a>
+       <a href="awards.html">Construction </a>
+       <a href="projects.html">Commercial And Hospitality Interior</a>
+    </details>
 
-        <div class="submenu" id="servicesMenu">
-
-            <a href="services.html#interior">Interior</a>
-
-            <a href="services.html#architecture">Architecture</a>
-
-            <a href="services.html#construction">Construction</a>
-
-              <a href="services.html#bathspaces">Photography</a>
-
-            <a href="services.html#bathspaces">3D services</a>
-
-        </div>
-
-    </div>
-
-    <div class="dropdown-item">
-
-        <button class="submenu-toggle" id="projectsToggle">
-            Projects +
-        </button>
-
-        <div class="submenu" id="projectsMenu">
-
-            <a href="projects.html#residential">Interior</a>
-
-            <a href="projects.html#commercial">Architecture</a>
-
-            <a href="projects.html#hospitality">Construction</a>
-
-            <a href="projects.html#retail">Commercial & Hospitality</a>
-
-
-        </div>
-
-    </div>
-
-    <a href="recognition.html">Recognition</a>
-
+    <a href="awards.html">Recognition</a>
     <a href="products.html">Products</a>
-
     <a href="careers.html">Careers</a>
-
     <a href="contact.html">Contact</a>
 
-</div>
+</nav>
+
     <!-- New Homepage Sections (we'll build these) -->
 
     <!-- Footer -->
 
     <!-- JS files -->
-    <script src="js/home.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
