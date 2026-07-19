@@ -1,4 +1,13 @@
 
+html,
+body{
+
+    margin:0;
+    padding:0;
+    background:#111111;
+    overflow-x:hidden;
+
+}
 /*=====================================
 ABOUT HERO
 =====================================*/
@@ -76,6 +85,22 @@ ABOUT HERO
     font-size:14px;
 
     letter-spacing:4px;
+
+}
+
+}
+.about-hero{
+
+    margin-top:-90px;
+    padding-top:90px;
+
+}
+@media(max-width:768px){
+
+.about-hero{
+
+    margin-top:-76px;
+    padding-top:76px;
 
 }
 
