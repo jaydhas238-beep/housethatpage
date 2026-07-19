@@ -328,3 +328,14 @@ body{
 }
 
 }
+body{
+    background:#111111;
+}
+
+.hero{
+    padding-bottom:20px;
+}
+
+.split-section{
+    padding-top:20px;
+}
