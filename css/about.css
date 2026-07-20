@@ -372,3 +372,18 @@ FOUNDER
 }
 
 }
+
+
+.founder-content p{
+
+    font-family:'Inter', sans-serif;
+
+    font-size:15px;
+
+    line-height:2;
+
+    color:#F5F2EB !important;
+
+    margin:0;
+
+}
