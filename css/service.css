@@ -23,7 +23,7 @@ SERVICES HERO
 
     height:100vh;
 
-    background:url("../images/suga4.jpg") center center/cover no-repeat;
+    background:url("../images/hero.jpg") center center/cover no-repeat;
 
     margin-top:-90px;
 
@@ -94,6 +94,92 @@ MOBILE
 }
 
 .services-hero-text{
+
+    font-size:15px;
+
+    letter-spacing:5px;
+
+}
+
+}
+
+/*=====================================
+FULL WIDTH SERVICE
+=====================================*/
+
+.service-banner{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+.luxury-interiors{
+
+    background:url("../images/suga1.jpg") center center/cover no-repeat;
+
+}
+
+.service-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+}
+
+.service-content{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    z-index:2;
+
+    padding:20px;
+
+}
+
+.service-content span{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    color:#F5F2EB;
+
+}
+
+@media(max-width:768px){
+
+.service-banner{
+
+    height:70vh;
+
+}
+
+.service-content span{
 
     font-size:15px;
 
