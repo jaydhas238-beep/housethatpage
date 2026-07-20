@@ -1,1 +1,104 @@
 
+html,
+body{
+
+    margin:0;
+    padding:0;
+
+    background:#111111;
+
+    overflow-x:hidden;
+
+}
+
+/*=====================================
+SERVICES HERO
+=====================================*/
+
+.services-hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    background:url("../images/suga4.jpg") center center/cover no-repeat;
+
+    margin-top:-90px;
+
+    padding-top:90px;
+
+}
+
+.services-hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.40);
+
+}
+
+.services-hero-content{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    z-index:2;
+
+}
+
+.services-hero-text{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    color:#F5F2EB;
+
+}
+
+/*=====================================
+MOBILE
+=====================================*/
+
+@media(max-width:768px){
+
+.services-hero{
+
+    height:100svh;
+
+    margin-top:-76px;
+
+    padding-top:76px;
+
+}
+
+.services-hero-text{
+
+    font-size:15px;
+
+    letter-spacing:5px;
+
+}
+
+}
