@@ -258,3 +258,54 @@ SERVICES GRID
     }
 
 }
+
+.service-content{
+
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:20px;
+
+    z-index:2;
+
+}
+
+.service-content span{
+
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    font-weight:500;
+    letter-spacing:6px;
+    text-transform:uppercase;
+    color:#F5F2EB;
+
+}
+
+.service-btn{
+
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    font-weight:400;
+
+    color:#F5F2EB;
+
+    text-decoration:none;
+
+    transition:.35s ease;
+
+}
+
+.service-btn:hover{
+
+    color:#C79A46;
+
+    transform:translateY(-2px);
+
+}
+
