@@ -249,3 +249,156 @@ ABOUT HOUSETHAT
 
 }
 
+/*=====================================
+FOUNDER
+=====================================*/
+
+.founder-section{
+
+    width:min(1400px,90%);
+
+    margin:100px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.founder-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.founder-content .section-label{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    color:#C79A46;
+
+    margin-bottom:35px;
+
+}
+
+.founder-content p{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    line-height:2;
+
+    color:#F5F2EB;
+
+    margin:0;
+
+}
+
+.founder-image{
+
+    width:100%;
+
+    height:700px;
+
+    overflow:hidden;
+
+}
+
+.founder-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+@media(max-width:768px){
+
+.founder-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    width:100%;
+
+    margin:70px 0;
+
+    gap:35px;
+
+}
+
+/* Image First */
+
+.founder-image{
+
+    width:100%;
+
+    height:430px;
+
+    order:1;
+
+}
+
+.founder-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* Text */
+
+.founder-content{
+
+    width:100%;
+
+    order:2;
+
+    padding:0 25px;
+
+    box-sizing:border-box;
+
+}
+
+.founder-content .section-label{
+
+    font-size:15px;
+
+    margin-bottom:25px;
+
+}
+
+.founder-content p{
+
+    font-size:15px;
+
+    line-height:2;
+
+}
+
+}
