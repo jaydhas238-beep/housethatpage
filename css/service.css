@@ -236,22 +236,25 @@ SERVICES GRID
 
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.services-grid{
+    .services-grid{
 
-    flex-direction:column;
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+        margin-top:12px;
 
-    gap:12px;
+    }
 
-}
+    .service-card{
 
-.service-card{
+        position:relative;
+        width:100%;
+        min-height:70vh;
+        flex:none;
+        display:block;
 
-    width:100%;
-
-    height:70vh;
-
-}
+    }
 
 }
