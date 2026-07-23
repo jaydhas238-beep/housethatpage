@@ -168,15 +168,10 @@ RECOGNITION GALLERY
 
     object-fit:cover;
 
-    transition:transform .8s ease;
-
+  
 }
 
-.gallery-image:hover img{
 
-    transform:scale(1.05);
-
-}
 
 /*=====================================
 MOBILE
