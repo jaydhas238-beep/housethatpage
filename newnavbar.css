@@ -1,0 +1,343 @@
+/*==================================================
+HOUSETHAT NAVBAR
+PART 1
+==================================================*/
+
+.ht-navbar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:9999;
+
+    padding:22px 50px;
+
+    background:rgba(17,17,17,.18);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    transition:.4s ease;
+
+}
+
+/*==================================================
+WRAPPER
+==================================================*/
+
+.ht-navbar-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    width:100%;
+
+}
+
+/*==================================================
+LEFT
+==================================================*/
+
+.ht-left-nav{
+
+    width:33.33%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+}
+
+.ht-desktop-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+}
+
+.ht-desktop-menu a{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    font-weight:400;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:#F5F2EB;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.ht-desktop-menu a:hover{
+
+    color:#C79A46;
+
+}
+
+/*==================================================
+MENU BUTTON
+==================================================*/
+
+.ht-menu-toggle{
+
+    display:none;
+
+    align-items:center;
+
+    gap:14px;
+
+    cursor:pointer;
+
+    background:none;
+
+    border:none;
+
+    color:#F5F2EB;
+
+}
+
+.ht-menu-toggle span{
+
+    display:block;
+
+}
+
+.menu-text{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+/*==================================================
+CENTER
+==================================================*/
+
+.ht-center-logo{
+
+    width:33.33%;
+
+    display:flex;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.ht-center-logo a{
+
+    text-decoration:none;
+
+}
+
+.ht-center-logo img{
+
+    width:42px;
+
+    display:block;
+
+    margin:auto;
+
+    margin-bottom:14px;
+
+}
+
+.ht-center-logo h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:32px;
+
+    font-weight:500;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+.house{
+
+    color:#F5F2EB;
+
+}
+
+.that{
+
+    color:#C79A46;
+
+}
+
+.ht-center-logo p{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:11px;
+
+    letter-spacing:4px;
+
+    color:#B5B5B5;
+
+    text-transform:uppercase;
+
+}
+
+/*==================================================
+RIGHT
+==================================================*/
+
+.ht-right-nav{
+
+    width:33.33%;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+.book-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 34px;
+
+    border:1px solid #C79A46;
+
+    color:#C79A46;
+
+    text-decoration:none;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    transition:.35s;
+
+}
+
+.book-btn:hover{
+
+    background:#C79A46;
+
+    color:#111111;
+
+}
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media(max-width:992px){
+
+    .ht-desktop-menu{
+
+        display:none;
+
+    }
+
+    .ht-menu-toggle{
+
+        display:flex;
+
+    }
+
+    .ht-navbar{
+
+        padding:18px 24px;
+
+    }
+
+    .ht-center-logo img{
+
+        width:34px;
+
+    }
+
+    .ht-center-logo h1{
+
+        font-size:24px;
+
+    }
+
+    .ht-center-logo p{
+
+        display:none;
+
+    }
+
+    .book-btn{
+
+        padding:12px 20px;
+
+        font-size:11px;
+
+        letter-spacing:2px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .book-btn{
+
+        display:none;
+
+    }
+
+    .ht-left-nav{
+
+        width:20%;
+
+    }
+
+    .ht-center-logo{
+
+        width:60%;
+
+    }
+
+    .ht-right-nav{
+
+        width:20%;
+
+        justify-content:flex-end;
+
+    }
+
+}
