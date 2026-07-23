@@ -230,3 +230,107 @@ MOBILE
 }
 
 }
+
+/*=====================================
+RECOGNITION QUOTE
+=====================================*/
+
+.recognition-quote{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    margin-top:12px;
+
+    background:url("../images/Dubai3.jpg") center center/cover no-repeat;
+
+}
+
+.recognition-quote-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+.recognition-quote-content{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+    z-index:2;
+
+}
+
+.recognition-quote-title{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    color:#C79A46;
+
+    margin-bottom:30px;
+
+}
+
+.recognition-quote-text{
+
+    max-width:720px;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    line-height:2;
+
+    color:#F5F2EB;
+
+    margin:0;
+
+}
+
+@media(max-width:768px){
+
+.recognition-quote{
+
+    height:80vh;
+
+}
+
+.recognition-quote-content{
+
+    padding:0 30px;
+
+}
+
+.recognition-quote-title{
+
+    letter-spacing:5px;
+
+}
+
+}
