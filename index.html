@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
 <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/newnavbar.css">
+     <link rel="stylesheet" href="css/navbar.css">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -22,134 +22,51 @@
 
 <body>
 
-<!-- ===============================
-HOUSETHAT LUXURY NAVBAR
-================================ -->
+    <!-- Navbar -->
+  
+
 
 <header class="ht-navbar">
 
-    <!-- LEFT -->
+    <div class="ht-container">
 
-    <div class="ht-nav-left">
+        <!-- HOUSETHAT BRAND -->
 
-        <button id="menuToggle" class="ht-menu-btn">
+<div class="ht-brand">
 
-            <span></span>
-            <span></span>
-            <span></span>
+    <a href="index.html" class="ht-logo">
+        <img src="images/logo2.png" alt="HouseThat">
+    </a>
 
-            <p>MENU</p>
+</div>
 
-        </button>
+        <!-- Desktop Navigation -->
 
-    </div>
+       <nav class="ht-nav ht-nav-pill">
 
-    <!-- CENTER -->
+            <a href="index.html">Home</a>
 
-    <div class="ht-nav-center">
-
-        <a href="index.html" class="ht-brand">
-
-            <img
-                src="images/logo2.png"
-                alt="HouseThat Logo"
-            >
-
-            <h1>
-
-                <span class="house">
-                    House
-                </span>
-
-                <span class="that">
-                    That
-                </span>
-
-            </h1>
-
-            <small>
-
-                INTERIOR • ARCHITECTURE • CONSTRUCTION
-
-            </small>
-
-        </a>
-
-    </div>
-
-    <!-- RIGHT -->
-
-    <div class="ht-nav-right">
-
-        <a href="contact.html" class="book-btn">
-
-            BOOK CONSULTATION
-
-        </a>
-
-    </div>
-
-</header>
-
-<!-- ===============================
-FULLSCREEN MENU
-================================ -->
-
-<div id="menuOverlay" class="menu-overlay">
-
-    <button id="closeMenu" class="close-btn">
-
-        ✕
-
-    </button>
-
-    <div class="menu-grid">
-
-        <!-- LEFT -->
-
-        <div class="menu-links">
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="about.html">
-                About
-            </a>
+            <a href="about.html">About</a>
 
             <!-- SERVICES -->
 
-            <div class="dropdown">
+            <div class="ht-dropdown">
 
-                <button class="dropdown-btn">
+                <a href="services.html">
 
                     Services
 
-                    <span>+</span>
+                    <span class="ht-arrow">▾</span>
 
-                </button>
+                </a>
 
-                <div class="dropdown-content">
+                <div class="ht-dropdown-menu">
 
-                    <a href="services.html#interior">
-                        Interior Design
-                    </a>
-
-                    <a href="services.html#architecture">
-                        Architecture
-                    </a>
-
-                    <a href="services.html#construction">
-                        Construction
-                    </a>
-
-                    <a href="services.html#photography">
-                        Photography
-                    </a>
-
-                    <a href="services.html#visualization">
-                        3D Visualization
-                    </a>
+                   <a href="services.html">Interior Design</a>
+        <a href="services.html">Architecture</a>
+        <a href="services.html">Construction</a>
+        <a href="services.html">Photography</a>
+        <a href="services.html">3D Visualization</a>
 
                 </div>
 
@@ -157,135 +74,83 @@ FULLSCREEN MENU
 
             <!-- PROJECTS -->
 
-            <div class="dropdown">
+            <div class="ht-dropdown">
 
-                <button class="dropdown-btn">
+                <a href="projects.html">
 
                     Projects
 
-                    <span>+</span>
+                    <span class="ht-arrow">▾</span>
 
-                </button>
+                </a>
 
-                <div class="dropdown-content">
+                <div class="ht-dropdown-menu">
 
-                    <div class="project-group">
-
-                        <h4>
-
-                            Luxury Interiors
-
-                        </h4>
-
-                        <a href="project-gehna.html">
-
-                            Gehna Jewellery
-
-                        </a>
-
-                        <a href="project-penthouse.html">
-
-                            Skyline Penthouse
-
-                        </a>
-
-                        <a href="project-villa.html">
-
-                            Villa Aurelia
-
-                        </a>
-
-                    </div>
-
-                    <div class="project-group">
-
-                        <h4>
-
-                            Architecture
-
-                        </h4>
-
-                        <a href="project-modernvilla.html">
-
-                            Modern Villa
-
-                        </a>
-
-                        <a href="project-weekendhome.html">
-
-                            Weekend Home
-
-                        </a>
-
-                    </div>
-
-                    <div class="project-group">
-
-                        <h4>
-
-                            Commercial
-
-                        </h4>
-
-                        <a href="project-rooftopbar.html">
-
-                            Rooftop Bar
-
-                        </a>
-
-                        <a href="project-restaurant.html">
-
-                            Restaurant
-
-                        </a>
-
-                    </div>
-
+                     <a href="projects.html"> Luxury  Interiors</a>
+        <a href="projects.html">  Architecture</a>
+       <a href="awards.html">Construction </a>
+       <a href="projects.html">Commercial And Hospitality Interior</a>
                 </div>
 
             </div>
 
-            <a href="recognition.html">
+            <a href="awards.html">Recognition</a>
 
-                Recognition
+            <a href="products.html">Products</a>
 
-            </a>
+            <a href="careers.html">Careers</a>
 
-            <a href="products.html">
+            <a href="contact.html">Contact</a>
 
-                Products
+        </nav>
 
-            </a>
+        <!-- Mobile Menu Button -->
 
-            <a href="careers.html">
+         <button id="htMenuBtn" class="ht-menu-btn">
 
-                Careers
+            <span></span>
+            <span></span>
+            <span></span>
 
-            </a>
-
-            <a href="contact.html">
-
-                Contact
-
-            </a>
-
-        </div>
-
-        <!-- RIGHT IMAGE -->
-
-        <div class="menu-image">
-
-            <img
-                id="menuImage"
-                src="images/image5.jpg"
-                alt=""
-            >
-
-        </div>
+        </button>
 
     </div>
 
-</div>
+</header>
+
+<!-- =========================
+MOBILE NAVIGATION
+========================= -->
+
+<nav id="htMobileNav" class="ht-mobile-nav">
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+
+     <details>
+        <summary>Services</summary>
+        <a href="services.html">Interior Design</a>
+        <a href="services.html">Architecture</a>
+        <a href="services.html">Construction</a>
+        <a href="services.html">Photography</a>
+        <a href="services.html">3D Visualization</a>
+    </details>
+
+    <details>
+       
+          <summary>Projects</summary>
+        <a href="projects.html"> Luxury  Interiors</a>
+        <a href="projects.html">  Architecture</a>
+       <a href="awards.html">Construction </a>
+       <a href="projects.html">Commercial And Hospitality Interior</a>
+    </details>
+
+    <a href="awards.html">Recognition</a>
+    <a href="products.html">Products</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+
+</nav>
 
     <!-- New Homepage Sections (we'll build these) -->
 
@@ -468,8 +333,9 @@ FULLSCREEN MENU
 </footer>
 
     <!-- JS files -->
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="main.js"></script>
+    <script src="js/main.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 </html>
