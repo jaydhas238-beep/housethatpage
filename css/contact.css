@@ -228,35 +228,50 @@ BUTTON
 MOBILE
 =====================================*/
 
-@media(max-width:768px){
+@media (max-width:768px){
 
     .contact-section{
 
+        display:grid;
+
         grid-template-columns:1fr;
+
+        grid-template-areas:
+            "image"
+            "content";
 
         gap:0;
 
     }
 
-    .contact-right{
+    .contact-left{
 
-        order:1;
+        grid-area:image;
 
-        padding:50px 30px;
+        min-height:420px;
 
     }
 
-    .contact-left{
+    .contact-right{
 
-        order:2;
+        grid-area:content;
 
-        min-height:420px;
+        padding:50px 30px;
 
     }
 
     .contact-content{
 
         width:100%;
+        margin:0;
+
+    }
+
+    .contact-left img{
+
+        width:100%;
+        height:100%;
+        object-fit:cover;
 
     }
 
