@@ -309,3 +309,14 @@ SERVICES GRID
 
 }
 
+.photography{
+
+    background:url("../images/photo2.jpg") center center/cover no-repeat;
+
+}
+
+.visualisation{
+
+    background:url("../images/3render1.jpg") center center/cover no-repeat;
+
+}
