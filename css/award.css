@@ -334,3 +334,262 @@ RECOGNITION QUOTE
 }
 
 }
+
+/* ===========================
+   CTA
+=========================== */
+
+.cta-section{
+
+    width:100%;
+
+    min-height:60vh;
+
+    background:#111111;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:80px 20px;
+
+    margin-top:8px;
+}
+.cta-content{
+
+    text-align:center;
+
+    max-width:600px;
+
+}
+.cta-content span{
+
+    display:block;
+
+    font-size:15px;
+
+    font-family:'Inter',sans-serif;
+
+    color:#F5F2EB;
+
+    letter-spacing:4px;
+
+    margin-bottom:20px;
+
+}
+.cta-content p{
+
+    font-size:15px;
+
+    font-family:'Inter',sans-serif;
+
+    color:#F5F2EB;
+
+    line-height:2;
+
+    margin-bottom:30px;
+
+}
+
+.cta-content a{
+
+    text-decoration:none;
+
+    color:#F5F2EB;
+
+    border-bottom:1px solid #F5F2EB;
+
+    padding-bottom:4px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.cta-content a:hover{
+
+    color:#C79A46;
+
+    border-color:#C79A46;
+
+}
+
+/*==============================
+FOOTER
+==============================*/
+
+
+/*=====================================
+FOOTER
+=====================================*/
+
+.footer{
+
+    width:100%;
+
+    background:#111111;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:60px 30px 30px;
+
+    text-align:center;
+
+}
+
+/* Links */
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:35px;
+
+    margin-bottom:40px;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#F5F2EB;
+
+    font-size:15px;
+
+    transition:.35s ease;
+
+}
+
+.footer-links a:hover{
+
+    color:#C79A46;
+
+}
+
+/* Contact */
+
+.footer-contact{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:35px;
+
+}
+
+.footer-contact a,
+
+.footer-contact span{
+
+    color:#F5F2EB;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+}
+
+/* Social */
+
+.footer-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    margin-bottom:45px;
+
+}
+
+.footer-social a{
+
+    color:#F5F2EB;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.35s ease;
+
+}
+
+.footer-social a:hover{
+
+    color:#C79A46;
+
+}
+
+/* Copyright */
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:25px;
+
+    color:rgba(245,242,235,.55);
+
+    font-size:14px;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.footer{
+
+    padding:50px 20px 25px;
+
+}
+
+.footer-links{
+
+    gap:18px;
+
+    flex-direction:column;
+
+}
+
+.footer-contact{
+
+    gap:12px;
+
+    flex-direction:column;
+
+}
+
+.footer-social{
+
+    gap:20px;
+
+}
+
+.footer-bottom{
+
+    font-size:13px;
+
+}
+
+}
