@@ -31,15 +31,9 @@ WRAPPER
 ==================================================*/
 
 .ht-navbar-wrapper{
-
-    display:flex;
-
+    display:grid;
+    grid-template-columns:220px 1fr 220px;
     align-items:center;
-
-    justify-content:space-between;
-
-    width:100%;
-
 }
 
 /*==================================================
@@ -59,13 +53,7 @@ LEFT
 }
 
 .ht-desktop-menu{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:28px;
-
+    display:none;
 }
 
 .ht-desktop-menu a{
@@ -99,21 +87,17 @@ MENU BUTTON
 ==================================================*/
 
 .ht-menu-toggle{
-
-    display:none;
-
+    display:flex;
     align-items:center;
-
     gap:14px;
-
-    cursor:pointer;
-
     background:none;
-
     border:none;
-
+    cursor:pointer;
     color:#F5F2EB;
-
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    letter-spacing:3px;
+    text-transform:uppercase;
 }
 
 .ht-menu-toggle span{
