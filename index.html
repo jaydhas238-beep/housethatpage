@@ -22,33 +22,38 @@
 
 <body>
 
-<!-- ===========================
-HOUSETHAT NAVBAR
-=========================== -->
+<!-- ===============================
+HOUSETHAT LUXURY NAVBAR
+================================ -->
 
-<header class="navbar">
+<header class="ht-navbar">
 
-    <div class="nav-left">
+    <!-- LEFT -->
 
-        <button class="menu-btn">
+    <div class="ht-nav-left">
+
+        <button id="menuToggle" class="ht-menu-btn">
 
             <span></span>
             <span></span>
             <span></span>
 
-            <span class="menu-text">
-                MENU
-            </span>
+            <p>MENU</p>
 
         </button>
 
     </div>
 
-    <div class="nav-center">
+    <!-- CENTER -->
 
-        <a href="index.html" class="brand">
+    <div class="ht-nav-center">
 
-            <img src="images/logo2.png" alt="HouseThat">
+        <a href="index.html" class="ht-brand">
+
+            <img
+                src="images/logo2.png"
+                alt="HouseThat Logo"
+            >
 
             <h1>
 
@@ -62,17 +67,19 @@ HOUSETHAT NAVBAR
 
             </h1>
 
-            <p>
+            <small>
 
-                INTERIOR · ARCHITECTURE · CONSTRUCTION
+                INTERIOR • ARCHITECTURE • CONSTRUCTION
 
-            </p>
+            </small>
 
         </a>
 
     </div>
 
-    <div class="nav-right">
+    <!-- RIGHT -->
+
+    <div class="ht-nav-right">
 
         <a href="contact.html" class="book-btn">
 
@@ -84,79 +91,64 @@ HOUSETHAT NAVBAR
 
 </header>
 
+<!-- ===============================
+FULLSCREEN MENU
+================================ -->
 
-<!-- ===========================
-DESKTOP FULLSCREEN MENU
-=========================== -->
+<div id="menuOverlay" class="menu-overlay">
 
-<div class="menu-overlay">
-
-    <button class="close-menu">
+    <button id="closeMenu" class="close-btn">
 
         ✕
 
     </button>
 
-    <div class="overlay-wrapper">
+    <div class="menu-grid">
 
         <!-- LEFT -->
 
-        <div class="overlay-left">
+        <div class="menu-links">
 
             <a href="index.html">
-
-                HOME
-
+                Home
             </a>
 
             <a href="about.html">
-
-                ABOUT
-
+                About
             </a>
 
             <!-- SERVICES -->
 
-            <div class="menu-item">
+            <div class="dropdown">
 
-                <button>
+                <button class="dropdown-btn">
 
-                    SERVICES
+                    Services
 
                     <span>+</span>
 
                 </button>
 
-                <div class="submenu">
+                <div class="dropdown-content">
 
                     <a href="services.html#interior">
-
                         Interior Design
-
                     </a>
 
                     <a href="services.html#architecture">
-
                         Architecture
-
                     </a>
 
                     <a href="services.html#construction">
-
                         Construction
-
                     </a>
 
                     <a href="services.html#photography">
-
                         Photography
-
                     </a>
 
                     <a href="services.html#visualization">
-
                         3D Visualization
-
                     </a>
 
                 </div>
@@ -165,111 +157,87 @@ DESKTOP FULLSCREEN MENU
 
             <!-- PROJECTS -->
 
-            <div class="menu-item">
+            <div class="dropdown">
 
-                <button>
+                <button class="dropdown-btn">
 
-                    PROJECTS
+                    Projects
 
                     <span>+</span>
 
                 </button>
 
-                <div class="submenu">
+                <div class="dropdown-content">
 
-                    <!-- Luxury -->
+                    <div class="project-group">
 
-                    <div class="submenu-group">
-
-                        <button>
+                        <h4>
 
                             Luxury Interiors
 
-                            <span>›</span>
+                        </h4>
 
-                        </button>
+                        <a href="project-gehna.html">
 
-                        <div class="submenu-child">
+                            Gehna Jewellery
 
-                            <a href="project-gehna.html">
+                        </a>
 
-                                Gehna Jewellery
+                        <a href="project-penthouse.html">
 
-                            </a>
+                            Skyline Penthouse
 
-                            <a href="project-penthouse.html">
+                        </a>
 
-                                Skyline Penthouse
+                        <a href="project-villa.html">
 
-                            </a>
+                            Villa Aurelia
 
-                            <a href="project-villa.html">
-
-                                Villa Aurelia
-
-                            </a>
-
-                        </div>
+                        </a>
 
                     </div>
 
-                    <!-- Architecture -->
+                    <div class="project-group">
 
-                    <div class="submenu-group">
-
-                        <button>
+                        <h4>
 
                             Architecture
 
-                            <span>›</span>
+                        </h4>
 
-                        </button>
+                        <a href="project-modernvilla.html">
 
-                        <div class="submenu-child">
+                            Modern Villa
 
-                            <a href="project-modernvilla.html">
+                        </a>
 
-                                Modern Villa
+                        <a href="project-weekendhome.html">
 
-                            </a>
+                            Weekend Home
 
-                            <a href="project-weekendhome.html">
-
-                                Weekend Home
-
-                            </a>
-
-                        </div>
+                        </a>
 
                     </div>
 
-                    <!-- Commercial -->
+                    <div class="project-group">
 
-                    <div class="submenu-group">
-
-                        <button>
+                        <h4>
 
                             Commercial
 
-                            <span>›</span>
+                        </h4>
 
-                        </button>
+                        <a href="project-rooftopbar.html">
 
-                        <div class="submenu-child">
+                            Rooftop Bar
 
-                            <a href="project-rooftopbar.html">
+                        </a>
 
-                                Rooftop Bar
+                        <a href="project-restaurant.html">
 
-                            </a>
+                            Restaurant
 
-                            <a href="project-restaurant.html">
-
-                                Restaurant
-
-                            </a>
-
-                        </div>
+                        </a>
 
                     </div>
 
@@ -279,277 +247,41 @@ DESKTOP FULLSCREEN MENU
 
             <a href="recognition.html">
 
-                RECOGNITION
+                Recognition
 
             </a>
 
             <a href="products.html">
 
-                PRODUCTS
+                Products
 
             </a>
 
             <a href="careers.html">
 
-                CAREERS
+                Careers
 
             </a>
 
             <a href="contact.html">
 
-                CONTACT
+                Contact
 
             </a>
 
         </div>
 
-        <!-- RIGHT -->
+        <!-- RIGHT IMAGE -->
 
-        <div class="overlay-right">
+        <div class="menu-image">
 
             <img
-
+                id="menuImage"
                 src="images/image5.jpg"
-
-                id="menuPreview"
-
-                alt="Preview"
-
+                alt=""
             >
 
         </div>
-
-    </div>
-
-</div>
-
-    <!-- ==========================================
-MOBILE MENU
-========================================== -->
-
-<div class="mobile-menu-overlay">
-
-    <div class="mobile-menu-header">
-
-        <a href="index.html" class="mobile-brand">
-
-            <img src="images/logo2.png" alt="HouseThat">
-
-            <h2>
-
-                <span class="house">House</span>
-
-                <span class="that">That</span>
-
-            </h2>
-
-        </a>
-
-        <button class="mobile-close">
-
-            ✕
-
-        </button>
-
-    </div>
-
-    <div class="mobile-menu-content">
-
-        <a href="index.html">
-
-            Home
-
-        </a>
-
-        <a href="about.html">
-
-            About
-
-        </a>
-
-        <!-- SERVICES -->
-
-        <details>
-
-            <summary>
-
-                Services
-
-            </summary>
-
-            <a href="services.html#interior">
-
-                Interior Design
-
-            </a>
-
-            <a href="services.html#architecture">
-
-                Architecture
-
-            </a>
-
-            <a href="services.html#construction">
-
-                Construction
-
-            </a>
-
-            <a href="services.html#photography">
-
-                Photography
-
-            </a>
-
-            <a href="services.html#visualization">
-
-                3D Visualization
-
-            </a>
-
-        </details>
-
-        <!-- PROJECTS -->
-
-        <details>
-
-            <summary>
-
-                Projects
-
-            </summary>
-
-            <!-- Luxury -->
-
-            <details>
-
-                <summary>
-
-                    Luxury Interiors
-
-                </summary>
-
-                <a href="project-gehna.html">
-
-                    Gehna Jewellery
-
-                </a>
-
-                <a href="project-penthouse.html">
-
-                    Skyline Penthouse
-
-                </a>
-
-                <a href="project-villa.html">
-
-                    Villa Aurelia
-
-                </a>
-
-            </details>
-
-            <!-- Architecture -->
-
-            <details>
-
-                <summary>
-
-                    Architecture
-
-                </summary>
-
-                <a href="project-modernvilla.html">
-
-                    Modern Villa
-
-                </a>
-
-                <a href="project-weekendhome.html">
-
-                    Weekend Home
-
-                </a>
-
-            </details>
-
-            <!-- Commercial -->
-
-            <details>
-
-                <summary>
-
-                    Commercial
-
-                </summary>
-
-                <a href="project-rooftopbar.html">
-
-                    Rooftop Bar
-
-                </a>
-
-                <a href="project-restaurant.html">
-
-                    Restaurant
-
-                </a>
-
-            </details>
-
-        </details>
-
-        <a href="recognition.html">
-
-            Recognition
-
-        </a>
-
-        <a href="products.html">
-
-            Products
-
-        </a>
-
-        <a href="careers.html">
-
-            Careers
-
-        </a>
-
-        <a href="contact.html">
-
-            Contact
-
-        </a>
-
-    </div>
-
-    <div class="mobile-footer">
-
-        <p>
-
-            INDIA • UAE
-
-        </p>
-
-        <a href="mailto:studio@housethat.in">
-
-            studio@housethat.in
-
-        </a>
-
-        <a href="https://instagram.com/housethat.co">
-
-            Instagram
-
-        </a>
-
-        <a href="https://linkedin.com">
-
-            LinkedIn
-
-        </a>
 
     </div>
 
