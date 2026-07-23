@@ -1,3 +1,16 @@
+html,
+body{
+
+    margin:0;
+    padding:0;
+
+    width:100%;
+    overflow-x:hidden;
+
+    background:#111111;
+
+}
+
 /*=====================================
 RECOGNITION HERO
 =====================================*/
@@ -12,9 +25,9 @@ RECOGNITION HERO
 
     background:url("../images/Dubai1.jpg") center center/cover no-repeat;
 
-    margin-top:-90px;
+     margin:0;
 
-    padding-top:90px;
+  
 
 }
 
