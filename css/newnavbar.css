@@ -31,9 +31,13 @@ WRAPPER
 ==================================================*/
 
 .ht-navbar-wrapper{
+
     display:grid;
+
     grid-template-columns:220px 1fr 220px;
+
     align-items:center;
+
 }
 
 /*==================================================
@@ -42,7 +46,7 @@ LEFT
 
 .ht-left-nav{
 
-    width:33.33%;
+    width:auto;
 
     display:flex;
 
@@ -124,8 +128,7 @@ CENTER
 
 .ht-center-logo{
 
-    width:33.33%;
-
+    width:auto;
     display:flex;
 
     justify-content:center;
@@ -198,7 +201,7 @@ RIGHT
 
 .ht-right-nav{
 
-    width:33.33%;
+    width:auto;
 
     display:flex;
 
@@ -306,19 +309,19 @@ MOBILE
 
     .ht-left-nav{
 
-        width:20%;
+        width:auto;
 
     }
 
     .ht-center-logo{
 
-        width:60%;
+         width:auto;
 
     }
 
     .ht-right-nav{
 
-        width:20%;
+       width:auto;
 
         justify-content:flex-end;
 
