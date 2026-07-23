@@ -98,26 +98,31 @@ RECOGNITION HERO
 /*=====================================
 RECOGNITION STORY
 =====================================*/
-
-.recognition-story{
+.recognition-gallery{
 
     display:flex;
 
+    flex-direction:row;
+
     gap:12px;
 
-    padding:12px 0;
+    width:100%;
 
-    background:#111111;
+    margin-top:12px;
 
 }
 
-.recognition-image{
+.gallery-image{
 
     flex:1;
 
+    overflow:hidden;
+
 }
 
-.recognition-image img{
+.gallery-image img{
+
+    display:block;
 
     width:100%;
 
@@ -125,10 +130,7 @@ RECOGNITION STORY
 
     object-fit:cover;
 
-    display:block;
-
 }
-
 .recognition-text{
 
     flex:1;
@@ -191,25 +193,27 @@ RECOGNITION STORY
 
 }
 
-@media(max-width:768px){
 
-.recognition-story{
 
-    flex-direction:column;
+@media (max-width:768px){
 
-}
+    .recognition-gallery{
 
-.recognition-image{
+        flex-direction:column;
 
-    width:100%;
+    }
 
-}
+    .gallery-image{
 
-.recognition-image img{
+        width:100%;
 
-    width:100%;
+    }
 
-    height:auto;
+    .gallery-image img{
+
+        height:auto;
+
+    }
 
 }
 
