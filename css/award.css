@@ -1,0 +1,83 @@
+/*=====================================
+RECOGNITION HERO
+=====================================*/
+
+.recognition-hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    background:url("../images/Dubai1.jpg") center center/cover no-repeat;
+
+    margin-top:-90px;
+
+    padding-top:90px;
+
+}
+
+.recognition-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.40);
+
+}
+
+.recognition-content{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    z-index:2;
+
+}
+
+.recognition-title{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    color:#F5F2EB;
+
+}
+
+@media(max-width:768px){
+
+.recognition-hero{
+
+    height:100svh;
+
+    margin-top:-76px;
+
+    padding-top:76px;
+
+}
+
+.recognition-title{
+
+    letter-spacing:5px;
+
+}
+
+}
