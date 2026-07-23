@@ -94,3 +94,129 @@ RECOGNITION HERO
 }
 
 }
+
+/*=====================================
+RECOGNITION STORY
+=====================================*/
+
+.recognition-story{
+
+    display:flex;
+
+    gap:12px;
+
+    padding:12px 0;
+
+    background:#111111;
+
+}
+
+.recognition-image{
+
+    flex:1;
+
+}
+
+.recognition-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.recognition-text{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:80px;
+
+}
+
+.recognition-subtitle{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    color:#C79A46;
+
+    margin-bottom:25px;
+
+}
+
+.recognition-text h2{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    color:#F5F2EB;
+
+    margin-bottom:25px;
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+}
+
+.recognition-text p{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    line-height:2;
+
+    color:#F5F2EB;
+
+    opacity:.9;
+
+}
+
+@media(max-width:768px){
+
+.recognition-story{
+
+    flex-direction:column;
+
+}
+
+.recognition-image{
+
+    width:100%;
+
+}
+
+.recognition-image img{
+
+    width:100%;
+
+    height:auto;
+
+}
+
+.recognition-text{
+
+    padding:50px 30px;
+
+}
+
+}
