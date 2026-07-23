@@ -65,42 +65,35 @@ CAREER SECTION
 
 .career-subtitle{
 
-    display:block;
-
-    color:#C79A46;
-
+    font-family:'Inter',sans-serif;
     font-size:15px;
-
+    font-weight:400;
     letter-spacing:6px;
-
-    margin-bottom:20px;
+    text-transform:uppercase;
+    color:#C79A46;
 
 }
 
 .career-content h2{
 
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    font-weight:500;
+    letter-spacing:4px;
+    text-transform:uppercase;
     color:#F5F2EB;
 
-    font-size:15px;
-
-    letter-spacing:3px;
-
-    text-transform:uppercase;
-
-    margin-bottom:25px;
+    margin:25px 0;
 
 }
 
 .career-content p{
 
-    color:#F5F2EB;
-
-    opacity:.85;
-
-    line-height:2;
-
+    font-family:'Inter',sans-serif;
     font-size:15px;
-
-    margin-bottom:50px;
+    font-weight:400;
+    line-height:2;
+    color:#F5F2EB;
+    opacity:.85;
 
 }
