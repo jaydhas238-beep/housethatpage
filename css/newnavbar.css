@@ -362,3 +362,252 @@ LARGE DESKTOP
     }
 
 }
+
+/*=========================================
+SUBMENUS
+=========================================*/
+
+.submenu{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    margin-left:35px;
+
+    transition:max-height .55s ease,
+               opacity .35s ease,
+               margin .35s ease;
+
+}
+
+.menu-item.active .submenu{
+
+    max-height:1200px;
+
+    opacity:1;
+
+    margin-top:12px;
+    margin-bottom:12px;
+
+}
+
+/*=========================================
+SUBMENU LINKS
+=========================================*/
+
+.submenu>a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#CFCFCF;
+
+    font-size:22px;
+
+    font-family:"Inter",sans-serif;
+
+    font-weight:300;
+
+    letter-spacing:1px;
+
+    padding:12px 0;
+
+    transition:.35s ease;
+
+    position:relative;
+
+}
+
+.submenu>a:hover{
+
+    color:#C79A46;
+
+    transform:translateX(18px);
+
+}
+
+.submenu>a::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-18px;
+    top:50%;
+
+    width:8px;
+    height:1px;
+
+    background:#C79A46;
+
+    opacity:0;
+
+    transform:translateY(-50%);
+
+    transition:.35s;
+
+}
+
+.submenu>a:hover::before{
+
+    opacity:1;
+
+}
+
+/*=========================================
+PROJECT GROUPS
+=========================================*/
+
+.submenu-group{
+
+    margin:18px 0;
+
+}
+
+.submenu-group>button{
+
+    width:100%;
+
+    background:none;
+    border:none;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:10px 0;
+
+    color:#F5F2EB;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.submenu-group>button:hover{
+
+    color:#C79A46;
+
+}
+
+.submenu-group>button span{
+
+    color:#C79A46;
+
+    transition:.35s;
+
+}
+
+.submenu-group.active>button span{
+
+    transform:rotate(90deg);
+
+}
+
+/*=========================================
+CHILD PROJECTS
+=========================================*/
+
+.submenu-child{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    margin-left:28px;
+
+    transition:max-height .45s ease,
+               opacity .35s ease;
+
+}
+
+.submenu-group.active .submenu-child{
+
+    max-height:500px;
+
+    opacity:1;
+
+}
+
+.submenu-child a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#BEBEBE;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:18px;
+
+    padding:10px 0;
+
+    transition:.3s;
+
+}
+
+.submenu-child a:hover{
+
+    color:#C79A46;
+
+    padding-left:18px;
+
+}
+
+/*=========================================
+DIVIDER
+=========================================*/
+
+.submenu-group:not(:last-child){
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    padding-bottom:18px;
+
+}
+
+/*=========================================
+TABLET
+=========================================*/
+
+@media(max-width:1100px){
+
+    .submenu{
+
+        margin-left:22px;
+
+    }
+
+    .submenu>a{
+
+        font-size:20px;
+
+    }
+
+    .submenu-group>button{
+
+        font-size:26px;
+
+    }
+
+    .submenu-child a{
+
+        font-size:17px;
+
+    }
+
+}
