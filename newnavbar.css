@@ -1001,3 +1001,371 @@ RESPONSIVE
     }
 
 }
+/*==================================================
+PART 4
+PREMIUM ANIMATIONS & POLISH
+==================================================*/
+
+/*=====================================
+SCROLLED NAVBAR
+=====================================*/
+
+.ht-navbar.scrolled{
+
+    padding:16px 50px;
+
+    background:rgba(10,10,10,.88);
+
+    backdrop-filter:blur(30px);
+
+    -webkit-backdrop-filter:blur(30px);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.35);
+
+}
+
+/*=====================================
+DESKTOP LINK ANIMATION
+=====================================*/
+
+.ht-desktop-menu a{
+
+    position:relative;
+
+}
+
+.ht-desktop-menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:1px;
+
+    background:#C79A46;
+
+    transition:.35s ease;
+
+}
+
+.ht-desktop-menu a:hover::after{
+
+    width:100%;
+
+}
+
+/*=====================================
+BUTTON ANIMATION
+=====================================*/
+
+.book-btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.book-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.12);
+
+    transition:.45s;
+
+}
+
+.book-btn:hover::before{
+
+    left:100%;
+
+}
+
+.book-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 25px rgba(199,154,70,.25);
+
+}
+
+/*=====================================
+LOGO
+=====================================*/
+
+.ht-center-logo{
+
+    transition:.35s;
+
+}
+
+.ht-center-logo:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.ht-center-logo img{
+
+    transition:.4s;
+
+}
+
+.ht-center-logo:hover img{
+
+    transform:rotate(-5deg) scale(1.05);
+
+}
+
+/*=====================================
+DROPDOWNS
+=====================================*/
+
+.ht-dropdown-content{
+
+    border-radius:4px;
+
+    box-shadow:
+
+    0 30px 60px rgba(0,0,0,.55);
+
+}
+
+.ht-submenu-content{
+
+    border-radius:4px;
+
+    box-shadow:
+
+    0 30px 60px rgba(0,0,0,.55);
+
+}
+
+/*=====================================
+GOLD BAR
+=====================================*/
+
+.ht-dropdown-content::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:2px;
+
+    background:#C79A46;
+
+}
+
+/*=====================================
+MOBILE MENU LINKS
+=====================================*/
+
+.ht-mobile-menu a{
+
+    transition:
+
+    color .3s,
+
+    transform .3s,
+
+    padding-left .3s;
+
+}
+
+.ht-mobile-menu a:hover{
+
+    transform:translateX(6px);
+
+}
+
+/*=====================================
+DETAILS
+=====================================*/
+
+.ht-mobile-menu details summary{
+
+    transition:.3s;
+
+}
+
+.ht-mobile-menu details[open]>summary{
+
+    color:#C79A46;
+
+}
+
+/*=====================================
+SCROLLBAR
+=====================================*/
+
+.ht-mobile-overlay::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.ht-mobile-overlay::-webkit-scrollbar-thumb{
+
+    background:#C79A46;
+
+    border-radius:50px;
+
+}
+
+.ht-mobile-overlay::-webkit-scrollbar-track{
+
+    background:#181818;
+
+}
+
+/*=====================================
+ACTIVE PAGE
+=====================================*/
+
+.ht-desktop-menu a.active{
+
+    color:#C79A46;
+
+}
+
+.ht-desktop-menu a.active::after{
+
+    width:100%;
+
+}
+
+.ht-mobile-menu a.active{
+
+    color:#C79A46;
+
+}
+
+/*=====================================
+FADE IN
+=====================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.ht-dropdown-content{
+
+    animation:fadeUp .35s ease;
+
+}
+
+.ht-submenu-content{
+
+    animation:fadeUp .35s ease;
+
+}
+
+/*=====================================
+MENU ICON
+=====================================*/
+
+.ht-menu-toggle span{
+
+    transition:.35s;
+
+}
+
+.ht-menu-toggle:hover{
+
+    color:#C79A46;
+
+}
+
+.ht-menu-toggle:hover span{
+
+    background:#C79A46;
+
+}
+
+/*=====================================
+SMOOTH TRANSITIONS
+=====================================*/
+
+*{
+
+    transition-property:
+
+    color,
+
+    background,
+
+    border-color,
+
+    transform,
+
+    opacity,
+
+    box-shadow;
+
+}
+
+/*=====================================
+LARGE DESKTOP
+=====================================*/
+
+@media(min-width:1600px){
+
+    .ht-navbar{
+
+        padding:24px 80px;
+
+    }
+
+    .ht-desktop-menu{
+
+        gap:40px;
+
+    }
+
+    .book-btn{
+
+        padding:18px 40px;
+
+    }
+
+}
