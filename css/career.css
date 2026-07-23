@@ -98,6 +98,33 @@ CAREER SECTION
 
 }
 
+@media (max-width:768px){
+
+    .career-section{
+
+        grid-template-columns:1fr;
+        grid-template-areas:
+        "image"
+        "content";
+
+    }
+
+    .career-left{
+
+        grid-area:content;
+        padding:50px 30px;
+
+    }
+
+    .career-right{
+
+        grid-area:image;
+        min-height:420px;
+
+    }
+
+}
+
 /*=====================================
 CAREER CONTENT
 =====================================*/
