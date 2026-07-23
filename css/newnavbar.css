@@ -172,3 +172,193 @@ MOBILE
     }
 
 }
+
+/*=========================================
+MAIN MENU LINKS
+=========================================*/
+
+.overlay-left>a,
+.menu-item>button{
+
+    width:100%;
+
+    background:none;
+    border:none;
+    outline:none;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:18px 0;
+
+    text-decoration:none;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(38px,4vw,72px);
+
+    font-weight:400;
+
+    color:#F5F2EB;
+
+    letter-spacing:.5px;
+
+    cursor:pointer;
+
+    transition:.45s ease;
+
+    position:relative;
+
+}
+
+/*=========================================
+UNDERLINE ANIMATION
+=========================================*/
+
+.overlay-left>a::after,
+.menu-item>button::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:8px;
+
+    width:0;
+
+    height:1px;
+
+    background:#C79A46;
+
+    transition:.45s ease;
+
+}
+
+.overlay-left>a:hover::after,
+.menu-item>button:hover::after{
+
+    width:100%;
+
+}
+
+/*=========================================
+TEXT HOVER
+=========================================*/
+
+.overlay-left>a:hover,
+.menu-item>button:hover{
+
+    color:#C79A46;
+
+    transform:translateX(18px);
+
+}
+
+/*=========================================
+PLUS ICON
+=========================================*/
+
+.menu-item button span{
+
+    font-size:22px;
+
+    color:#C79A46;
+
+    transition:.35s ease;
+
+}
+
+.menu-item button:hover span{
+
+    transform:rotate(45deg);
+
+}
+
+/*=========================================
+ACTIVE MENU
+=========================================*/
+
+.overlay-left>a.active{
+
+    color:#C79A46;
+
+}
+
+.overlay-left>a.active::after{
+
+    width:100%;
+
+}
+
+/*=========================================
+FOCUS
+=========================================*/
+
+.overlay-left a:focus,
+.menu-item button:focus{
+
+    outline:none;
+
+}
+
+/*=========================================
+SPACING BETWEEN ITEMS
+=========================================*/
+
+.menu-item{
+
+    margin:4px 0;
+
+}
+
+/*=========================================
+FIRST ITEM
+=========================================*/
+
+.overlay-left>a:first-child{
+
+    margin-top:0;
+
+}
+
+/*=========================================
+LAST ITEM
+=========================================*/
+
+.overlay-left>a:last-child{
+
+    margin-bottom:0;
+
+}
+
+/*=========================================
+TABLET
+=========================================*/
+
+@media(max-width:1100px){
+
+    .overlay-left>a,
+    .menu-item>button{
+
+        font-size:50px;
+
+    }
+
+}
+
+/*=========================================
+LARGE DESKTOP
+=========================================*/
+
+@media(min-width:1600px){
+
+    .overlay-left>a,
+    .menu-item>button{
+
+        font-size:82px;
+
+    }
+
+}
