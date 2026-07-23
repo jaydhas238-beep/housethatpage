@@ -1,0 +1,194 @@
+/*=====================================
+JOIN HOUSETHAT
+=====================================*/
+
+.career-join{
+
+    display:flex;
+    align-items:stretch;
+    gap:12px;
+
+    width:100%;
+
+    margin-top:12px;
+
+    background:#111111;
+
+}
+
+.career-image{
+
+    flex:1;
+
+}
+
+.career-image img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+
+}
+
+.career-form-container{
+
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:80px;
+
+}
+
+.career-subtitle{
+
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    letter-spacing:6px;
+    text-transform:uppercase;
+
+    color:#C79A46;
+
+    margin-bottom:25px;
+
+}
+
+.career-heading{
+
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    font-weight:500;
+
+    letter-spacing:4px;
+    text-transform:uppercase;
+
+    color:#F5F2EB;
+
+    margin-bottom:25px;
+
+}
+
+.career-description{
+
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    line-height:2;
+
+    color:#F5F2EB;
+    opacity:.9;
+
+    margin-bottom:45px;
+
+}
+
+#careerForm{
+
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+
+}
+
+#careerForm input,
+#careerForm select,
+#careerForm textarea{
+
+    width:100%;
+
+    background:transparent;
+
+    border:none;
+    border-bottom:1px solid rgba(245,242,235,.25);
+
+    padding:14px 0;
+
+    color:#F5F2EB;
+
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+
+    outline:none;
+
+}
+
+#careerForm input::placeholder,
+#careerForm textarea::placeholder{
+
+    color:rgba(245,242,235,.6);
+
+}
+
+#careerForm select{
+
+    color:#F5F2EB;
+
+}
+
+#careerForm option{
+
+    color:#111111;
+
+}
+
+#careerForm textarea{
+
+    resize:none;
+
+}
+
+#careerForm button{
+
+    margin-top:15px;
+
+    width:fit-content;
+
+    padding:16px 42px;
+
+    background:transparent;
+
+    border:1px solid #C79A46;
+
+    color:#C79A46;
+
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+#careerForm button:hover{
+
+    background:#C79A46;
+    color:#111111;
+
+}
+
+@media(max-width:768px){
+
+.career-join{
+
+    flex-direction:column;
+
+}
+
+.career-form-container{
+
+    padding:50px 30px;
+
+}
+
+#careerForm button{
+
+    width:100%;
+
+}
+
+}
