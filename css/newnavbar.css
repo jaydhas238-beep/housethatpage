@@ -631,7 +631,7 @@ MOBILE OVERLAY & RESPONSIVE MENU
 OVERLAY
 =====================================*/
 
-.ht-mobile-overlay{
+.ht-menu-overlay{
 
     position:fixed;
 
@@ -663,7 +663,7 @@ OVERLAY
 
 }
 
-.ht-mobile-overlay.active{
+.ht-menu-overlay.active{
 
     opacity:1;
 
@@ -883,7 +883,7 @@ RESPONSIVE
 
 @media(min-width:993px){
 
-    .ht-mobile-overlay{
+   .ht-menu-overlay{
 
         display:none;
 
@@ -969,7 +969,7 @@ RESPONSIVE
 
     }
 
-    .ht-mobile-overlay{
+   .ht-menu-overlay{
 
         padding:30px 24px;
 
@@ -1209,13 +1209,13 @@ DETAILS
 SCROLLBAR
 =====================================*/
 
-.ht-mobile-overlay::-webkit-scrollbar{
+.ht-menu-overlay::-webkit-scrollbar{
 
     width:6px;
 
 }
 
-.ht-mobile-overlay::-webkit-scrollbar-thumb{
+.ht-menu-overlay::-webkit-scrollbar-thumb{
 
     background:#C79A46;
 
@@ -1223,7 +1223,7 @@ SCROLLBAR
 
 }
 
-.ht-mobile-overlay::-webkit-scrollbar-track{
+.ht-menu-overlay{:-webkit-scrollbar-track{
 
     background:#181818;
 
