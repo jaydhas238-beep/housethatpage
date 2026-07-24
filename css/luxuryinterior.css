@@ -559,9 +559,9 @@ body{
 
 }
 }
-/*=====================================
-CTA
-=====================================*/
+/* ===========================
+   CTA
+=========================== */
 
 .cta-section{
 
@@ -579,8 +579,8 @@ CTA
 
     padding:80px 20px;
 
+    margin-top:8px;
 }
-
 .cta-content{
 
     text-align:center;
@@ -588,58 +588,48 @@ CTA
     max-width:600px;
 
 }
-
 .cta-content span{
 
     display:block;
 
-    font-family:'Inter',sans-serif;
-
     font-size:15px;
 
-    font-weight:500;
-
-    letter-spacing:5px;
-
-    text-transform:uppercase;
+    font-family:'Inter',sans-serif;
 
     color:#F5F2EB;
 
-    margin-bottom:28px;
+    letter-spacing:4px;
+
+    margin-bottom:20px;
 
 }
-
 .cta-content p{
-
-    font-family:'Inter',sans-serif;
 
     font-size:15px;
 
-    font-weight:500;
+    font-family:'Inter',sans-serif;
 
     color:#F5F2EB;
 
     line-height:2;
 
-    margin-bottom:45px;
+    margin-bottom:30px;
 
 }
 
 .cta-content a{
 
-    font-family:'Inter',sans-serif;
-
-    font-size:15px;
+    text-decoration:none;
 
     color:#F5F2EB;
-
-    text-decoration:none;
 
     border-bottom:1px solid #F5F2EB;
 
     padding-bottom:4px;
 
-    transition:.3s ease;
+    font-size:15px;
+
+    transition:.3s;
 
 }
 
@@ -651,143 +641,10 @@ CTA
 
 }
 
-@media(max-width:768px){
+/*==============================
+FOOTER
+==============================*/
 
-.cta-section{
-
-    min-height:45vh;
-
-    padding:70px 20px;
-
-}
-
-.cta-content span,
-.cta-content p,
-.cta-content a{
-
-    font-size:15px;
-
-}
-
-}
-
-/*=====================================
-PHILOSOPHY
-=====================================*/
-
-.philosophy-hero{
-
-    position:relative;
-
-    width:100%;
-
-    height:100vh;
-
-    background:url("../images/joy3.jpg") center center/cover no-repeat;
-
-    margin-top:100px;
-
-}
-
-.philosophy-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(0,0,0,.45);
-
-}
-
-.philosophy-content{
-
-    position:absolute;
-
-    inset:0;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    padding:20px;
-
-    z-index:2;
-
-}
-
-.philosophy-title{
-
-    font-family:'Inter',sans-serif;
-
-    font-size:15px;
-
-    font-weight:500;
-
-    letter-spacing:6px;
-
-    text-transform:uppercase;
-
-    color:#C79A46;
-
-    margin-bottom:30px;
-
-}
-
-.philosophy-quote{
-
-    max-width:700px;
-
-    font-family:'Inter',sans-serif;
-
-    font-size:15px;
-
-    line-height:2;
-
-    color:#F5F2EB;
-
-    margin:0;
-
-}
-
-@media(max-width:768px){
-
-.philosophy-hero{
-
-    height:80vh;
-
-    margin-top:70px;
-
-}
-
-.philosophy-content{
-
-    padding:0 30px;
-
-}
-
-.philosophy-title{
-
-    font-size:15px;
-
-    letter-spacing:5px;
-
-}
-
-.philosophy-quote{
-
-    font-size:15px;
-
-    line-height:2;
-
-}
-
-}
 
 /*=====================================
 FOOTER
@@ -831,8 +688,6 @@ FOOTER
 
     color:#F5F2EB;
 
-    font-family:'Inter',sans-serif;
-
     font-size:15px;
 
     transition:.35s ease;
@@ -864,13 +719,12 @@ FOOTER
 }
 
 .footer-contact a,
+
 .footer-contact span{
 
     color:#F5F2EB;
 
     text-decoration:none;
-
-    font-family:'Inter',sans-serif;
 
     font-size:15px;
 
@@ -898,8 +752,6 @@ FOOTER
 
     text-decoration:none;
 
-    font-family:'Inter',sans-serif;
-
     font-size:15px;
 
     transition:.35s ease;
@@ -912,7 +764,7 @@ FOOTER
 
 }
 
-/* Bottom */
+/* Copyright */
 
 .footer-bottom{
 
@@ -922,15 +774,11 @@ FOOTER
 
     color:rgba(245,242,235,.55);
 
-    font-family:'Inter',sans-serif;
-
     font-size:14px;
 
 }
 
-/*=====================================
-MOBILE
-=====================================*/
+/* Mobile */
 
 @media(max-width:768px){
 
@@ -939,6 +787,138 @@ MOBILE
     padding:50px 20px 25px;
 
 }
+
+.footer-links{
+
+    gap:18px;
+
+    flex-direction:column;
+
+}
+
+.footer-contact{
+
+    gap:12px;
+
+    flex-direction:column;
+
+}
+
+.footer-social{
+
+    gap:20px;
+
+}
+
+.footer-bottom{
+
+    font-size:13px;
+
+}
+
+}
+@media (max-width:768px){
+
+/* Hero */
+
+.hero{
+    height:100vh;
+}
+
+.hero-content{
+    padding:0 30px;
+}
+
+.hero-location{
+    font-size:14px;
+}
+
+.hero-title{
+    font-size:28px;
+    line-height:1.4;
+}
+
+.hero-link{
+    font-size:16px;
+}
+
+
+/* Split Sections */
+
+.split-section{
+
+    grid-template-columns:1fr;
+
+    gap:8px;
+
+}
+
+.split-card{
+
+    min-height:75vh;
+
+}
+
+.card-content{
+
+    left:30px;
+    bottom:35px;
+
+}
+
+.card-content span{
+
+    font-size:13px;
+
+}
+
+.card-content h2{
+
+    font-size:28px;
+
+}
+
+.card-content p{
+
+    font-size:15px;
+
+}
+
+
+/* CTA */
+
+.cta{
+
+    min-height:45vh;
+
+}
+
+.cta-content{
+
+    padding:0 25px;
+
+}
+
+.cta-content span{
+
+    font-size:13px;
+
+}
+
+.cta-content h2{
+
+    font-size:24px;
+
+}
+
+.cta-content a{
+
+    font-size:15px;
+
+}
+
+
+/* Footer */
 
 .footer-links{
 
@@ -959,12 +939,6 @@ MOBILE
 .footer-social{
 
     gap:20px;
-
-}
-
-.footer-bottom{
-
-    font-size:13px;
 
 }
 
