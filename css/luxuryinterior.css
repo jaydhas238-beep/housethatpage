@@ -495,23 +495,31 @@ body{
 
     .project-story{
 
-        padding:60px 20px;
+    padding:60px 0;
 
-    }
+}
 
-    .story-content{
+.story-content{
 
-        width:100%;
+    width:100%;
 
-    }
+    max-width:100%;
 
-    .story-content p{
+    padding:0 28px;
 
-        font-size:18px;
+    box-sizing:border-box;
 
-        line-height:1.8;
+    margin:0 auto;
 
-    }
+}
+
+.story-content p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    text-align:center;
 
 }
 
