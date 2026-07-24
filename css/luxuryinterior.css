@@ -177,6 +177,41 @@ body{
 ==================================== */
 
 @media (max-width: 768px){
+   .project-gallery{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:12px;
+
+    padding:0 20px;
+
+    margin:0 auto 60px;
+
+    box-sizing:border-box;
+
+}
+
+.gallery-image{
+
+    width:100%;
+
+}
+
+.gallery-image img{
+
+    width:100%;
+
+    height:380px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
 
     .project-intro{
 
@@ -298,42 +333,6 @@ body{
 
 }
 
-.project-gallery{
-
-    width:100%;
-
-    display:grid;
-
-    grid-template-columns:1fr;
-
-    gap:12px;
-
-    padding:0 20px;
-
-    margin:0 auto 60px;
-
-    box-sizing:border-box;
-
-}
-
-.gallery-image{
-
-    width:100%;
-
-}
-
-.gallery-image img{
-
-    width:100%;
-
-    height:380px;
-
-    object-fit:cover;
-
-    display:block;
-
-}
-
 /*====================================
         PROJECT STORY
 ====================================*/
@@ -381,6 +380,8 @@ body{
     font-weight:300;
 
 }
+
+@media(max-width:768px){
 .project-story{
 
     padding:60px 20px;
@@ -399,4 +400,5 @@ body{
 
     line-height:1.8;
 
+}
 }
