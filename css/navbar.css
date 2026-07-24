@@ -968,7 +968,19 @@ DESKTOP NAV TEXT
 }
 
 
+.ht-project-link,
+.ht-dropdown > a{
 
+    color:#111111 !important;
+
+}
+
+.ht-project-link:hover,
+.ht-dropdown > a:hover{
+
+    color:#C79A46 !important;
+
+}
 
 
   
