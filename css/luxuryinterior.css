@@ -257,3 +257,43 @@ body{
     }
 
 }
+
+/*====================================
+        PROJECT GALLERY
+====================================*/
+
+.project-gallery{
+
+    width:92%;
+    margin:0 auto 120px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+
+}
+
+.gallery-image{
+
+    overflow:hidden;
+
+}
+
+.gallery-image img{
+
+    width:100%;
+    height:650px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:transform .6s ease;
+
+}
+
+.gallery-image:hover img{
+
+    transform:scale(1.03);
+
+}
