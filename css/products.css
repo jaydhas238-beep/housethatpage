@@ -1,0 +1,94 @@
+/*====================================
+        PRODUCTS PAGE
+====================================*/
+
+body{
+
+    background:#111111;
+    color:#ffffff;
+    font-family:'Inter',sans-serif;
+
+}
+
+/*====================================
+            HERO
+====================================*/
+
+.products-hero{
+
+    position:relative;
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+.products-hero img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.products-hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+}
+
+.products-hero-content{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    text-align:center;
+
+}
+
+.products-hero-content span{
+
+    color:#ffffff;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:16px;
+
+    font-weight:400;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+}
+
+@media(max-width:768px){
+
+.products-hero{
+
+    height:100vh;
+
+}
+
+.products-hero-content span{
+
+    font-size:15px;
+
+    letter-spacing:5px;
+
+}
+
+}
