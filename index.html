@@ -22,91 +22,23 @@
 
 <body>
 
- <!-- =========================
-         PREMIUM NAVBAR
-========================== -->
+<!-- ===========================
+        PROJECT NAVBAR
+=========================== -->
 
-<header class="project-navbar">
+<header class="ht-navbar">
 
     <!-- Left Navigation -->
 
-    <nav class="project-nav-left">
+    <div class="ht-left-nav">
 
         <a href="index.html">HOME</a>
 
         <a href="about.html">ABOUT</a>
 
-        <div class="project-dropdown">
-
-            <button class="project-dropdown-btn">
-                PROJECTS
-            </button>
-
-            <!-- Level 1 -->
-
-            <div class="project-dropdown-menu">
-
-                <div class="project-category" data-target="luxury">
-                    Luxury Interior
-                </div>
-
-                <div class="project-category" data-target="architecture">
-                    Architecture
-                </div>
-
-                <div class="project-category" data-target="construction">
-                    Construction
-                </div>
-
-                <div class="project-category" data-target="commercial">
-                    Commercial
-                </div>
-
-            </div>
-
-            <!-- Luxury -->
-
-            <div class="project-submenu" id="luxury">
-
-                <a href="villa-serenity.html">Villa Serenity</a>
-
-                <a href="sky-residence.html">Sky Residence</a>
-
-                <a href="urban-loft.html">Urban Loft</a>
-
-            </div>
-
-            <!-- Architecture -->
-
-            <div class="project-submenu" id="architecture">
-
-                <a href="modern-villa.html">Modern Villa</a>
-
-                <a href="forest-house.html">Forest House</a>
-
-            </div>
-
-            <!-- Construction -->
-
-            <div class="project-submenu" id="construction">
-
-                <a href="construction-1.html">Construction 01</a>
-
-                <a href="construction-2.html">Construction 02</a>
-
-            </div>
-
-            <!-- Commercial -->
-
-            <div class="project-submenu" id="commercial">
-
-                <a href="office-one.html">Office One</a>
-
-                <a href="restaurant.html">Restaurant</a>
-
-            </div>
-
-        </div>
+        <button id="projectsBtn">
+            PROJECTS
+        </button>
 
         <a href="services.html">SERVICES</a>
 
@@ -118,41 +50,114 @@
 
         <a href="contact.html">CONTACT</a>
 
-    </nav>
+    </div>
 
-    <!-- Logo -->
 
-    <div class="project-logo">
+    <!-- Center Logo -->
+
+    <div class="ht-logo">
 
         <a href="index.html">
 
-            <h2>HOUSETHAT</h2>
+            <h1>HOUSETHAT</h1>
 
-            <span>Interiors • Architecture • Construction</span>
+            <p>INTERIORS • ARCHITECTURE • CONSTRUCTION</p>
 
         </a>
 
     </div>
 
-    <!-- Right -->
 
-    <div class="project-right">
+    <!-- Right Side -->
 
-        <button class="search-btn">
+    <div class="ht-right-nav">
 
-            <i class="ri-search-line"></i>
-
-        </button>
-
-        <a href="contact.html" class="book-btn">
-
+        <a href="contact.html" class="consult-btn">
             Book Consultation
-
         </a>
 
     </div>
 
 </header>
+
+
+<!-- ===========================
+      FIRST DROPDOWN
+=========================== -->
+
+<div class="projects-menu" id="projectsMenu">
+
+    <div class="project-type" data-target="interior">
+
+        Luxury Interior
+
+    </div>
+
+    <div class="project-type" data-target="architecture">
+
+        Architecture
+
+    </div>
+
+    <div class="project-type" data-target="construction">
+
+        Construction
+
+    </div>
+
+    <div class="project-type" data-target="commercial">
+
+        Commercial
+
+    </div>
+
+</div>
+
+
+
+<!-- ===========================
+      SECOND DROPDOWNS
+=========================== -->
+
+<div class="project-list" id="interior">
+
+    <a href="villa-serenity.html">Villa Serenity</a>
+
+    <a href="sky-residence.html">Sky Residence</a>
+
+    <a href="urban-loft.html">Urban Loft</a>
+
+</div>
+
+
+
+<div class="project-list" id="architecture">
+
+    <a href="modern-villa.html">Modern Villa</a>
+
+    <a href="forest-house.html">Forest House</a>
+
+</div>
+
+
+
+<div class="project-list" id="construction">
+
+    <a href="construction-01.html">Construction 01</a>
+
+    <a href="construction-02.html">Construction 02</a>
+
+</div>
+
+
+
+<div class="project-list" id="commercial">
+
+    <a href="office-one.html">Office One</a>
+
+    <a href="restaurant.html">Restaurant</a>
+
+</div>
 
     <!-- New Homepage Sections (we'll build these) -->
 
