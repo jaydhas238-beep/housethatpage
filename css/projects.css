@@ -1,0 +1,77 @@
+/*========================
+        HERO
+========================*/
+
+.projects-hero{
+
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    background:#000;
+
+}
+
+.projects-hero img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+
+}
+
+.projects-hero-overlay{
+
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.35);
+
+}
+
+.projects-hero-content{
+
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.projects-hero-content p{
+
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    font-weight:400;
+
+    color:#fff;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+}
+
+@media(max-width:768px){
+
+.projects-hero{
+
+height:65vh;
+
+}
+
+.projects-hero-content p{
+
+font-size:15px;
+letter-spacing:4px;
+
+}
+
+}
