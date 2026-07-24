@@ -1383,3 +1383,9 @@ document.onclick=function(){
     });
 
 }
+
+/*
+
+const swiper = new Swiper(...);
+
+*/
