@@ -182,18 +182,17 @@ body{
    MOBILE
 ==================================== */
 
-@media (max-width: 768px){
- @media (max-width:768px){
+@media (max-width:768px){
 
 .project-gallery{
 
-    display:flex;
+    display:flex !important;
 
-    flex-direction:column;
-
-    gap:20px;
+    flex-direction:column !important;
 
     width:100%;
+
+    gap:20px;
 
     padding:0 20px;
 
@@ -203,7 +202,7 @@ body{
 
 .gallery-image{
 
-    width:100%;
+    width:100% !important;
 
 }
 
@@ -212,12 +211,6 @@ body{
     width:100% !important;
 
     height:auto !important;
-
-    max-height:none !important;
-
-    aspect-ratio:auto !important;
-
-    object-fit:contain !important;
 
     display:block;
 
