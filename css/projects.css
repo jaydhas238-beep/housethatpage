@@ -169,7 +169,7 @@ letter-spacing:4px;
 
     font-size:14px;
 
-    color:#fff;
+     color:#C79A46;      /* Gold */
 
     position:relative;
 
@@ -190,7 +190,7 @@ letter-spacing:4px;
 
     height:1px;
 
-    background:#fff;
+    color:#C79A46;      /* Gold */
 
     transition:.4s;
 
