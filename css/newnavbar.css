@@ -1,51 +1,41 @@
-/*======================================
-            PROJECT NAVBAR
-=======================================*/
+/*====================================
+        PREMIUM NAVBAR
+=====================================*/
 
-.project-navbar{
-
+.ht-navbar{
     position:fixed;
     top:0;
     left:0;
-
     width:100%;
-
-    height:110px;
-
-    padding:0 60px;
+    height:90px;
 
     display:flex;
     align-items:center;
     justify-content:space-between;
 
-    backdrop-filter:blur(30px);
-    -webkit-backdrop-filter:blur(30px);
+    padding:0 50px;
 
-    background:rgba(10,10,10,.35);
+    background:rgba(0,0,0,.25);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
 
     z-index:9999;
-
 }
 
-
-.project-nav-left{
+.ht-left-nav{
 
     display:flex;
     flex-direction:column;
-    gap:12px;
+    gap:8px;
 
 }
 
-.project-nav-left>a,
-.project-dropdown-btn{
+.ht-left-nav a,
+.ht-left-nav button{
 
     font-family:'Inter',sans-serif;
-
-    font-size:14px;
-
+    font-size:13px;
     font-weight:400;
-
-    letter-spacing:1px;
 
     color:#ffffff;
 
@@ -56,19 +46,20 @@
 
     cursor:pointer;
 
-    transition:.35s;
+    transition:.3s;
+
+    text-align:left;
 
 }
 
-.project-nav-left>a:hover,
-.project-dropdown-btn:hover{
+.ht-left-nav a:hover,
+.ht-left-nav button:hover{
 
     color:#C79A46;
 
 }
 
-
-.project-logo{
+.ht-logo{
 
     position:absolute;
 
@@ -79,81 +70,64 @@
 
 }
 
-.project-logo a{
+.ht-logo a{
 
     text-decoration:none;
 
 }
 
-.project-logo h2{
+.ht-logo h1{
 
     color:#ffffff;
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:42px;
+    font-size:38px;
 
     font-weight:500;
 
-    letter-spacing:2px;
+    margin:0;
 
-    margin-bottom:6px;
+    letter-spacing:2px;
 
 }
 
-.project-logo span{
+.ht-logo p{
 
-    color:#d5d5d5;
+    color:#d8d8d8;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+    margin-top:5px;
+
+}
+
+.ht-right-nav{
+
+    display:flex;
+    align-items:center;
+
+}
+
+.consult-btn{
+
+    color:#C79A46;
 
     font-family:'Inter',sans-serif;
 
     font-size:13px;
 
-    letter-spacing:3px;
-
-    text-transform:uppercase;
-
-}
-
-
-.project-right{
-
-    display:flex;
-    align-items:center;
-    gap:24px;
-
-}
-
-.search-btn{
-
-    background:none;
-    border:none;
-
-    color:#fff;
-
-    font-size:20px;
-
-    cursor:pointer;
-
-}
-
-.book-btn{
-
-    color:#C79A46;
-
     text-decoration:none;
-
-    font-family:'Inter',sans-serif;
-
-    font-size:14px;
-
-    letter-spacing:1px;
 
     position:relative;
 
 }
 
-.book-btn::after{
+.consult-btn::after{
 
     content:"";
 
@@ -169,24 +143,22 @@
 
 }
 
-.project-dropdown{
+.projects-menu{
 
-    position:relative;
+    position:fixed;
 
-}
-
-.project-dropdown-menu{
-
-    position:absolute;
-
-    top:30px;
-    left:0;
+    top:95px;
+    left:50px;
 
     width:240px;
 
-    background:#111;
+    background:#111111;
 
-    padding:20px;
+    border:1px solid rgba(199,154,70,.3);
+
+    border-radius:12px;
+
+    padding:18px;
 
     display:none;
 
@@ -194,9 +166,11 @@
 
     gap:16px;
 
+    z-index:9998;
+
 }
 
-.project-category{
+.project-type{
 
     color:#ffffff;
 
@@ -210,26 +184,29 @@
 
 }
 
-.project-category:hover{
+.project-type:hover{
 
     color:#C79A46;
 
 }
 
+.project-list{
 
-.project-submenu{
+    position:fixed;
 
-    position:absolute;
+    top:95px;
 
-    top:30px;
-
-    left:250px;
+    left:300px;
 
     width:260px;
 
-    background:#111;
+    background:#111111;
 
-    padding:20px;
+    border:1px solid rgba(199,154,70,.3);
+
+    border-radius:12px;
+
+    padding:18px;
 
     display:none;
 
@@ -237,11 +214,13 @@
 
     gap:16px;
 
+    z-index:9998;
+
 }
 
-.project-submenu a{
+.project-list a{
 
-    color:#fff;
+    color:#ffffff;
 
     text-decoration:none;
 
@@ -253,47 +232,40 @@
 
 }
 
-.project-submenu a:hover{
+.project-list a:hover{
 
     color:#C79A46;
 
 }
-.project-dropdown-menu.active{
+
+.projects-menu.show{
 
     display:flex;
 
 }
 
-.project-submenu.active{
+.project-list.show{
 
     display:flex;
 
 }
 
-@media(max-width:992px){
+@media(max-width:991px){
 
-.project-navbar{
+    .ht-left-nav{
+        display:none;
+    }
 
-padding:25px;
+    .consult-btn{
+        display:none;
+    }
 
-}
+    .ht-logo h1{
+        font-size:28px;
+    }
 
-.project-logo h2{
-
-font-size:30px;
-
-}
-
-.project-nav-left{
-
-display:none;
-
-}
-
-.book-btn{
-
-display:none;
-
-}
+    .ht-logo p{
+        font-size:10px;
+    }
 
 }
