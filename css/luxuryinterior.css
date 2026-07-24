@@ -183,19 +183,19 @@ body{
 ==================================== */
 
 @media (max-width: 768px){
-   .project-gallery{
+ @media (max-width:768px){
+
+.project-gallery{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
 
     width:100%;
 
-    display:grid;
-
-    grid-template-columns:1fr;
-
-    gap:12px;
-
     padding:0 20px;
-
-    margin:0 auto 60px;
 
     box-sizing:border-box;
 
@@ -211,13 +211,11 @@ body{
 
     width:100%;
 
-    aspect-ratio:3/4;
-
     height:auto;
 
-    object-fit:cover;
-
     display:block;
+
+}
 
 }
 
