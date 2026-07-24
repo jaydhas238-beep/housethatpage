@@ -508,3 +508,38 @@ body{
     }
 
 }
+
+/*====================================
+      SECOND GALLERY
+====================================*/
+
+.gallery-large{
+
+    width:92%;
+    margin:0 auto 140px;
+
+}
+
+.gallery-large .gallery-image img{
+
+    height:720px;
+
+}
+
+/*====================================
+      SECOND GALLERY
+====================================*/
+@media (max-width:768px){
+.gallery-large{
+
+    width:92%;
+    margin:0 auto 140px;
+
+}
+
+.gallery-large .gallery-image img{
+
+    height:720px;
+
+}
+}
