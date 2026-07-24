@@ -553,7 +553,9 @@ body{
 
 .gallery-large .gallery-image img{
 
-    height:720px;
+     height:280px;
+
+    object-fit:cover;
 
 }
 }
