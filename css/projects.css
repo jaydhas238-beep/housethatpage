@@ -237,3 +237,414 @@ letter-spacing:4px;
 }
 
 }
+
+/*=====================================
+CTA
+=====================================*/
+
+.cta-section{
+
+    width:100%;
+
+    min-height:60vh;
+
+    background:#111111;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:80px 20px;
+
+}
+
+.cta-content{
+
+    text-align:center;
+
+    max-width:600px;
+
+}
+
+.cta-content span{
+
+    display:block;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    color:#F5F2EB;
+
+    margin-bottom:28px;
+
+}
+
+.cta-content p{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    color:#F5F2EB;
+
+    line-height:2;
+
+    margin-bottom:45px;
+
+}
+
+.cta-content a{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    color:#F5F2EB;
+
+    text-decoration:none;
+
+    border-bottom:1px solid #F5F2EB;
+
+    padding-bottom:4px;
+
+    transition:.3s ease;
+
+}
+
+.cta-content a:hover{
+
+    color:#C79A46;
+
+    border-color:#C79A46;
+
+}
+
+@media(max-width:768px){
+
+.cta-section{
+
+    min-height:45vh;
+
+    padding:70px 20px;
+
+}
+
+.cta-content span,
+.cta-content p,
+.cta-content a{
+
+    font-size:15px;
+
+}
+
+}
+
+/*=====================================
+PHILOSOPHY
+=====================================*/
+
+.philosophy-hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    background:url("../images/joy3.jpg") center center/cover no-repeat;
+
+    margin-top:100px;
+
+}
+
+.philosophy-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+.philosophy-content{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    z-index:2;
+
+}
+
+.philosophy-title{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    color:#C79A46;
+
+    margin-bottom:30px;
+
+}
+
+.philosophy-quote{
+
+    max-width:700px;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    line-height:2;
+
+    color:#F5F2EB;
+
+    margin:0;
+
+}
+
+@media(max-width:768px){
+
+.philosophy-hero{
+
+    height:80vh;
+
+    margin-top:70px;
+
+}
+
+.philosophy-content{
+
+    padding:0 30px;
+
+}
+
+.philosophy-title{
+
+    font-size:15px;
+
+    letter-spacing:5px;
+
+}
+
+.philosophy-quote{
+
+    font-size:15px;
+
+    line-height:2;
+
+}
+
+}
+
+/*=====================================
+FOOTER
+=====================================*/
+
+.footer{
+
+    width:100%;
+
+    background:#111111;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:60px 30px 30px;
+
+    text-align:center;
+
+}
+
+/* Links */
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:35px;
+
+    margin-bottom:40px;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#F5F2EB;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    transition:.35s ease;
+
+}
+
+.footer-links a:hover{
+
+    color:#C79A46;
+
+}
+
+/* Contact */
+
+.footer-contact{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:35px;
+
+}
+
+.footer-contact a,
+.footer-contact span{
+
+    color:#F5F2EB;
+
+    text-decoration:none;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+}
+
+/* Social */
+
+.footer-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    margin-bottom:45px;
+
+}
+
+.footer-social a{
+
+    color:#F5F2EB;
+
+    text-decoration:none;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    transition:.35s ease;
+
+}
+
+.footer-social a:hover{
+
+    color:#C79A46;
+
+}
+
+/* Bottom */
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:25px;
+
+    color:rgba(245,242,235,.55);
+
+    font-family:'Inter',sans-serif;
+
+    font-size:14px;
+
+}
+
+/*=====================================
+MOBILE
+=====================================*/
+
+@media(max-width:768px){
+
+.footer{
+
+    padding:50px 20px 25px;
+
+}
+
+.footer-links{
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.footer-contact{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.footer-social{
+
+    gap:20px;
+
+}
+
+.footer-bottom{
+
+    font-size:13px;
+
+}
+
+}
