@@ -333,3 +333,70 @@ body{
     display:block;
 
 }
+
+/*====================================
+        PROJECT STORY
+====================================*/
+
+.project-story{
+
+    width:100%;
+    padding:100px 0;
+
+}
+
+.story-content{
+
+    width:60%;
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+.story-content span{
+
+    display:block;
+
+    font-size:13px;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    color:#C79A46;
+
+    margin-bottom:30px;
+
+}
+
+.story-content p{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#E6E6E6;
+
+    font-weight:300;
+
+}
+.project-story{
+
+    padding:60px 20px;
+
+}
+
+.story-content{
+
+    width:100%;
+
+}
+
+.story-content p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
