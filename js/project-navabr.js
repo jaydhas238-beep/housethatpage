@@ -1,3 +1,5 @@
+console.log("Navbar JS Loaded");
+
 const projectsBtn = document.getElementById("projectsBtn");
 const projectsMenu = document.getElementById("projectsMenu");
 const projectTypes = document.querySelectorAll(".project-type");
