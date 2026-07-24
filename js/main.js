@@ -1331,3 +1331,78 @@ Looking forward to discussing my project with your team.`;
     });
 
 });
+
+/*=========================================
+        PROJECT NAVBAR
+=========================================*/
+
+const projectBtn = document.querySelector(".project-dropdown-btn");
+const dropdownMenu = document.querySelector(".project-dropdown-menu");
+
+const categories = document.querySelectorAll(".project-category");
+const submenus = document.querySelectorAll(".project-submenu");
+
+
+/*----------------------------
+    OPEN FIRST DROPDOWN
+-----------------------------*/
+
+projectBtn.addEventListener("click", function(e){
+
+    e.stopPropagation();
+
+    dropdownMenu.classList.toggle("active");
+
+    submenus.forEach(menu=>{
+        menu.classList.remove("active");
+    });
+
+});
+
+
+/*----------------------------
+    OPEN SECOND DROPDOWN
+-----------------------------*/
+
+categories.forEach(category=>{
+
+    category.addEventListener("click", function(e){
+
+        e.stopPropagation();
+
+        submenus.forEach(menu=>{
+            menu.classList.remove("active");
+        });
+
+        const target = document.getElementById(
+            category.dataset.target
+        );
+
+        if(target){
+
+            target.classList.add("active");
+
+        }
+
+    });
+
+});
+
+
+/*----------------------------
+    CLICK OUTSIDE
+-----------------------------*/
+
+document.addEventListener("click", function(e){
+
+    if(!e.target.closest(".project-dropdown")){
+
+        dropdownMenu.classList.remove("active");
+
+        submenus.forEach(menu=>{
+            menu.classList.remove("active");
+        });
+
+    }
+
+});
