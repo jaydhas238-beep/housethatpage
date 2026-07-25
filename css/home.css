@@ -593,35 +593,30 @@ FOOTER
 
 .footer{
 
-    padding:50px 20px 25px;
+    padding:50px 24px 30px;
 
 }
 
-.footer-links{
-
-    gap:18px;
-
-    flex-direction:column;
-
-}
-
+.footer-links,
 .footer-contact{
 
-    gap:12px;
-
     flex-direction:column;
+
+    gap:18px;
 
 }
 
 .footer-social{
 
-    gap:20px;
+    justify-content:center;
+
+    gap:24px;
 
 }
 
 .footer-bottom{
 
-    font-size:13px;
+    text-align:center;
 
 }
 
