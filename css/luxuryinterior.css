@@ -350,38 +350,15 @@ body{
 
     /* ---------- Gallery ---------- */
 
-    .project-gallery{
+    /* ---------- Gallery ---------- */
 
-        width:100%;
-
-        grid-template-columns:1fr;
-
-        gap:12px;
-
-        padding:0 20px;
-
-        margin:0 auto 60px;
-
-        box-sizing:border-box;
-
-    }
-
-  .gallery-image img{
-
-    width:100%;
-
-    height:auto;
-
-    display:block;
-
-}
-    .project-gallery{
-
-    width:100%;
+.project-gallery{
 
     display:grid;
 
     grid-template-columns:1fr;
+
+    width:100%;
 
     gap:20px;
 
@@ -390,6 +367,22 @@ body{
     margin:0 auto 60px;
 
     box-sizing:border-box;
+
+}
+
+.gallery-image{
+
+    width:100%;
+
+}
+
+.gallery-image img{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
 
 }
     /* ---------- Story ---------- */
