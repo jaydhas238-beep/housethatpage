@@ -388,17 +388,15 @@ FOUNDER
 
 }
 
-/*=====================================
-CTA
-=====================================*/
+/* ===========================
+   CTA
+=========================== */
 
 .cta-section{
 
     width:100%;
 
-    min-height:60vh;
-
-    background:#111111;
+    min-height:55vh;
 
     display:flex;
 
@@ -406,69 +404,65 @@ CTA
 
     align-items:center;
 
-    padding:80px 20px;
+    padding:80px 24px;
+
+    text-align:center;
+
+    box-sizing:border-box;
 
 }
 
 .cta-content{
 
-    text-align:center;
+    width:100%;
 
-    max-width:600px;
+    max-width:650px;
+
+    margin:0 auto;
 
 }
-
 .cta-content span{
 
     display:block;
 
-    font-family:'Inter',sans-serif;
-
     font-size:15px;
 
-    font-weight:500;
-
-    letter-spacing:5px;
-
-    text-transform:uppercase;
+    font-family:'Inter',sans-serif;
 
     color:#F5F2EB;
 
-    margin-bottom:28px;
+    letter-spacing:4px;
+
+    margin-bottom:20px;
 
 }
-
 .cta-content p{
-
-    font-family:'Inter',sans-serif;
 
     font-size:15px;
 
-    font-weight:500;
+    font-family:'Inter',sans-serif;
 
     color:#F5F2EB;
 
     line-height:2;
 
-    margin-bottom:45px;
+    margin-bottom:30px;
 
 }
 
 .cta-content a{
 
-    font-family:'Inter',sans-serif;
-
-    font-size:15px;
+    text-decoration:none;
 
     color:#F5F2EB;
-
-    text-decoration:none;
 
     border-bottom:1px solid #F5F2EB;
 
     padding-bottom:4px;
 
-    transition:.3s ease;
+    font-size:15px;
+
+    transition:.3s;
 
 }
 
@@ -480,143 +474,10 @@ CTA
 
 }
 
-@media(max-width:768px){
+/*==============================
+FOOTER
+==============================*/
 
-.cta-section{
-
-    min-height:45vh;
-
-    padding:70px 20px;
-
-}
-
-.cta-content span,
-.cta-content p,
-.cta-content a{
-
-    font-size:15px;
-
-}
-
-}
-
-/*=====================================
-PHILOSOPHY
-=====================================*/
-
-.philosophy-hero{
-
-    position:relative;
-
-    width:100%;
-
-    height:100vh;
-
-    background:url("../images/joy3.jpg") center center/cover no-repeat;
-
-    margin-top:100px;
-
-}
-
-.philosophy-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(0,0,0,.45);
-
-}
-
-.philosophy-content{
-
-    position:absolute;
-
-    inset:0;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    padding:20px;
-
-    z-index:2;
-
-}
-
-.philosophy-title{
-
-    font-family:'Inter',sans-serif;
-
-    font-size:15px;
-
-    font-weight:500;
-
-    letter-spacing:6px;
-
-    text-transform:uppercase;
-
-    color:#C79A46;
-
-    margin-bottom:30px;
-
-}
-
-.philosophy-quote{
-
-    max-width:700px;
-
-    font-family:'Inter',sans-serif;
-
-    font-size:15px;
-
-    line-height:2;
-
-    color:#F5F2EB;
-
-    margin:0;
-
-}
-
-@media(max-width:768px){
-
-.philosophy-hero{
-
-    height:80vh;
-
-    margin-top:70px;
-
-}
-
-.philosophy-content{
-
-    padding:0 30px;
-
-}
-
-.philosophy-title{
-
-    font-size:15px;
-
-    letter-spacing:5px;
-
-}
-
-.philosophy-quote{
-
-    font-size:15px;
-
-    line-height:2;
-
-}
-
-}
 
 /*=====================================
 FOOTER
@@ -630,7 +491,9 @@ FOOTER
 
     border-top:1px solid rgba(255,255,255,.08);
 
-    padding:60px 30px 30px;
+    padding:60px 24px 30px;
+
+    box-sizing:border-box;
 
     text-align:center;
 
@@ -659,8 +522,6 @@ FOOTER
     text-decoration:none;
 
     color:#F5F2EB;
-
-    font-family:'Inter',sans-serif;
 
     font-size:15px;
 
@@ -693,13 +554,12 @@ FOOTER
 }
 
 .footer-contact a,
+
 .footer-contact span{
 
     color:#F5F2EB;
 
     text-decoration:none;
-
-    font-family:'Inter',sans-serif;
 
     font-size:15px;
 
@@ -727,8 +587,6 @@ FOOTER
 
     text-decoration:none;
 
-    font-family:'Inter',sans-serif;
-
     font-size:15px;
 
     transition:.35s ease;
@@ -741,7 +599,7 @@ FOOTER
 
 }
 
-/* Bottom */
+/* Copyright */
 
 .footer-bottom{
 
@@ -751,49 +609,39 @@ FOOTER
 
     color:rgba(245,242,235,.55);
 
-    font-family:'Inter',sans-serif;
-
     font-size:14px;
 
 }
 
-/*=====================================
-MOBILE
-=====================================*/
+/* Mobile */
 
 @media(max-width:768px){
 
 .footer{
 
-    padding:50px 20px 25px;
+    padding:50px 24px 30px;
 
 }
 
-.footer-links{
-
-    flex-direction:column;
-
-    gap:18px;
-
-}
-
-.footer-contact{
-
-    flex-direction:column;
-
-    gap:15px;
-
-}
-
+.footer-links,
+.footer-contact,
 .footer-social{
 
-    gap:20px;
+    width:100%;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-left:auto;
+
+    margin-right:auto;
 
 }
 
 .footer-bottom{
 
-    font-size:13px;
+    text-align:center;
 
 }
 
