@@ -271,7 +271,7 @@ body{
     font-weight:300;
 
 }
-}
+
 
 /*====================================
         MOBILE
@@ -366,15 +366,30 @@ body{
 
     }
 
-    .gallery-image img{
+  .gallery-image img{
 
     width:100%;
 
-    aspect-ratio:3/4;
-
-    object-fit:cover;
+    height:auto;
 
     display:block;
+
+}
+    .project-gallery{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+    padding:0 20px;
+
+    margin:0 auto 60px;
+
+    box-sizing:border-box;
 
 }
     /* ---------- Story ---------- */
@@ -816,42 +831,3 @@ FOOTER
 }
 
 
-@media (max-width:768px){
-
-    .project-gallery{
-
-        display:grid !important;
-
-        grid-template-columns:1fr !important;
-
-        gap:20px;
-
-        width:100%;
-
-        padding:0 20px;
-
-        margin:0 auto 60px;
-
-        box-sizing:border-box;
-
-    }
-
-    .gallery-image{
-
-        width:100%;
-
-    }
-
-    .gallery-image img{
-
-        width:100%;
-
-        height:auto;
-
-        display:block;
-
-        object-fit:cover;
-
-    }
-
-}
