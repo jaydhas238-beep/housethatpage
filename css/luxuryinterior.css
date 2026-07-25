@@ -437,7 +437,17 @@ body{
 /*====================================
       SECOND GALLERY
 ====================================*/
+@media (max-width:768px){
 
+    .gallery-large .gallery-image img{
+
+        height:350px;
+
+        object-fit:cover;
+
+    }
+
+}
 /* ===========================
    CTA
 =========================== */
