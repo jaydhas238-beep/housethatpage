@@ -124,7 +124,7 @@ body{
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:54px;
+    font-size:28px;
 
     font-weight:500;
 
@@ -218,11 +218,7 @@ body{
 
 }
 
-.gallery-image:hover img{
 
-    transform:scale(1.03);
-
-}
 
 /*====================================
         PROJECT STORY
