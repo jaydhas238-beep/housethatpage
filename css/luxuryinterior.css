@@ -182,48 +182,6 @@ body{
    MOBILE
 ==================================== */
 
-@media (max-width: 768px){
- @media (max-width:768px){
-
-.project-gallery{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:20px;
-
-    width:100%;
-
-    padding:0 20px;
-
-    box-sizing:border-box;
-
-}
-
-.gallery-image{
-
-    width:100%;
-
-}
-
-.gallery-image img{
-
-    width:100% !important;
-
-    height:auto !important;
-
-    max-height:none !important;
-
-    aspect-ratio:auto !important;
-
-    object-fit:contain !important;
-
-    display:block;
-
-}
-
-}
 
     .project-intro{
 
@@ -552,28 +510,7 @@ body{
 /*====================================
       SECOND GALLERY
 ====================================*/
-@media (max-width:768px){
-.gallery-large{
 
-    width:92%;
-    margin:0 auto 140px;
-
-}
-
-.gallery-large .gallery-image img{
-
-    width:100%;
-
-    aspect-ratio:3/4;
-
-    height:auto;
-
-    object-fit:cover;
-
-    display:block;
-
-}
-}
 /* ===========================
    CTA
 =========================== */
@@ -956,5 +893,46 @@ FOOTER
     gap:20px;
 
 }
+
+}
+
+
+@media (max-width:768px){
+
+    .project-gallery{
+
+        display:grid !important;
+
+        grid-template-columns:1fr !important;
+
+        gap:20px;
+
+        width:100%;
+
+        padding:0 20px;
+
+        margin:0 auto 60px;
+
+        box-sizing:border-box;
+
+    }
+
+    .gallery-image{
+
+        width:100%;
+
+    }
+
+    .gallery-image img{
+
+        width:100%;
+
+        height:auto;
+
+        display:block;
+
+        object-fit:cover;
+
+    }
 
 }
